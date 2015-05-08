@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>279</y>
+      <w>306</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Prezes
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1008</x>
+      <y>486</y>
+      <w>189</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>Pracownik Pionu Produkcji
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>621</y>
+      <w>306</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Pracownik działu Obsługi Klienta
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>225</y>
+      <w>306</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Członek Zarządu ds. Ekonomiczno-Finansowych
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>738</x>
+      <y>720</y>
+      <w>207</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Pracownik magazynu
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>495</x>
+      <y>477</y>
+      <w>217</w>
+      <h>118</h>
+    </coordinates>
+    <panel_attributes>// Modify the text below and
+// observe the element preview.
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=textHeight();
+
+drawRectangleRound(0,0,width,height,width/4,height/2);
+drawLine(width/6,height/4,width/6,0);
+drawLine(0,height/4,width,height/4);
+drawLine(0,height-height/4,width,height-height/4);
+
+</custom_code>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Systemborder</type>
+    <coordinates>
+      <x>495</x>
+      <y>504</y>
+      <w>216</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes> 
+
+                   System
+layer=1
+
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>567</x>
+      <y>585</y>
+      <w>189</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>Stan magazynu
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>190.0;200.0;10.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>477</y>
+      <w>324</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Stan zlecenia
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>216</x>
+      <y>504</y>
+      <w>297</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>Dane klienta
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>310.0;20.0;10.0;20.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>504</y>
+      <w>324</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Dane materiałów
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>585</y>
+      <w>162</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>Dane o dostawach
+lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0;160.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>531</y>
+      <w>324</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Zgłoszenia problemów</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>252</x>
+      <y>540</y>
+      <w>261</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Zlecenia
+lt=&lt;-</panel_attributes>
+    <additional_attributes>270.0;20.0;10.0;20.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>234</x>
+      <y>522</y>
+      <w>279</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>Dane sprzedaży
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>290.0;20.0;10.0;20.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>171</y>
+      <w>306</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Pracownik działu Marketingu i Rozwoju
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>234</y>
+      <w>252</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>Wyniki funkcjonowania przedsiębiorstwa
+lt=-
+bg=magenta
+fg=magenta</panel_attributes>
+    <additional_attributes>210.0;10.0;10.0;10.0;10.0;170.0;200.0;170.0;200.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>180</y>
+      <w>144</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>234</y>
+      <w>144</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;140.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>225</y>
+      <w>144</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>549</x>
+      <y>261</y>
+      <w>693</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>Decyzje administracyjne
+stan zatrudnienia pracowników
+lt=-&gt;</panel_attributes>
+    <additional_attributes>540.0;10.0;560.0;10.0;560.0;140.0;10.0;140.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>963</x>
+      <y>225</y>
+      <w>90</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>80.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>963</x>
+      <y>234</y>
+      <w>90</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>80.0;10.0;80.0;70.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>567</x>
+      <y>180</y>
+      <w>891</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>Stan zatrudnienia, harmonogram
+lt=&lt;-
+fg=red</panel_attributes>
+    <additional_attributes>450.0;10.0;770.0;10.0;770.0;250.0;10.0;250.0;10.0;330.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>558</y>
+      <w>243</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>Stan zatrudnienia, harmonogram
+lt=-&gt;
+fg=red</panel_attributes>
+    <additional_attributes>250.0;20.0;10.0;20.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>612</x>
+      <y>585</y>
+      <w>252</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>Stan zatrudnienia, harmonogram
+lt=-&gt;
+fg=red</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;260.0;50.0;260.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>558</y>
+      <w>324</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Stan zatrudnienia, harmonogram
+lt=-&gt;
+fg=red</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+</diagram>

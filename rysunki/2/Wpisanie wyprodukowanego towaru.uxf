@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.baselet.element.old.element.Actor</type>
+    <coordinates>
+      <x>670</x>
+      <y>650</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Pracownik magazynu</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>730</x>
+      <y>520</y>
+      <w>50</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;30;130</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.UseCase</type>
+    <coordinates>
+      <x>910</x>
+      <y>290</y>
+      <w>260</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Wprowadzenie niezbednych danych
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.UseCase</type>
+    <coordinates>
+      <x>610</x>
+      <y>480</y>
+      <w>290</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Wpisanie wyprodukowanego towaru
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>350</y>
+      <w>150</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;includes&gt;&gt;
+lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.UseCase</type>
+    <coordinates>
+      <x>350</x>
+      <y>270</y>
+      <w>370</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Wyswietlenie propozycji miejsca umieszczenia towaru
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>370</y>
+      <w>200</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;includes&gt;&gt;
+lt=&lt;.</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>750</x>
+      <y>240</y>
+      <w>130</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;extends&gt;&gt;
+lt=&lt;.</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Systemborder</type>
+    <coordinates>
+      <x>300</x>
+      <y>60</y>
+      <w>890</w>
+      <h>520</h>
+    </coordinates>
+    <panel_attributes>Wspomaganie sprzedaży
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.UseCase</type>
+    <coordinates>
+      <x>580</x>
+      <y>160</y>
+      <w>400</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Manulane wprowdzenie miejsca umieszczenia towaru
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
