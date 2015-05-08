@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
   <zoom_level>10</zoom_level>
   <element>
-    <type>com.umlet.element.Actor</type>
+    <type>com.baselet.element.old.element.Actor</type>
     <coordinates>
       <x>400</x>
       <y>540</y>
@@ -12,10 +13,10 @@
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.UseCase</type>
+    <type>com.baselet.element.old.element.UseCase</type>
     <coordinates>
-      <x>550</x>
-      <y>350</y>
+      <x>510</x>
+      <y>370</y>
       <w>290</w>
       <h>70</h>
     </coordinates>
@@ -24,19 +25,19 @@ bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.custom.Systemborder</type>
+    <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
       <x>100</x>
       <y>130</y>
       <w>820</w>
       <h>340</h>
     </coordinates>
-    <panel_attributes>Podsystem produkcji
+    <panel_attributes>Wspomaganie produkcji
 fg=red</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.UseCase</type>
+    <type>com.baselet.element.old.element.UseCase</type>
     <coordinates>
       <x>560</x>
       <y>180</y>
@@ -48,33 +49,33 @@ bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.Relation</type>
+    <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>660</x>
+      <x>650</x>
       <y>230</y>
-      <w>160</w>
-      <h>140</h>
+      <w>142</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>50;30;120;120</additional_attributes>
+    <additional_attributes>60;30;90;140</additional_attributes>
   </element>
   <element>
-    <type>com.umlet.element.Relation</type>
+    <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
       <x>470</x>
-      <y>390</y>
-      <w>240</w>
-      <h>170</h>
+      <y>410</y>
+      <w>200</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>220;30;30;150</additional_attributes>
+    <additional_attributes>180;30;30;130</additional_attributes>
   </element>
   <element>
-    <type>com.umlet.element.UseCase</type>
+    <type>com.baselet.element.old.element.UseCase</type>
     <coordinates>
-      <x>160</x>
-      <y>330</y>
+      <x>120</x>
+      <y>300</y>
       <w>300</w>
       <h>80</h>
     </coordinates>
@@ -83,7 +84,7 @@ bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.UseCase</type>
+    <type>com.baselet.element.old.element.UseCase</type>
     <coordinates>
       <x>130</x>
       <y>190</y>
@@ -95,7 +96,7 @@ bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <type>com.umlet.element.Relation</type>
+    <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
       <x>400</x>
       <y>180</y>
@@ -107,27 +108,15 @@ bg=blue</panel_attributes>
     <additional_attributes>30;50;160;40</additional_attributes>
   </element>
   <element>
-    <type>com.umlet.element.Relation</type>
+    <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>420</x>
+      <x>380</x>
       <y>220</y>
-      <w>230</w>
-      <h>150</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-&lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>30;130;210;30</additional_attributes>
-  </element>
-  <element>
-    <type>com.umlet.element.Relation</type>
-    <coordinates>
-      <x>190</x>
-      <y>240</y>
-      <w>160</w>
+      <w>270</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>30;100;140;30</additional_attributes>
+    <additional_attributes>30;100;250;30</additional_attributes>
   </element>
 </diagram>
