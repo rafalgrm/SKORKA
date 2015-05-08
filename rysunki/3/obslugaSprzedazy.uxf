@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>712</y>
+      <w>688</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>Pracownik działu Obsługi Klienta
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>728</x>
+      <y>520</y>
+      <w>160</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>Dane indetyfikacyjne klienta
+lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>880</x>
+      <y>520</y>
+      <w>112</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>Dane zamówienia
+lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>712</x>
+      <y>424</y>
+      <w>209</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>// Modify the text below and
+// observe the element preview.
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=textHeight();
+
+drawRectangleRound(0,0,width,height,width/4,height/2);
+drawLine(width/6,height/4,width/6,0);
+drawLine(0,height/4,width,height/4);
+drawLine(0,height-height/4,width,height-height/4);
+
+</custom_code>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Systemborder</type>
+    <coordinates>
+      <x>712</x>
+      <y>448</y>
+      <w>208</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes> 
+            Złożenie zamówienia
+layer=1
+
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>544</x>
+      <y>216</y>
+      <w>241</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>// Modify the text below and
+// observe the element preview.
+
+ 
+Klienci</panel_attributes>
+    <additional_attributes/>
+    <custom_code>//Modify the code below to define the element's behavior.
+//
+//Example:  Change the line
+//  y += printCenter(textline,y);
+//to
+//  y += 2*printCenter(textline,y);
+//and observe the element preview.
+
+int y=textHeight();
+
+drawRectangle(0,0,width,height);
+drawRectangle(0,0,width/5,height);
+printLeft("     D",height/2+5);
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>1008</x>
+      <y>136</y>
+      <w>241</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>// Modify the text below and
+// observe the element preview.
+
+ 
+Produkty</panel_attributes>
+    <additional_attributes/>
+    <custom_code>//Modify the code below to define the element's behavior.
+//
+//Example:  Change the line
+//  y += printCenter(textline,y);
+//to
+//  y += 2*printCenter(textline,y);
+//and observe the element preview.
+
+int y=textHeight();
+
+drawRectangle(0,0,width,height);
+drawRectangle(0,0,width/5,height);
+printLeft("     D",height/2+5);
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>856</y>
+      <w>272</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>Klient
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>736</y>
+      <w>160</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>Szczegóły zakupu
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>180.0;10.0;180.0;70.0;10.0;70.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>592</x>
+      <y>744</y>
+      <w>256</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>Dane na temat wykonania zamówienia
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>300.0;10.0;300.0;100.0;10.0;100.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>856</x>
+      <y>256</y>
+      <w>80</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>Zamówienie
+lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>840</x>
+      <y>216</y>
+      <w>241</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>// Modify the text below and
+// observe the element preview.
+
+ 
+Zamówienia</panel_attributes>
+    <additional_attributes/>
+    <custom_code>//Modify the code below to define the element's behavior.
+//
+//Example:  Change the line
+//  y += printCenter(textline,y);
+//to
+//  y += 2*printCenter(textline,y);
+//and observe the element preview.
+
+int y=textHeight();
+
+drawRectangle(0,0,width,height);
+drawRectangle(0,0,width/5,height);
+printLeft("     D",height/2+5);
+
+for(String textline : textlines) {
+	y += printCenter(textline,y);
+}</custom_code>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>752</x>
+      <y>256</y>
+      <w>80</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>Dane klienta
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;210.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>800</x>
+      <y>144</y>
+      <w>224</w>
+      <h>296</h>
+    </coordinates>
+    <panel_attributes>Dane produktów
+lt=-&gt;</panel_attributes>
+    <additional_attributes>260.0;20.0;10.0;20.0;10.0;350.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>936</x>
+      <y>424</y>
+      <w>209</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>// Modify the text below and
+// observe the element preview.
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=textHeight();
+
+drawRectangleRound(0,0,width,height,width/4,height/2);
+drawLine(width/6,height/4,width/6,0);
+drawLine(0,height/4,width,height/4);
+drawLine(0,height-height/4,width,height-height/4);
+
+</custom_code>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Systemborder</type>
+    <coordinates>
+      <x>936</x>
+      <y>448</y>
+      <w>208</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes> 
+       Sprawdzenie stanu zamówienia
+layer=1
+
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>968</x>
+      <y>256</y>
+      <w>104</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>Stan zamówienia
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;210.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1088</x>
+      <y>520</y>
+      <w>96</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>Dane zlecenia
+lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>992</x>
+      <y>520</y>
+      <w>104</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>Dane o zleceniu
+lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>232</x>
+      <y>424</y>
+      <w>209</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>// Modify the text below and
+// observe the element preview.
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=textHeight();
+
+drawRectangleRound(0,0,width,height,width/4,height/2);
+drawLine(width/6,height/4,width/6,0);
+drawLine(0,height/4,width,height/4);
+drawLine(0,height-height/4,width,height-height/4);
+
+</custom_code>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Systemborder</type>
+    <coordinates>
+      <x>232</x>
+      <y>448</y>
+      <w>208</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes> 
+            Dodanie klienta
+layer=1
+
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>272</x>
+      <y>520</y>
+      <w>224</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>Szczegółowe dane klienta
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;260.0;260.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Systemborder</type>
+    <coordinates>
+      <x>1184</x>
+      <y>448</y>
+      <w>208</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes> 
+            Wydanie zamówienia
+layer=1
+
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>1184</x>
+      <y>424</y>
+      <w>209</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>// Modify the text below and
+// observe the element preview.
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=textHeight();
+
+drawRectangleRound(0,0,width,height,width/4,height/2);
+drawLine(width/6,height/4,width/6,0);
+drawLine(0,height/4,width,height/4);
+drawLine(0,height-height/4,width,height-height/4);
+
+</custom_code>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1224</x>
+      <y>272</y>
+      <w>312</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>Pracownik magazynu
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>352</x>
+      <y>232</y>
+      <w>208</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>Dane klienta
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;240.0;10.0;10.0;240.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1352</x>
+      <y>296</y>
+      <w>80</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Zamówienie
+lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1016</x>
+      <y>256</y>
+      <w>224</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>Zmiana stanu zamówienia
+lt=-&gt;</panel_attributes>
+    <additional_attributes>260.0;210.0;260.0;90.0;10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Systemborder</type>
+    <coordinates>
+      <x>456</x>
+      <y>448</y>
+      <w>208</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes> 
+            Wycofanie zamówienia
+layer=1
+
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>456</x>
+      <y>424</y>
+      <w>209</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>// Modify the text below and
+// observe the element preview.
+
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int y=textHeight();
+
+drawRectangleRound(0,0,width,height,width/4,height/2);
+drawLine(width/6,height/4,width/6,0);
+drawLine(0,height/4,width,height/4);
+drawLine(0,height-height/4,width,height-height/4);
+
+</custom_code>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>256</y>
+      <w>416</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>Zmiana stanu zamówienia
+lt=&lt;-&gt;</panel_attributes>
+    <additional_attributes>10.0;210.0;10.0;70.0;500.0;70.0;500.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>520</y>
+      <w>112</w>
+      <h>208</h>
+    </coordinates>
+    <panel_attributes>Dane zamówienia
+lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+</diagram>
