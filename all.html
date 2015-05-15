@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>all</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p>#1. Sformułowanie zadania projektowego</p>
+<h2>1.1. Obszar i przedmiot modelowania</h2>
+<h3>1.1.1. Dziedzina problemu</h3>
+<p>Firma: Firma &quot;Sanwil&quot; S.A.</p>
+<p>Miejsce: ul. Lwowska 52 Przemyśl</p>
+<p>Dziedzina: Przemysł chemiczny</p>
+<p>Cele firmy : Wytworzenie i sprzedaż materiałów powlekanych.</p>
+<p>Zatrudnienie: Firma zatrudnia 110 pracowników podzielonych na piony.</p>
+<p>Cel problemu: Utworzenie systemu zajmującego się zarządzaniem magazynem oraz zasobami ludzkimi oraz wspomaganie pracy.</p>
+<h2>1.2. Obszar modelowania</h2>
+<h3>1.2.1. Opis struktury organizacyjnej</h3>
+<p>Za decyzję o kierunku rozwoju firmy odpowiada Zgromadzenie Wspólników, pod którym podlega prezes zarządu, który zarządza większością pionów z wyjątkiem pionu logistyki i pionu finansów. Pion logistyki, zajmujący się zamówieniami, i pion finansów zajmujący się księgowością są zarządzane przez Członka zarządu ds. Ekonomiczno-Finansowych podlegającego bezpośrednio pod Zgromadzenie Wspólników. Firma posiada kilka magazynów:</p>
+<ul>
+<li>surowców</li>
+<li>produktów</li>
+<li>reklamacji</li>
+</ul>
+<p>Firma wytwarza i sprzedaje sztuczne skóry dla przemysłu meblowego, obuwniczego i medycznego. Produkuje również materiały kaletnicze, odzieżowe, plandekowe oraz materiały na potrzeby wojska i przemysłu motoryzacyjnego. Projektowanie produktu jest oparte o indywidualne wymagania klienta. Surowce są zamawiane przez pracowników pionu Logiki i zaopatrzenia i przekazane do magazynu surowców. Następnie w zależności od typu produktu, zostają one użyte przez jeden z oddziałów produkcji i przekazane do magazynu produktów. Następnie pion jakości sprawdza czy produkt zawiera jakieś wady i czy jest zgodny z normą ISO. Jeśli wszystkie wymagania zostały spełnione pracownicy pionu sprzedaży wysyłają towar do klienta. Odbywa się ona na terenie kraju jak i poza jego granicami , w szczególności na terenach Ukrainy i Rosji. Jeśli produkt zostanie zwrócony, trafia do magazynu reklamacji. Nie związany bezpośrednio z częścią kliencką jest pion Marketingu i Rozwoju, który zajmuje się badaniem technologii, zarządzaniem laboratorium oraz kontaktami z potencjalnymi klientami.W laboratorium kontroluje się jakość surowców, bada parametry wyrobów i wydaje atesty wewnętrzne .</p>
+<h3>1.2.2. Obszary aktywności</h3>
+<p>a) Wspomaganie sprzedaży - Klient może złożyć zamówienie, tylko za pośrednictwem pracownika, telefonicznie lub osobiście. System pozwala pracownikom na zapisywanie i oglądanie danych o sprzedanych produktach oraz o klientach. Na podstawie wymagań zostaje utworzone zamówienia, po których sprzedaży utworzone będą faktury.</p>
+<p>b) Wspomaganie produkcji - System zawiera informacje o produkcie, który jest w kolejce do produkcji, który jest obecnie w produkcji oraz który został wyprodukowany, a także o stanie maszyn produkcyjnych. Zapewnia odpowiedni przebieg procedur kontroli jakości zamówionych produktów.System monitoruje też stan surowców w magazynie upewniając się, że nie zostanie
+ustalona produkcja materiału jeśli nie ma ich wystarczająco.</p>
+<p>c) Wspomaganie zakupu surowców - System zawiera informacje o ilości oraz składzie zakupionych materiałów, a także informacje o dostawcach. System umożliwia utworzenie zestawienia produktów, które należy zakupić oraz rejestruje dany zakup i jego przekazanie do magazyn surowcow.</p>
+<p>d) Zarządzanie pracą - Prezes posiada możliwość zatrudniać, promować oraz zwalniać pracowników. Kierownicy mają możliwość zarządzania pracą swoich podwładnych. Reszta pracowników może sprawdzić w systemie swój harmonogram oraz odebrać zlecone im zadania. System pozwala na generowanie raportów i statystyki z dzialań pracowników, jak i ogolnego stanu firmy.</p>
+<p>e) Wspomaganie pracy magazynów - Pracownicy są w stanie sprawdzić stan magazynu i na bieżąco go aktualizować podczas wydawania materiałów. Każdy z produktów jest okrelany poprzez swój unikalny kod. System dba o bezpieczny stan magazynów sygnalizujac ilosć danego materialu ponizej krytycznej linii.</p>
+<h2>1.3 Opis obszarów aktywności</h2>
+<h3>1.3.1 Opis stanowisk pracy</h3>
+<ul>
+<li>
+<p>a) Prezes - odpowiada za zatrudnioną kadrę i sprawne funkcjonowanie firmy. Ma pełną decyzyjność w kwestii zatrudniania, promowania i zwalniania pracowników. Kontroluje przydział zadań w firmie i podejmuje strategicznie decyzje przy konsultacji ze zgromadzeniem wspólników.</p>
+</li>
+<li>
+<p>b) Członek Zarządu ds. Ekonomiczno-Finansowych - sprawuje pieczę nad strategicznymi pionami firmy - logistyką i finansami. Zastępuje w tych obowiązkach Prezesa Zarządu. Współpracuje z pionem logistyki podejmując decyzje odnośnie zakupu surowców i zarządzania stanem magazynu. Kontroluje także pion finansowy, kierując pracą w dziedzinie księgowości.</p>
+</li>
+<li>
+<p>c) Pracownik działu Obsługi Klienta - przyjmuje zamówienia telefoniczne i obsługuje klientów przychodzących osobiście.</p>
+</li>
+<li>
+<p>d) Pracownik Pionu Produkcji - ma dostęp do kolejki czekających do produkcji materiałów. Wytwarza materiały przeznaczone do sprzedaży.</p>
+</li>
+<li>
+<p>e) Pracownik działu Marketingu i Rozwoju - przeprowadza kontrole materiałów, dokonuje oceny sytuacji na rynku, ściśle współpracuje z laboratorium.</p>
+</li>
+<li>
+<p>f) Magazynier - dba o dostępność zamawianych materiałów. Dokonuje odbioru dostaw, przygotowuje zamówienia do wysyłki.</p>
+</li>
+</ul>
+<h3>1.3.2 Opis procedur biznesowych</h3>
+<h4>1.3.2.1 Wspomaganie sprzedaży</h4>
+<ul>
+<li>
+<p>nawiązanie kontaktu z przedsiębiorstwem</p>
+</li>
+<li>
+<p>złożenie zamówienia</p>
+</li>
+<li>
+<p>sprawdzenie stanu zamówienia</p>
+</li>
+<li>
+<p>wpłata zaliczki</p>
+</li>
+<li>
+<p>odbiór zamówienia</p>
+</li>
+<li>
+<p>umówienie na rozmowę z przedstawicielem firmy</p>
+</li>
+<li>
+<p>zapłacenie za zamówienie</p>
+</li>
+<li>
+<p>przejrzenie złożonych zamówień</p>
+</li>
+<li>
+<p>przejrzenie historii zamówień danego klienta</p>
+</li>
+</ul>
+<h4>1.3.2.2 Wspomaganie produkcji</h4>
+<ul>
+<li>
+<p>przejrzenie materiałów oczekujących na produkcję</p>
+</li>
+<li>
+<p>aktualizacja procedur produkcyjnych</p>
+</li>
+<li>
+<p>odczytanie procedur produkcyjnych</p>
+</li>
+</ul>
+<h4>1.3.2.3 Wspomaganie zakupu surowców</h4>
+<ul>
+<li>
+<p>wyświetl informacje o posiadanych surowcach</p>
+</li>
+<li>
+<p>złóż zamówienie na surowiec</p>
+</li>
+</ul>
+<h4>1.3.2.4 Zarządzanie pracą</h4>
+<ul>
+<li>
+<p>zatrudnienie pracownika</p>
+</li>
+<li>
+<p>zwolnienie Pracownika</p>
+</li>
+<li>
+<p>promocja pracownika</p>
+</li>
+<li>
+<p>kontrola czasu pracy pracownika</p>
+</li>
+<li>
+<p>negocjowanie umowy z klientem</p>
+</li>
+<li>
+<p>tworzenie harmonogramu pracy</p>
+</li>
+<li>
+<p>zlecanie zadań pracownikowi</p>
+</li>
+</ul>
+<h3>1.3.2.5 Wspomaganie pracy magazynów</h3>
+<ul>
+<li>
+<p>zarządzanie materiałem wyprodukowanym w firmie</p>
+</li>
+<li>
+<p>sprawdzenie stanu magazynów</p>
+</li>
+</ul>
+<h2>1.4 Zakres odpowiedzialności systemu</h2>
+<p>W zakres odpowiedzialności systemu wchodzą wymienione obszary aktywności. Będą one realizowane w pełnym zakresie. System nie pomoże w zrealizowaniu rekrutacji, a jedynie odnotuje wyniki takiego postępowania.</p>
+<h2>1.5 Zwięzła nazwa problemu</h2>
+<p>Projekt systemu wspomagający prace firmy produkcyjno-handlowej działającej w obszarze materiałów skóropodobnych. Akronim: S.K.Ó.R.K.A </p>
+<h2>1.6 Cele do osiągnięcia</h2>
+<h3>1.6.1 Cele produktu</h3>
+<p>Celem do osiągnięcia przez produkt “SKÓRKA” jest wspomaganie produkcji oraz sprzedaży produktów skóropodobnych, w tym ułatwienie zapewnienia odpowiedniego poziomu jakości produktu oraz harmonogramu w zakładzie produkcyjnym, a także punktualną dostawę produktów od klienta oraz podniesienie zadowolenia pracowników poprzez wyeliminowanie problemów wynikających z braku organizacji czy nieprawidłowej komunikacji wewnątrz przedsiębiorstwa.</p>
+<h3>1.6.2 Cele przedsięwzięcia projektowego</h3>
+<p>Naszym celem jest zaznajomienie się z poszczególnymi elementami projektowania systemów informatycznych z wykorzystaniem metodyki strukturalnej. Uzyskiwanie potrzebnych informacji od klientów podczas procesu projektowania oraz utrzymywanie dobrego kontaktu. Chcemy również nabrać doświadczenie w pracy grupowej, odpowiednim planowaniu działań oraz dotrzymywaniu terminów.</p>
+<h1>2. Opis wymagań</h1>
+<h3>2.1.1 Funkcje z punktu widzenia przezesa i członków zarządu</h3>
+<pre><code>a) Zmień stan zatrudnienia pracownika (CRUD)
+b) Wyznacz nagrodę służbową
+c) Wyznacz kierownika działu
+d) Pobierz statystyki odnośnie funkcjonowania przedsiębiorstwa
+</code></pre>
+
+<h3>2.1.2 Funkcje z punktu widzenia kierownika działu</h3>
+<pre><code>a) Ustalanie harmonogramu pracy podwładnych
+b) Utworzenie raportu na temat funkcjonowania działu 
+</code></pre>
+
+<h3>2.1.3 Funkcje z punktu widzenia pracownika</h3>
+<pre><code>a) Sprawdzenie harmonogramu pracy
+</code></pre>
+
+<h3>2.1.4 Funkcje z punktu widzenia pracownika Działu Produkcji</h3>
+<pre><code>a) Odebranie zlecenia wykonania produktu 
+b) Zareportowanie wykonania zlecenia 
+c) Zgłoszenie awarii sprzętu 
+</code></pre>
+
+<h3>2.1.5 Funkcje z punktu widzenia pracownika Działu Obsługi Klienta</h3>
+<pre><code>a) Sprzedaż towaru 
+b) Dodanie notatki o kliencie 
+</code></pre>
+
+<h3>2.1.6 Funkcje z punktu widzenia pracownika magazynu</h3>
+<pre><code>a) Wydanie towaru kurierowi
+b) Wpisanie wyprodukowanego towaru
+c) Przeglądanie stanu magazynu
+</code></pre>
+
+<h3>2.1.7 Funkcje z punktu widzenia pracownika Działu Marketingu i Rozwoju</h3>
+<pre><code>a) Zawarcie umowy z firmą reklamową
+b) Wykonanie zleceni wykonania materiałów reklamowych
+c) Zlecenie firmie zewnętrznej wykonania materiałów reklamowych
+</code></pre>
+
+<h2>2.2. Dane przechowywane w systemie</h2>
+<h3>2.2.1 Dane o pracownikach</h3>
+<pre><code>a) Imię i Nazwisko
+b) PESEL
+c) Data urodzenia
+d) Data zatrudnienia
+e) Data zwolnienia
+f) Stanowisko
+g) Harmonogram pracy
+h) Telefon
+i) Adres e-mail
+</code></pre>
+
+<h3>2.2.2 Dane o produktach</h3>
+<pre><code>a) Nazwa produktu
+b) Klasyfikacja
+c) Ilość
+d) Cena jednostkowa
+e) Miejsce przechowywania w magazynie
+f) Numer identyfikujący
+</code></pre>
+
+<h3>2.2.3 Dane o dostawcach</h3>
+<pre><code>a) Nazwa
+b) Osoba reprezentująca
+c) Adres
+d) Telefon
+e) Adres e-mail
+</code></pre>
+
+<h3>2.2.5 Dane o zamówieniach</h3>
+<pre><code>a) Klient
+b) Produkt
+c) Data złożenia
+d) Data dostarczenia
+d) Pozycje zamówienia
+e) Cena
+</code></pre>
+
+<h3>2.2.6 Dane o klientach</h3>
+<pre><code>a) Nazwa firmy
+b) NIP
+c) Adres
+d) Telefon
+e) Adres e-mail
+d) Osoba reprezentująca
+</code></pre>
+
+<h2>2.3. Dokumenty wprowadzane i wyprowadzane z systemu</h2>
+<h3>2.3.1 Dokumenty wprowadzane</h3>
+<pre><code>a) Faktury za materiały
+b) Faktury za sprzedaż
+c) Dane o klientach
+d) Dane o pracownikach
+</code></pre>
+
+<h3>2.3.2 Dokumenty wyprowadzane</h3>
+<pre><code>a) Faktury dla klientów
+b) Podsumowanie miesięczne/tygodniowe pracownika
+c) Plan dnia dla pracownika
+d) Dane o magazynie
+</code></pre>
+
+<h2>2.4. Wymagania specjalne i ograniczenia</h2>
+<h3>2.4.1 Prostota obsługi</h3>
+<p>System ma być na tyle prosty i intuicyjny, żeby nie sprawiał trudności w obsłudze przez osobę, która wcześniej miała styczność z podobnym oprogramowaniem.</p>
+<h3>2.4.2 Szybki dostęp</h3>
+<p>Niektóre partie systemu wymagają szybkiego dostępu.
+Są to funkcje związane z zarządzaniem pracownikami a zwłaszcza &lt;<CRUD>&gt; harmonogramu pracy.</p>
+<h3>2.4.3 Bezpieczeństwo danych</h3>
+<p>Najstotniejsze w systemie są dane o zamówieniach. Są kluczowym elementem działalności firmy, dlatego nie mogą być zagrożone. Istotne są także dane o klientach ze względu na ich poufny charakter.</p>
+<h3>2.4.4 Dostępność systemu</h3>
+<p>System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza się niedługie przerwy serwisowe. Należy wymusić wykonywanie kopii bezpieczeństwa danych.</p>
+<h2>2.5. Analiza wymagań funkcjonalnych</h2>
+<p><img src="rysunki\2\Zmiana_stanu_zatrudnienia_pracownika.png" alt="Zmiana stanu zatrudnienia pracownika"></p>
+<ul>
+<li><strong>Tytuł: Zmiana stanu zatrudnienia pracownika</strong></li>
+<li>Aktor główny: Prezes</li>
+<li>Aktorzy: Pracownik, kierownik pionu </li>
+<li>Cel: Zmiana w stanie zatrudnienia pracownika</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja: Stan systemu nie zmienia się </li>
+<li>Wyzwalacz: Prezes otwiera okno zarządzania pracownikami</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Prezes wprowadza zmiany
+2. Pracownik dostaje informacje dotyczącą wprowadzonych zmian
+3. Kierownik pionu dostaje informacje o wprowadzonych zmianach
+4. Jeżeli było to zwolnienie to wypłacana jest odprawa
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><img src="\rysunki\2\Wyznaczenie_nagrody_sluzbowej.png" alt="Wyznaczenie nagrody służbowej"></p>
+<ul>
+<li><strong>Tytuł: Wyznaczenie nagrody służbowej</strong></li>
+<li>Aktor główny: Prezes	</li>
+<li>Aktorzy: Pracownik	</li>
+<li>Cel: Wyznaczenie nagrody służbowej</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja: Brak zmian w systemie</li>
+<li>Wyzwalacz: Prezes otwiera okno nagród</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Prezes przyznaje nagrodę
+2. Pracownik dostaje zawiadomienie o nagrodzie
+3. Dział księgowości dostaje informacje o zmianach
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><img src="\rysunki\2\Wyznaczenie_kierownika_dzialu.png" alt="Wyznaczenie kierownika działu"></p>
+<ul>
+<li><strong>Tytuł: Wyznaczenie kierownika działu</strong></li>
+<li>Aktor główny: Prezes</li>
+<li>Aktorzy: Pracownik</li>
+<li>Cel: Wyznaczenie kierownika z obecnych pracowników</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja: Stan systemu jest bez zmian</li>
+<li>Wyzwalacz: Wejście w okno wyznaczenia kierownika</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Prezes zapisuje zmiany w systemie
+2. Pracownik dostaje zawiadomienie o zmianach oraz dostęp do części systemu związanej ze stanowiskiem.
+3. Zawiadomienie reszty pracowników o zmianach
+4. Wysłanie informacji do administracji i księgowości 
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><img src="\rysunki\2\Ustalenie_harmonogramu_pracy.png" alt="Ustalenie harmonogramu"></p>
+<ul>
+<li><strong>Tytuł: Ustalenie harmonogramu pracy</strong></li>
+<li>Aktor główny: Kierownik pionu</li>
+<li>Aktorzy: pracownik</li>
+<li>Cel: Ustawienie harmonogramu dla danego pionu</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja: Brak zmiany stanu systemu</li>
+<li>Wyzwalacz: Wejście kierownika pionu zmiany harmonogramu</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Wprowadzono zmiany do systemu
+2. Pracownik ma już ustaloną pracę w tym terminie
+3. Pracownik akceptuje wprowadzone zmiany 
+4. Pracownik nie zgadza się na pracę w tym terminie.
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><img src="\rysunki\2\Odebranie_zlecenia_wykonania_produktu.png" alt="Odebranie zlecenia wykonania produktu"></p>
+<ul>
+<li><strong>Tytuł: Odebranie zlecenia wykonania produktu</strong></li>
+<li>Aktor główny: Pracownik działu produkcji</li>
+<li>Aktorzy: Pracownik działu produkcji</li>
+<li>Cel: Przyjęcie zlecenia wykoniania</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja: Brak zmiany stanu systemu </li>
+<li>Wyzwalacz: Pracownik wszedł na okno nieodebranego zadania</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Pracownik zatwierdził odebranie zlecenia
+2. Zostały wysłane wiadomości o koniecznych materiałach
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><img src="\rysunki\2\Zareportowanie_wykonania_zlecenia.png" alt="Zareportowanie wykonania zlecenia"></p>
+<ul>
+<li><strong>Tytuł: Zareportowanie wykonania zlecenia</strong></li>
+<li>Aktor główny: Pracownik działu</li>
+<li>Cel: Wysłanie raportu o wykonanym zadaniu</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja:  Brak zmiany stanu systemu</li>
+<li>Warunek poczatkowy: Pracownik posiada obdebrane, ale nie wykonane zadanie </li>
+<li>Wyzwalacz: Pracownik wszedł na na okno danego zadania</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Pracownik zatwierdził wykonanie zadania
+    1.1 Termin zakończenia zadania minął
+2. Informacje o zmianch w magazynie zostały dodane do systemu
+3. Informacje o zakończeniu zostały wysłane do kierownika działu.
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><img src="\rysunki\2\Zgloszenie_awarii_sprzetu.png" alt="Zgłoszenie awarii sprzętu"></p>
+<ul>
+<li><strong>Tytuł: Zgłoszenie awarii sprzętu</strong></li>
+<li>Aktor główny: Pracownik</li>
+<li>Aktorzy: Kierownik</li>
+<li>Cel: Zgloszenie awarii sprzetu w celu jak najszybszej naprawy</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja:  Brak zmiany stanu systemu</li>
+<li>Wyzwalacz: Wejście na okno zgłoszenie problemu</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Pracownik zgłasza awarię sprzętu
+2. Zostaje poinformowany kierownik dzialu, który weryfikuje dana awarie
+3. Weryfikacja przebiegla pomyslnie i zostaje wysłana wiadomość do działu administracji 
+    3.1.  Weryfikacja przebiegla niepomyslnie
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><img src="\rysunki\2\Sprzedaz_towaru.png" alt="Sprzedaż towaru"></p>
+<ul>
+<li><strong>Tytuł: Sprzedaż towaru</strong></li>
+<li>Aktor główny: Pracownik działu sprzedaży</li>
+<li>Aktorzy: Pracownik Dzialu sprzedaży</li>
+<li>Cel: Sprzedanie towaru</li>
+<li>Gwarancja:  Stan systemu może ulec zmianie</li>
+<li>Wyzwalacz: Klient dzwoni do firmy z zamiarem zamówienia materiału </li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Pracownik konsultuje z klientem rodzaj i cene materialu
+2. Pracownik proponuje wstepna cene i czas produkcji
+3. Pracownik wysyla zlecenie produkcji do zatwierdzenia
+4. Pracownik otrzymuje potwierdzenie produkcji i informuje klienta o aktualnym stanie
+5. Pracownik wysyla zlecenie wysylki
+6. Po otrzymaniu platnosci pracownik zatwierdza sprzedaż
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><img src="\rysunki\2\Wydanie_towaru_kurierowi.png" alt="Wydanie towaru kurierowi"></p>
+<ul>
+<li><strong>Tytuł: Wydanie towaru kurierowi</strong></li>
+<li>Aktor główny: Pracownik magazynu</li>
+<li>Aktorzy: Pracownik magazynu</li>
+<li>Cel: Wysłanie towaru do klienta lub innego magazynu</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja: Stan systemu nie zmienia się </li>
+<li>Wyzwalacz: Pracownik magazynu otwiera okno wydania towaru</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Pracownik magazynu wprowadza dane zlecenia wysyłki do formularza    
+2. Dokonywana jest weryfikacja ze stanem magazynu    
+    2.1 Odrzucono formularz
+3. Pracownik potwierdza wykonanie   
+4. Stan magazynu zmienia się. Wyświetla się stosowna informacja.
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><img src="\rysunki\2\Sprawdzenie_stanu_magazynu.png" alt="Sprawdzanie stanu magazynu"></p>
+<ul>
+<li><strong>Tytuł: Sprawdzanie stanu magazynu</strong></li>
+<li>Aktor główny: Pracownik magazynu</li>
+<li>Aktorzy: Pracownik magazynu</li>
+<li>Cel: Uzyskanie niezbędnych informacji o stanie</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja: Stan systemu nie zmienia się </li>
+<li>Wyzwalacz: Wejście w okno przeglądania magaznu</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Pracownik ustalna określone filtry odnośnie przeglądania. Filtry dzielą się na kilka kategorii. 
+2. Generowany jest odpowiedni widok.  
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><img src="\rysunki\2\Wpisanie_wyprodukowanego_towaru.png" alt="Wpisanie wyprodukowanego towaru"></p>
+<ul>
+<li><strong>Tytuł: Wpisanie wyprodukowanego towaru</strong></li>
+<li>Aktor główny: Pracownik magazynu</li>
+<li>Aktorzy: Pracownik magazynu</li>
+<li>Cel: Dodanie do stanu magazynu wyprodukowanego produktu</li>
+<li>Poziom: </li>
+<li>Gwarancja: Stan systemu nie zmienia się </li>
+<li>Wyzwalacz: Wejście w okno wprowadzania towaru</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Pracownik wprowadza dane oraz ilość towaru w formularz   
+    1.1 Negatywna weryfikacja wprowadzonych danych. Produkty nie są firmowe 
+2. Wyświetla się propnowane miejsce magazynowania towaru    
+    2.1 Wyświetlana jest informacja o możliwym braku miejsca w magazynie    
+    2.2 Pracownik na własną rekę znajduje miejsce   
+        2.2.1 Nie znalazł miejsca   
+    2.3 Pracownik opisuje położenie towaru  
+3. Pracownik zatwierdza zmagazynowanie towaru
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<h2>2.6. Wymagania funkcjonalne dla dodatkowych funkcji systemu</h2>
+<ul>
+<li>Tytuł: Wyświetlenie statystyk wydajności produkcji</li>
+<li>Aktor główny: Prezes</li>
+<li>Aktorzy: Kierownik pionu produkcji</li>
+<li>Cel: Analiza efektywności działania pionu produkcyjnego</li>
+<li>Poziom:</li>
+<li>Gwarancja: Stan systemu nie zmienia się</li>
+<li>Wyzwalacz: Wejście w okno statystyk produkcji</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Pracownik generuje dane statystyczne wybierając szczegółowe opcje
+2. Wyświetlają się wykresy wydajności z dostępnymi opcjami i dodatkowymi widokami
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<ul>
+<li>Tytuł: Wyświetlenie raportu działania systemu</li>
+<li>Aktor główny: Prezes</li>
+<li>Aktorzy: Prezes</li>
+<li>Cel: Analiza działania systemu, sprawdzenie ostatnio występujących błędów</li>
+<li>Poziom:</li>
+<li>Gwarancja: Stan systemu nie zmienia się</li>
+<li>Wyzwalacz: Wejście w okno raportu działania systemu</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Prezes wybiera interesujące opcje do wygenerowanego raportu
+2. Na prośbę użytkownika wyświetlają się błędy, które wystąpiły w ostatnim czasie w systemie
+    2.1 Wyświetlana jest informacja o możliwych akcjach do podjęcia w celu naprawy błędu
+    2.2 Użytkownik dokonuje wyboru spośród dostępnych opcji
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<h2>2.7. Wymagania niefunkcjonalne</h2>
+<h3>2.7.1 Funkcje produktowe</h3>
+<p>System powinien w zrozumiały sposób komunikować się z pracownikami poszczególnych pionów.
+Interfejs, z którego korzystają pracownicy pionu produkcji musi być szybki, zrozumiały oraz
+prosty w obsłudze. Po stronie pionów zarządzających wszelkie ustalania harmonogramu pracy
+mają być widoczne od razu po wprowadzeniu w systemie.</p>
+<h3>2.7.2 Funkcje organizacyjne</h3>
+<p>Podsystemy kontroli jakości i produkcji powinny opierać się na sprawdzonych technologiach
+używanych w podobnych firmach. Każdy pracownik powinien zostać wyszkolony z obsługi funkcji systemowych
+odpowiednio do stanowiska zajmowanego w firmie.
+Należy zapewnić wsparcie techniczne. Wszelkie prace konserwacyjne w ramach systemu powinny odbywać się
+poza godzinami działania firmy.</p>
+<h1>3. Analiza funkcjonalna systemu – diagramy DFD</h1>
+<h2>3.1 Diagram kontekstowy systemu wraz z opisem</h2>
+<p><img src="rysunki\3\systemDFD.png" alt="Diagram DFD calego systemu" style="width:100%;height:40%"></p>
+<h3>3.1.1 Opis</h3>
+<p>Z systemem komunikować będzie się: prezes, członek zarządu, pracownik działu R&amp;D, pracownik-sprzedawca, pracownik-magazynier, pracownik-produkcja.</p>
+<ul>
+<li>Prezes, członkowie zarządu: Mogą pobierać dane o funkcjonowaniu przedsiębiorstwa, mogą wprowadzać decyzje administracyjne, takie jak np. wydanie nowej linii produktu, zmiana zatrudnienia pracownika.</li>
+<li>Pracownik działu Marketingu i Rozwoju: Może pobierać dane o funkcjonowaniu przedsiębiorstwa, pobierać swój harmonogram pracy, oraz sprawdzić detale swojego zatrudnienia.</li>
+<li>Pracownik działu Obsługi Klienta: Może modyfikować dane o klientach, wykonywanych sprzedażach, dodawać zlecenia, pobierać swój harmonogram pracy, oraz sprawdzić detale swojego zatrudnienia.</li>
+<li>Pracownik magazynu: Może modyfikować stan magazynu, pobierać dane o nadchodzących dostawach, swój harmonogram pracy, oraz sprawdzić detale swojego zatrudnienia.</li>
+<li>Pracownik działu Produkcji: Może modyfikować wykonywanie zlecenia stan materiałów w magazynie, zgłaszać problemy, pobierać swój harmonogram pracy, oraz sprawdzić detale swojego zatrudnienia.</li>
+</ul>
+<h2>3.2 Analiza top-down</h2>
+<h3>3.2.1 Wyszczególnienie</h3>
+<h4>3.2.1.1 Rysunek</h4>
+<p><img src="rysunki\3\DFD0.png" alt="Diagram DFD calego systemu" style="width:100%;height:80%"></p>
+<h4>3.2.1.2 Opis</h4>
+<p>Powyższy diagram  DFD ukazuje wyodrębnienie pewnych podsystemów szerzej przedstawionych na kolejnych diagramach.</p>
+<h3>3.2.2 Zarządzanie zamówieniem</h3>
+<h4>3.2.2.1 Rysunek</h4>
+<p><img src="rysunki\3\obslugaSprzedazy.png" alt="Obsluga sprzedaży" style="width:90%;height:50%"></p>
+<h4>3.2.2.2 Opis</h4>
+<pre><code>1.1 Pracownik wprowadza do systemu szczegółowe dane klienta, które następnie zostają zapisane w bazie danych.
+1.2 Pracownik wycofuje wskazane zamówienie. Musi ono zostać jednoznacznie sprecyzowane.
+1.3 Pracownik przyjmuje zamówienie od klienta. Dane klienta muszą być już wprowadzone do systemu. Wszystkie pozycje zamówienia muszą być wyszczególnione i zgodne z katalogiem produktów. Całość następnie zostaje wprowadzona do bazy.
+1.4 Pracownik, możliwie na życzenie klienta sprawdza stan zamówienia w systemie. Stan jest sprowadzany z bazy.
+1.5 Magazynier wydaje podane jednoznacznie zamówienie klientowi.
+</code></pre>
+
+<h3>3.2.3 Zarządzanie magazynem</h3>
+<h4>3.2.3.1 Rysunek</h4>
+<p><img src="rysunki\3\obslugaMagazynu.png" alt="Obsluga sprzedaży" style="width:100%;height:40%"></p>
+<h4>3.2.3.2 Opis</h4>
+<pre><code>2.1 Pracownik produkcji wypisuje materiał z magazynu. Musi podać ilość oraz rodzaj. Pracownik magazynu musi zatwierdzić to zapotrzebowanie.
+2.2 Pracownik magazynu dodaje wyprodukowany produkt do magazynu. Musi explicite podać jaki to towar i ile go wyprodukowano.
+2.3 Pracownik magazynu wydaje produkt klientowi na bazie numeru zamówienia.
+2.4 Pracownik magazynu odbiera materiał od dostawcy. Dostawca musi być zarejestrowany w bazie.
+</code></pre>
+
+<h3>3.2.4 Zarządzanie pracą</h3>
+<h4>3.2.4.1 Rysunek</h4>
+<p><img src="rysunki\3\obslugaZatrudnienia.png" alt="Zarządzanie pracą" style="width:100%;height:40%"></p>
+<h4>3.2.4.2 Opis</h4>
+<pre><code>3.1 Prezes lub członek zarządu pragną zmienić stan zatrudniania pracownika. Ta funkcjonalność ma charakter CRUD. 
+3.2 Pracownik pragnie poznać swój aktualny stan zatrudnienia oraz harmonogram pracy.
+</code></pre>
+
+<h3>3.2.4 Wspomaganie produkcji</h3>
+<h4>3.2.4.1 Rysunek</h4>
+<p><img src="rysunki\3\obslugaProdukcji.png" alt="Wspomaganie produkcji" style="width:100%;height:70%"></p>
+<h4>3.2.4.2 Opis</h4>
+<pre><code>4.1 Pracownik zgłasza problem w procesie produkcyjnym. Podaje numer urządzenia i opis usterki, a następnie otrzymuje potwierdzenie.
+4.2 Pracownik chce zmodyfikować&lt;&lt;CRUD&gt;&gt; stan zamówienia. Nowy stan musi być zgodny z wytycznymi nałożonymi przez zarząd firmy. Dokonywane jest sprawdzenie stanu materiałów na magazynie.
+4.3 Pracownik bądź 4.2 chce sprawdzić dostępność materiałów w magazynie. Podawany jest rodzaj materiału i ilość. W odpowiedzi uzyskuje się potwierdzenie lub zaprzeczenie danej kwerendy.
+</code></pre>
+
+<h1>4. Słownik pojeć biznesowych</h1>
+<pre><code>1. Prezes  - Osoba odpowiadająca za zatrudnianie oraz zwalnianie pracowników oraz zarządza całością działa w firmie. Bezpośrednio pod nią podelgają kierownicy działów.
+2. Zarząd – osoby dyktujące kierunek w którym zmierza firma nie ingerujące w dużym stopniu w jej wewnętrzną         strukturę.
+3. Kierownik działu – pracownik na stanowisku kierowniczym ma za zadanie zarządzać grupą pracowników mu         popdporządkowanych oraz pilnować 
+4. Dział Obsługi Klienta – dział zajmujący się sprzedażą produktu. Odpowiedzialny jest za utworzenie i przekazanie  dalej dokładnego zlecenia klienta.
+5. Dział Marketingu i Rozwoju – dział zajmujący się różnego rodzaju umowani w jak i poza granicami kraju, a także   zawiera w sobie część laoraturyjną gdzie badane są nowe produkty.
+6. Materiał – Przedmiot będący surowcem, półproduktem bądź produktem końcowym.
+7. Surowce – materiały potrzebne do produkcji sztucznych skór.
+8. Sprzęt  - maszyny służące do produkcji materiałów powlekanych w tym. 
+9.  Magazyn – firma posiada trzy rodzaje magazynów : magazyn surowców, produktów i reklamacji. W zależności od typu  są przechowywane w nich materiały.
+10. Pracownik magazynu – pracownik stacjonujący na magazynie. Odpowiada, za poprawane dostarczenie/odebranie        materiałów dla kuriera jak i do działu produkcji.
+11. Niwykonane zlecenie – zadanie, które zostało odebrane, ale nie zostało zatiwierdzone jego wykonanie
+12. Nieodebrane zlecenie – zadanie, które zostało wysłane do pracownika, ale nie zostało przez niego odebrane
+</code></pre>
+
+<h1>5. Analiza struktur danych przechowywanych w magazynach</h1>
+<h2>5.1 Diagram ERD</h2>
+<p><img src="rysunki\4\diagram_rolled.png" alt="Diagram DFD calego systemu" style="width:120%;height:170%"></p>
+<h2>5.2 Tabela krzyżowa</h2>
+<p><style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:8px;padding:3px 2px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:8px;font-weight:normal;padding:3px 2px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-nrw8{font-size:8px}
+.tg .tg-huh2{font-size:8px;text-align:center}
+.tg .tg-by3v{font-weight:bold;font-size:8px;text-align:center}
+</style></p>
+<table class="tg">
+  <tr>
+    <th class="tg-nrw8"><br></th>
+    <th class="tg-huh2">Pracownicy</th>
+    <th class="tg-nrw8">Klienci</th>
+    <th class="tg-nrw8">Osoby</th>
+    <th class="tg-nrw8">Piony</th>
+    <th class="tg-nrw8">Stanowiska</th>
+    <th class="tg-nrw8">Harmonogramy</th>
+    <th class="tg-nrw8">Produkty</th>
+    <th class="tg-nrw8">Komponenty</th>
+    <th class="tg-nrw8">Materiały</th>
+    <th class="tg-nrw8">Zadania</th>
+    <th class="tg-nrw8">Pozycje zamówienia</th>
+    <th class="tg-nrw8">Dostawcy</th>
+    <th class="tg-nrw8">Komponenty Produktów</th>
+    <th class="tg-nrw8">Zamówienia</th>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Pracownicy<br></td>
+    <td class="tg-by3v">X<br></td>
+    <td class="tg-by3v"><br></td>
+    <td class="tg-by3v"><br></td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v">X</td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Klienci<br></td>
+    <td class="tg-by3v"><br></td>
+    <td class="tg-by3v"><br></td>
+    <td class="tg-by3v"><br></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v">X</td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Osoby<br></td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v"><br></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Piony</td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Stanowiska</td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Harmonogramy</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Produkty</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Komponenty</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Materiały</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Zadania</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Pozycje zamówienia<br></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Dostawcy</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Komponenty Produktów<br></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+  </tr>
+  <tr>
+    <td class="tg-nrw8">Zamówienia</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v">X</td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+    <td class="tg-by3v"></td>
+  </tr>
+</table>
+<h2>5.3 Opis relacji miedzy obiektami</h2>
+<p><style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;width:100%}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+</style></p>
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Relacja</th>
+    <th class="tg-031e">Tabele</th>
+    <th class="tg-031e" colspan="2">Krotność</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">Jest przełożonym<br></td>
+    <td class="tg-031e">Pracownicy - Pracownicy<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">0..N</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Jest pracownikiem <br></td>
+    <td class="tg-031e">Osoby - Pracownicy<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">0..N</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Zawiera</td>
+    <td class="tg-031e">Stanowiska - Pracownicy<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">0..N</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Zawiera</td>
+    <td class="tg-031e">Piony - Pracownicy<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">0..N</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Jest odpowiedzialny<br></td>
+    <td class="tg-031e">Pracownicy - Pion<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">1..N</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Obsługuje<br></td>
+    <td class="tg-031e">Pracownicy - Zamówienia<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">0..N</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Zleca</td>
+    <td class="tg-031e">Pracownicy - Zadania<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">0..N</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Jest odpowiedzialny<br></td>
+    <td class="tg-031e">Pracownicy - Zadania<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">0..N</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Ma przypisany<br></td>
+    <td class="tg-031e">Pracownicy - Zadania<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">0..N</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Występuje</td>
+    <td class="tg-031e">Produkty - Zadania<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">1..N</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Zawiera</td>
+    <td class="tg-031e">Zamówienia - Pozycje zamówienia<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">1..N</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Zlecił</td>
+    <td class="tg-031e">Klienci - Zamówienia<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">0..N</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Jest dostawcą<br></td>
+    <td class="tg-031e">Dostawca - Osoby<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">0..1</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Zawiera</td>
+    <td class="tg-031e">Produkty - Materiał<br></td>
+    <td class="tg-031e">1..N</td>
+    <td class="tg-031e">1..N<br></td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Zawiera</td>
+    <td class="tg-031e">Produkty - Pozycje zamówienia<br></td>
+    <td class="tg-031e">1</td>
+    <td class="tg-031e">1..N</td>
+  </tr>
+</table>
+<h2>5.4 Opis struktur danych</h2>
+<p><code></p>
+<p>Harmonogramy</p>
+<pre><code>[id] [int] NOT NULL,
+[Pracownik] [int] NULL,
+[Dzien tygodnia] [varchar](10) NULL,
+[Godzina rozpoczecia] [time](7) NULL,
+[Godzina zakonczenia] [time](7) NULL,
+[Godzina rozpoczecia przerwy] [time](7) NULL,
+[Data p. obowiazywania] [date] NULL,
+[Data k. obowiazywania] [date] NULL
+</code></pre>
+
+<p>Klienci</p>
+<pre><code>[id] [int] NOT NULL,
+[Nazwa firmy] [varchar](50) NULL,
+[Miasto] [varchar](50) NULL,
+[Ulica] [varchar](50) NULL,
+[Kod Pocztowy] [varchar](10) NULL,
+[Numer budynku] [smallint] NULL,
+[Numer miekszania] [smallint] NULL,
+[Adres e-mail] [varchar](50) NULL,
+[Osoba reprezentujaca] [int] NOT NULL,
+[Telefon] [varchar](50) NULL
+</code></pre>
+
+<p>Komponenty produktow</p>
+<pre><code>[id] [int] NOT NULL,
+[Material] [int] NULL,
+[Produkt] [int] NULL
+</code></pre>
+
+<p>Materialy</p>
+<pre><code>[id] [int] NOT NULL,
+[Nazwa] [varchar](40) NULL
+</code></pre>
+
+<p>Osoby</p>
+<pre><code>[id] [int] NOT NULL,
+[Imie] [varchar](50) NULL,
+[Nazwisko] [varchar](50) NULL,
+[Miasto] [varchar](50) NULL,
+[Ulica] [varchar](50) NULL,
+[Kod pocztowy] [varchar](10) NULL,
+[Numer budnyku] [smallint] NULL,
+[Numer miekszania] [smallint] NULL,
+[Telefon] [varchar](50) NULL
+</code></pre>
+
+<p>Piony</p>
+<pre><code>[id] [int] NOT NULL,
+[Nazwa] [varchar](50) NULL,
+[Szef] [int] NULL,
+</code></pre>
+
+<p>Pozycje zamowienia</p>
+<pre><code>[id] [int] NOT NULL,
+[Produkt] [int] NULL,
+[Zamowienie] [int] NULL,
+[Ilosc] [int] NULL,
+[Rabat] [real] NOT NULL
+</code></pre>
+
+<p>Pracownicy</p>
+<pre><code>[id] [int] NOT NULL,
+[Osoba] [int] NOT NULL,
+[Data urodzenia] [date] NULL,
+[Tytul] [varchar](50) NULL,
+[Stanowisko] [int] NOT NULL,
+[Pion] [int] NULL,
+[Data zatrudnienia] [date] NULL,
+[Data zwolnienia] [date] NULL,
+[Przelozony] [int] NULL,
+[Na zwolnieniu] [bit] NULL
+</code></pre>
+
+<p>Produkty</p>
+<pre><code>[id] [int] NOT NULL,
+[Cena jednostkowa] [money] NULL,
+[Gramatura] [real] NULL,
+[Rodzaj] [varchar](40) NULL,
+[Opis slowny] [text] NULL,
+[Ilosc na magazynie] [int] NULL
+</code></pre>
+
+<p>Stanowiska</p>
+<pre><code>[id] [int] NOT NULL,
+[Nazwa] [varchar](50) NULL
+</code></pre>
+
+<p>Zadania</p>
+<pre><code>[id] [int] NOT NULL,
+[Zlecajacy] [int] NULL,
+[Produkt] [int] NULL,
+[Ilosc] [int] NULL,
+[Dealine] [date] NULL,
+[Data zlecenia] [date] NULL,
+[Data wykonania] [date] NULL,
+[Odpowiedzialny za wykonanie] [int] NULL,
+[Szczegoly] [text] NULL
+</code></pre>
+
+<p>Zamowienia</p>
+<pre><code>[id] [int] NOT NULL,
+[Klient] [int] NULL,
+[Pracownik obslugujacy] [int] NULL,
+[Data zamowienia] [date] NULL,
+[Data wyslania] [date] NULL
+</code></pre>
+
+<p><code/></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
