@@ -1,0 +1,13 @@
+1. Brak obrazka do struktury firmy
+2. Brak warunków początkowych w use case
+3. Posegregować use case względem obszarów aktywności
+4. Zmienić na jeden walny diagram dla każego obszaru aktywności
+5. Wypłać odprawę -> zweryfikuj dane fiansowe
+6. Funkcje administracyjne
+7. 2.73 wymagania zewnętrzne
+8. 3.2.1.1 Identyfikacja podsystemu
+9. "Staytstyka" zmienić nazewnictwo
+10. Spójnośc nazw
+11. Ponumerować obszary na DFD
+12. Stanowisko jako tabela?
+13. Klient -> Obsługa klienta jest to komunikacja poza systemem
