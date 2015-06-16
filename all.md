@@ -1,4 +1,4 @@
- #1. Sformułowanie zadania projektowego
+#1. Sformułowanie zadania projektowego
 
 ##1.1. Obszar i przedmiot modelowania
 
@@ -16,7 +16,12 @@ Zatrudnienie: Firma zatrudnia 110 pracowników podzielonych na piony.
 
 Cel problemu: Utworzenie systemu zajmującego się zarządzaniem magazynem oraz zasobami ludzkimi oraz wspomaganie pracy.
 
+
+
+
 ##1.2. Obszar modelowania
+
+<img src="rysunki\schemat.png" alt="schemat">
 
 ###1.2.1. Opis struktury organizacyjnej
 
@@ -260,7 +265,7 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 ##2.5. Analiza wymagań funkcjonalnych
 
-<img src="rysunki\2\Zmiana_stanu_zatrudnienia_pracownika.png" alt="Zmiana stanu zatrudnienia pracownika">
+<img src="rysunki\2\Praca_razem.png" alt="Zatrudnienie">
 
 *   **Tytuł: Zmiana stanu zatrudnienia pracownika**
 *   Aktor główny: Prezes
@@ -281,9 +286,6 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-
-<img src="\rysunki\2\Wyznaczenie_nagrody_sluzbowej.png" alt="Wyznaczenie nagrody służbowej">
-
 *   **Tytuł: Wyznaczenie nagrody służbowej**
 *   Aktor główny: Prezes	
 *   Aktorzy: Pracownik	
@@ -299,8 +301,6 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 	3. Dział księgowości dostaje informacje o zmianach
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
-
-<img src="\rysunki\2\Wyznaczenie_kierownika_dzialu.png" alt="Wyznaczenie kierownika działu">
 
 *   **Tytuł: Wyznaczenie kierownika działu**
 *   Aktor główny: Prezes
@@ -320,8 +320,6 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-<img src="\rysunki\2\Ustalenie_harmonogramu_pracy.png" alt="Ustalenie harmonogramu">
-
 *   **Tytuł: Ustalenie harmonogramu pracy**
 *   Aktor główny: Kierownik pionu
 *   Aktorzy: pracownik
@@ -340,7 +338,7 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-<img src="\rysunki\2\Odebranie_zlecenia_wykonania_produktu.png" alt="Odebranie zlecenia wykonania produktu">
+<img src="\rysunki\2\Produkcja_razem.png" alt="Produkcja">
 
 *   **Tytuł: Odebranie zlecenia wykonania produktu**
 *   Aktor główny: Pracownik działu produkcji
@@ -356,8 +354,6 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 	2. Zostały wysłane wiadomości o koniecznych materiałach
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
-
-<img src="\rysunki\2\Zareportowanie_wykonania_zlecenia.png" alt="Zareportowanie wykonania zlecenia">
 
 *   **Tytuł: Zareportowanie wykonania zlecenia**
 *   Aktor główny: Pracownik działu
@@ -376,8 +372,6 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 	3. Informacje o zakończeniu zostały wysłane do kierownika działu.
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
-
-<img src="\rysunki\2\Zgloszenie_awarii_sprzetu.png" alt="Zgłoszenie awarii sprzętu">
 
 *   **Tytuł: Zgłoszenie awarii sprzętu**
 *   Aktor główny: Pracownik
@@ -418,7 +412,7 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-<img src="\rysunki\2\Wydanie_towaru_kurierowi.png" alt="Wydanie towaru kurierowi">
+<img src="\rysunki\2\Magazyn_razem.png" alt="Magazyn">
 	  
 *   **Tytuł: Wydanie towaru kurierowi**
 *   Aktor główny: Pracownik magazynu
@@ -438,8 +432,6 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-<img src="\rysunki\2\Sprawdzenie_stanu_magazynu.png" alt="Sprawdzanie stanu magazynu">
-
 *   **Tytuł: Sprawdzanie stanu magazynu**
 *   Aktor główny: Pracownik magazynu
 *   Aktorzy: Pracownik magazynu
@@ -455,8 +447,7 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-<img src="\rysunki\2\Wpisanie_wyprodukowanego_towaru.png" alt="Wpisanie wyprodukowanego towaru">
-  
+
 *   **Tytuł: Wpisanie wyprodukowanego towaru**
 *   Aktor główny: Pracownik magazynu
 *   Aktorzy: Pracownik magazynu
@@ -479,6 +470,24 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
     	
 ##2.6. Wymagania funkcjonalne dla dodatkowych funkcji systemu
+
+*	Tytuł: Tworzenie kopii bezpieczeństwa
+*	Aktor główny: Administrator
+*	Aktorzy: Administrator
+*	Cel: Stworzenie kopii bezpieczeństwa bazy
+*	Poziom:
+*   Wyzwalacz: Czasowy lub/i manualny
+*	Gwarancja: Stan systemu nie zmienia się
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+    1. Administrator ustala sposób
+	1.1 Administrator zleca wykonania kopi bezpieczeństwa w danej chwili
+	1.2 Administrator planuje wykonanie kopii bezpieczeństwa
+	1.3 Administrator planuje okresowo wykonanie kopii bezpieczeństwa
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
 *	Tytuł: Wyświetlenie statystyk wydajności produkcji
 *	Aktor główny: Prezes
 *	Aktorzy: Kierownik pionu produkcji
@@ -524,7 +533,6 @@ odpowiednio do stanowiska zajmowanego w firmie.
 Należy zapewnić wsparcie techniczne. Wszelkie prace konserwacyjne w ramach systemu powinny odbywać się
 poza godzinami działania firmy.
 
-
 #3. Analiza funkcjonalna systemu – diagramy DFD 
 
 ##3.1 Diagram kontekstowy systemu wraz z opisem
@@ -551,7 +559,7 @@ Z systemem komunikować będzie się: prezes, członek zarządu, pracownik dzia�
 ####3.2.1.2 Opis
 Powyższy diagram  DFD ukazuje wyodrębnienie pewnych podsystemów szerzej przedstawionych na kolejnych diagramach.
 
-###3.2.2 Zarządzanie zamówieniem
+###3.2.2 Wspomaganie sprzedaży
 
 ####3.2.2.1 Rysunek
 
@@ -589,7 +597,7 @@ Powyższy diagram  DFD ukazuje wyodrębnienie pewnych podsystemów szerzej przed
 	3.1 Prezes lub członek zarządu pragną zmienić stan zatrudniania pracownika. Ta funkcjonalność ma charakter CRUD. 
 	3.2 Pracownik pragnie poznać swój aktualny stan zatrudnienia oraz harmonogram pracy.
 
-###3.2.4 Wspomaganie produkcji
+###3.2.4 Zarządzanie produkcją
 
 ####3.2.4.1 Rysunek
 
@@ -601,21 +609,19 @@ Powyższy diagram  DFD ukazuje wyodrębnienie pewnych podsystemów szerzej przed
 	4.2 Pracownik chce zmodyfikować<<CRUD>> stan zamówienia. Nowy stan musi być zgodny z wytycznymi nałożonymi przez zarząd firmy. Dokonywane jest sprawdzenie stanu materiałów na magazynie.
 	4.3 Pracownik bądź 4.2 chce sprawdzić dostępność materiałów w magazynie. Podawany jest rodzaj materiału i ilość. W odpowiedzi uzyskuje się potwierdzenie lub zaprzeczenie danej kwerendy.
 
-#4. Słownik pojeć biznesowych
-
-	1. Prezes  - Osoba odpowiadająca za zatrudnianie oraz zwalnianie pracowników oraz zarządza całością działa w firmie. Bezpośrednio pod nią podelgają kierownicy działów.
-	2. Zarząd – osoby dyktujące kierunek w którym zmierza firma nie ingerujące w dużym stopniu w jej wewnętrzną 		strukturę.
-	3. Kierownik działu – pracownik na stanowisku kierowniczym ma za zadanie zarządzać grupą pracowników mu 		popdporządkowanych oraz pilnować 
-	4. Dział Obsługi Klienta – dział zajmujący się sprzedażą produktu. Odpowiedzialny jest za utworzenie i przekazanie 	dalej dokładnego zlecenia klienta.
-	5. Dział Marketingu i Rozwoju – dział zajmujący się różnego rodzaju umowani w jak i poza granicami kraju, a także 	zawiera w sobie część laoraturyjną gdzie badane są nowe produkty.
-	6. Materiał – Przedmiot będący surowcem, półproduktem bądź produktem końcowym.
-	7. Surowce – materiały potrzebne do produkcji sztucznych skór.
-	8. Sprzęt  - maszyny służące do produkcji materiałów powlekanych w tym. 
-	9.  Magazyn – firma posiada trzy rodzaje magazynów : magazyn surowców, produktów i reklamacji. W zależności od typu  są przechowywane w nich materiały.
-	10. Pracownik magazynu – pracownik stacjonujący na magazynie. Odpowiada, za poprawane dostarczenie/odebranie  		materiałów dla kuriera jak i do działu produkcji.
-	11. Niwykonane zlecenie – zadanie, które zostało odebrane, ale nie zostało zatiwierdzone jego wykonanie
-	12. Nieodebrane zlecenie – zadanie, które zostało wysłane do pracownika, ale nie zostało przez niego odebrane
-
+#4.Roboczy słownik danych
+	1. Stan zlecenia - dane określające ile zadań ze zlecenia zostało już wykonane i gdzie aktualnie odbywa się praca nad danym zleceniem.
+	2. Decyzje administracyjne - Dane przekazywane pracownikom na temat odgórnych zmian w firmie.
+	3. Stan zatrudnienia pracowników - dane dotyczące zarobków, awansach, przeniesieniach, zwolnieniach i rodzaju zatrudnienia.
+	4. Stan magazynu - ilość i rodzaj materiałów na danym managzynie. Informuje także o stanie krytycznym.
+	5. Dane o funkcjonowianiu przedsiębiorstwa - dane zawierające raporty finansowe i stanu magazynu, zbiorowy spis pracowników itd. 
+	6. Dane na temat wykonania zamówienia - czas do dostarczenia gotowego zamówienia
+	7. Dane identyfikacyjne klienta - Klient identyfikowany jest poprzez imię, nazwisko oraz indywidualny numer
+	8. Dane o zleceniu - dane zlecenia z dodatkiem elementów zmiennych, jak miejsce przechowywania produktów
+	9. Dane zlecenia - dane nie zawierające elementów zmiennych
+	10.Oznaczenie wypisania w bazie - Dane zatwierdzające wypisanie z bazy danych
+	
+	
 #5. Analiza struktur danych przechowywanych w magazynach
 
 ##5.1 Diagram ERD
@@ -1107,3 +1113,177 @@ Zamowienia
 	[Data zamowienia] [date] NULL,
 	[Data wyslania] [date] NULL
 <code/>
+
+#6 Activity Diagram
+<img src="rysunki\6\Sprzedaz.jpg" alt="Produkcja">
+
+<img src="rysunki\6\Zarzadzanie_magazynem.png" alt="Zarządzanie magazynem">
+
+<img src="rysunki\6\Zarzadzanie_praca.png" alt="Zarządzanie pracą">
+
+#9. Architektura systemu
+
+## 9.1 Schemat architektury systemu
+
+Poniżej zaprezentowany jest schemat architektury systemu.
+
+<img src="rysunki\9\schemat.png" alt="schemat">
+
+## 9.2 Opis architektury systemu
+
+Architektura systemu opiera się na schemacie klient - serwer. Wszystkie dane są umieszczone są w usłudze bazodanowej a program użytkownika komunikuje się z nią poprzez Internet. Serwer akceptuje połączenia tylko z wewnętrznej sieci firmy. Wyjątkiem jest konto Prezesa oraz Członków Zarządu, którzy mogą się komunikować z systemem bez korzystania z sieci wewnętrznej. Wszyscy inni pracownicy muszą korzystać z systemu tylko w zakładzie pracy albo korzystać z tunelowania. Powyższy zabieg jest kluczowy w celu utrzymania bezpieczeństwa systemu.
+
+Nie przewidziany jest schemat pracy offline, ze względu na obecność wszystkich niezbędnych danych na serwerze.
+
+#10. Projekt interfejsu użytkownika
+
+## 10.1 Logowanie się do systemu
+
+Po uruchomieniu aplikacji przez użytkownika generuje się okno logowania.
+
+<img src="rysunki\10\logowanie.png" alt="logowanie">
+
+Użytkownik musi podać swój login i hasło, które następnie zostaje zweryfikowane.
+
+Po wciśnięciu przycisku logowania uwidacznia się wiadomość o dacie ostatniego logowania.
+
+## 10.2 Karty
+
+Praca użytkownika w aplikacji oparta jest o karty, tak jak w przeglądarce internetowej. Ma to umożliwić korzystanie jednocześnie z wielu funkcji systemu, a jednocześnie przybliżyć wygląd do schematu wcześniej znajomemu użytkkownikowi.
+
+Jeżeli używkonik posiadał wcześniej sesję w systemie to uwidacznia się poprzednia sesja.
+
+Jeżeli nie to okno przybiera taką postać:
+
+<img src="rysunki\10\nowa_karta2.png" alt="nowa_karta">
+
+Użytkownik może wybrać jedną z opcji, co spowoduje zamianę bierzącej karty na kartę określonego typu. Wybór jest także możliwy przy pomocy klawiatury.
+
+<img src="rysunki\10\nowa_karta.png" alt="nowa_karta">
+
+W każdym momencie użytkownik może otworzyć nową kartę klikając w "+" na pasku zakładek.
+
+Użytkownik może też się wylogować przyciskając przyscisk "Wyloguj" w górnym prawym rogu ekranu.
+
+## 10.3 Generalny układ okna na bazie obszaru magazynu
+
+### 10.3.1 Wygląd
+
+Oto przykładowy wygląd aplikacji bo wybraniu okna magazynu:
+
+<img src="rysunki\10\magazyn.png" alt="magazyn">
+
+Użytkownik znajdując się w obszarze magazynu może wybierać z listy po lewej stronie konkretny widok czy funkcjonalność. Niektóre z nich mogą być kategoriami i zawierać własne podkategorie. Odpowiednia kategoria będzie widnieć w opisie danej karty.
+
+Może też wybierać ogólne opcje takie jak: Plik, Edytuj, Widok, Narzędzia czy Pomoc. To menu jest widoczne w każdym widoku aplikacji.
+
+### 10.3.2 Breakdown
+
+<img src="rysunki\10\magazynbreakdown.png" alt="magazyn-breakdown">
+
+Zobaczmy może troszkę bardziej czytelny obraz:
+
+    1. Pasek narzędzi
+    2. Przycisk wylogowania się
+    3. Pasek kart
+    4. Pasek kategorii
+        4.1 Aktualna funkcjonalność
+        4.2 Rozpiska kategorii
+    5. Wybór filtrów
+    6. Wybór tabel
+    7. Pogląd
+    8. Widok
+    9. Pasek postępu oraz opis pracy systemu
+    10. Dane o użytkowniku
+
+## 10.4 Generalny układ okna na bazie obszaru sprzedaży
+
+### 10.4.1 Wygląd
+
+Oto przykładowa funkcjonalność znajdująca się w obszarze sprzedaży.
+
+<img src="rysunki\10\sprzedaz.png" alt="sprzedaz">
+
+Pracownik może tutaj wybierać klienta oraz kompletować skład zamówienia. Po zatwierdzeniu może wprowadzić zamówienie do systemu oraz wydrukować jego skład.
+
+### 10.4.2 Breakdown
+
+Poniżej zaprezentowana rozpiska.
+
+<img src="rysunki\10\magazynbreakdown.png" alt="magazyn-breakdown">
+
+    1. Pasek narzędzi
+    2. Przycisk wylogowania się
+    3. Pasek kart
+    4. Pasek kategorii
+    5. Wybór klienta oraz szczegółów
+    6. Edycja
+    7. Pogląd, zaznaczony został nowy produkt - konstrukcja ułatwiająca dodawanie nowych pozycji
+    8. Suma przed i po odliczeniu podatku
+    9. Przyciski akcji
+    10. Aktualny stan oraz postęp
+    11. Dane sesji    
+
+Dodawnie nowego produktu ułatwiono tutaj przez wiersz-widmo na tabeli. Podczas gdy podczas edycji aktualnej pozycji w oknie 6 można zobaczyć podgląd produktu, gdy zaznaczym wiersz-widmo, podgląd umożliwi wybranie rodzaju produktu i wpisanie szczegółów. Oczywiście edycja zamówienia poprzez edycje wiersza tabeli także jest możliwa. Naturalnie w pasku 3 także znajdują się opcję od dodawania oraz edycji pozycji zamówienia.
+
+
+# 11. Podsumowanie
+
+## 11.1 Założenia co do implementacji systemu
+
+Klient będzie musiał wynająć hosting dla serwera danych oraz zapewnić dostęp do sieci, a także w pełni doposażyć firmę w niezbędny sprzęt komputerowy. Aplikacja będzie multiplatformowa, napisana w języku Java SE8, ze względu na jego łatwą przenośność oraz rozbudowane biblioteki graficzne a także bardzo dobrą obsługę różnych SZBD.
+
+System zarządzania bazą danych będzie opierał się na PostgreSQL.
+
+Na początku tworzenia aplikacji należy skupić się na poprawnym działaniu bazy danych, a także na szkielecie MVC aplikacji. Rozbudowa tego elementu systemu może okazać się niezbędna po rozwoju firmy a także zmiany wymagań już w trakcie procesu implementacji. Na tym etapie należy używać mock-up'ów a po jego skończeniu należy przeprowadzić test integracyjny. Po przejściu przez ten fragment projektu należy zaimplementować poszczególne modułowe funkcjonalności. Taka kolejność zapewni łatwą obsługę błędów.
+
+## 11.2 Weryfikacja projektu systemu
+
+Na etapie weryfikacji spójności projektu nie wykryto żadnych błędów i nie
+stwierdzono nieścisłości. Projekt zdaje się spełniać wszystkie postawione przed
+systemem wymagania użytkowników. Również ze strony klienta nie mieliśmy żadnych
+sygnałów dotyczących ewentualnych poprawek. Dlatego też uznajemy powstały projekt
+systemu za poprawny.
+
+## 11.3 Uwagi i wnioski końcowe
+Stworzenie projektu systemu informatycznego okazało relatywnie łatwym zadaniem. Największą trudnością okazało się utrzymanie spójności projektu oraz skupienia się na najważniejszych częściach systemu, co spowodowało problem z dziedziny perfekcjonistyczno-praktycznej. Od strony dydaktycznej projekt
+pozwolił nam na zapoznanie się z problemami jakie możemy napotkać w przyszłości,
+rozpoczynając od kłopotów ze skontaktowaniem się z klientem przez problemy z
+organizacją pracy na trudnościach z utrzymaniem spójności projektu. Uznajemy, że stworzony przez nas produkt spełnia wszystkie wymagania. Uzyskane doświadczenie ułatwi wykonywanie tego przedśięwzięć w przyszłości.
+
+# 12. Bibliografia
+
+[1] Żabińska M.: Wykłady w ramach przedmiotu „Projektowanie Systemów
+informatycznych” wygłoszone dla studentów II roku kierunku Informatyka Wydz. EAIiE
+AGH w roku akademickim 2014/2015.
+
+#13. Wykorzystane narzędzia
+
+    - UMLet
+    - Retext
+    - Evolus Pencil
+    - TexMaker
+    - MarkPad
+    - Git
+    - GNU Image Manipulation Program
+    - Gedit
+    - Microsoft SQL Studio 2012
+    - Visual Paradigm
+
+#14. Słownik pojeć biznesowych
+
+	1. Prezes  - Osoba odpowiadająca za zatrudnianie oraz zwalnianie pracowników oraz zarządza całością działa w firmie. Bezpośrednio pod nią podelgają kierownicy działów.
+	2. Zarząd – osoby dyktujące kierunek w którym zmierza firma nie ingerujące w dużym stopniu w jej wewnętrzną 		strukturę.
+	3. Kierownik działu – pracownik na stanowisku kierowniczym ma za zadanie zarządzać grupą pracowników mu 		popdporządkowanych oraz pilnować 
+	4. Dział Obsługi Klienta – dział zajmujący się sprzedażą produktu. Odpowiedzialny jest za utworzenie i przekazanie 	dalej dokładnego zlecenia klienta.
+	5. Dział Marketingu i Rozwoju – dział zajmujący się różnego rodzaju umowani w jak i poza granicami kraju, a także 	zawiera w sobie część laoraturyjną gdzie badane są nowe produkty.
+	6. Materiał – Przedmiot będący surowcem, półproduktem bądź produktem końcowym.
+	7. Surowce – materiały potrzebne do produkcji sztucznych skór.
+	8. Sprzęt  - maszyny służące do produkcji materiałów powlekanych w tym. 
+	9.  Magazyn – firma posiada trzy rodzaje magazynów : magazyn surowców, produktów i reklamacji. W zależności od typu  są przechowywane w nich materiały.
+	10. Pracownik magazynu – pracownik stacjonujący na magazynie. Odpowiada, za poprawane dostarczenie/odebranie  		materiałów dla kuriera jak i do działu produkcji.
+	11. Niwykonane zlecenie – zadanie, które zostało odebrane, ale nie zostało zatiwierdzone jego wykonanie
+	12. Nieodebrane zlecenie – zadanie, które zostało wysłane do pracownika, ale nie zostało przez niego odebrane
+
+
+
