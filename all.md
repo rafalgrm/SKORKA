@@ -17,28 +17,26 @@ Zatrudnienie: Firma zatrudnia 110 pracowników podzielonych na piony.
 Cel problemu: Utworzenie systemu zajmującego się zarządzaniem magazynem oraz zasobami ludzkimi oraz wspomaganie pracy.
 
 
-
-
 ##1.2. Obszar modelowania
-
-<img src="rysunki\schemat.png" alt="schemat">
 
 ###1.2.1. Opis struktury organizacyjnej
 
-Za decyzję o kierunku rozwoju firmy odpowiada Zgromadzenie Wspólników, pod którym podlega prezes zarządu, który zarządza większością pionów z wyjątkiem pionu logistyki i pionu finansów. Pion logistyki, zajmujący się zamówieniami, i pion finansów zajmujący się księgowością są zarządzane przez Członka zarządu ds. Ekonomiczno-Finansowych podlegającego bezpośrednio pod Zgromadzenie Wspólników. Firma posiada kilka magazynów:
+<img src="rysunki/1/schemat.png" alt="Schemat firmy">
+
+Za decyzję o kierunku rozwoju firmy odpowiada Zgromadzenie Wspólników, pod którym podlega prezes zarzdzajacy większością pionów z wyjątkiem pionu logistyki i pionu finansów. Pion logistyki, zajmujący się zamówieniami, i pion finansów zajmujący się księgowością są zarządzane przez Członka zarządu ds. Ekonomiczno-Finansowych podlegającego bezpośrednio pod Zgromadzenie Wspólników. Firma posiada kilka magazynów:
 
 + surowców
 + produktów
 + reklamacji
 
-Firma wytwarza i sprzedaje sztuczne skóry dla przemysłu meblowego, obuwniczego i medycznego. Produkuje również materiały kaletnicze, odzieżowe, plandekowe oraz materiały na potrzeby wojska i przemysłu motoryzacyjnego. Projektowanie produktu jest oparte o indywidualne wymagania klienta. Surowce są zamawiane przez pracowników pionu Logiki i zaopatrzenia i przekazane do magazynu surowców. Następnie w zależności od typu produktu, zostają one użyte przez jeden z oddziałów produkcji i przekazane do magazynu produktów. Następnie pion jakości sprawdza czy produkt zawiera jakieś wady i czy jest zgodny z normą ISO. Jeśli wszystkie wymagania zostały spełnione pracownicy pionu sprzedaży wysyłają towar do klienta. Odbywa się ona na terenie kraju jak i poza jego granicami , w szczególności na terenach Ukrainy i Rosji. Jeśli produkt zostanie zwrócony, trafia do magazynu reklamacji. Nie związany bezpośrednio z częścią kliencką jest pion Marketingu i Rozwoju, który zajmuje się badaniem technologii, zarządzaniem laboratorium oraz kontaktami z potencjalnymi klientami.W laboratorium kontroluje się jakość surowców, bada parametry wyrobów i wydaje atesty wewnętrzne .
+Firma wytwarza i sprzedaje sztuczne skóry dla przemysłu meblowego, obuwniczego i medycznego. Produkuje również materiały kaletnicze, odzieżowe, plandekowe oraz materiały na potrzeby wojska i przemysłu motoryzacyjnego. Projektowanie produktu jest oparte o indywidualne wymagania klienta. Surowce są zamawiane przez pracowników pionu logistyki i przekazane do magazynu surowców. Następnie w zależności od typu produktu, zostają one użyte przez jeden z oddziałów produkcji i przekazane do magazynu produktów. Następnie pion jakości sprawdza czy produkt zawiera jakieś wady i czy jest zgodny z normą ISO. Jeśli wszystkie wymagania zostały spełnione pracownicy pionu sprzedaży wysyłają towar do klienta. Odbywa się ona na terenie kraju jak i poza jego granicami , w szczególności na terenach Ukrainy i Rosji. Jeśli produkt zostanie zwrócony, trafia do magazynu reklamacji. Nie związany bezpośrednio z częścią kupna i sprzedaży jest pion Marketingu i Rozwoju, który zajmuje się badaniem technologii, zarządzaniem laboratorium oraz kontaktami z potencjalnymi klientami.W laboratorium kontroluje się jakość surowców, bada parametry wyrobów i wydaje atesty wewnętrzne .
 
 ###1.2.2. Obszary aktywności
 
 a) Wspomaganie sprzedaży - Klient może złożyć zamówienie, tylko za pośrednictwem pracownika, telefonicznie lub osobiście. System pozwala pracownikom na zapisywanie i oglądanie danych o sprzedanych produktach oraz o klientach. Na podstawie wymagań zostaje utworzone zamówienia, po których sprzedaży utworzone będą faktury.
 
 b) Wspomaganie produkcji - System zawiera informacje o produkcie, który jest w kolejce do produkcji, który jest obecnie w produkcji oraz który został wyprodukowany, a także o stanie maszyn produkcyjnych. Zapewnia odpowiedni przebieg procedur kontroli jakości zamówionych produktów.System monitoruje też stan surowców w magazynie upewniając się, że nie zostanie
-ustalona produkcja materiału jeśli nie ma ich wystarczająco.
+ustalona produkcja jeśli nie ma ich wystarczająco.
 
 c) Wspomaganie zakupu surowców - System zawiera informacje o ilości oraz składzie zakupionych materiałów, a także informacje o dostawcach. System umożliwia utworzenie zestawienia produktów, które należy zakupić oraz rejestruje dany zakup i jego przekazanie do magazyn surowcow.
 
@@ -54,11 +52,11 @@ e) Wspomaganie pracy magazynów - Pracownicy są w stanie sprawdzić stan magazy
 
 * b) Członek Zarządu ds. Ekonomiczno-Finansowych - sprawuje pieczę nad strategicznymi pionami firmy - logistyką i finansami. Zastępuje w tych obowiązkach Prezesa Zarządu. Współpracuje z pionem logistyki podejmując decyzje odnośnie zakupu surowców i zarządzania stanem magazynu. Kontroluje także pion finansowy, kierując pracą w dziedzinie księgowości.
 
-* c) Pracownik działu Obsługi Klienta - przyjmuje zamówienia telefoniczne i obsługuje klientów przychodzących osobiście.
+* c) Pracownik działu Obsługi Klienta - przyjmuje zamówienia i reklamacje telefoniczne oraz obsługuje klientów przychodzących osobiście. Zajmuje sie także  odpowiedzia na pyatnia od potencjalnych klientów.
 
-* d) Pracownik Pionu Produkcji - ma dostęp do kolejki czekających do produkcji materiałów. Wytwarza materiały przeznaczone do sprzedaży.
+* d) Pracownik Pionu Produkcji - ma dostęp do kolejki czekających do produkcji materiałów. Wytwarza materiały przeznaczone do sprzedaży. Może pobierać materialy przyslane z magazynu surowców.
 
-* e) Pracownik działu Marketingu i Rozwoju - przeprowadza kontrole materiałów, dokonuje oceny sytuacji na rynku, ściśle współpracuje z laboratorium.
+* e) Pracownik działu Marketingu i Rozwoju - przeprowadza kontrole materiałów, dokonuje oceny sytuacji na rynku, ściśle współpracuje z laboratorium. Przeprowadza rozmowy z potencjalnymi klientami dlugoterminowymi.
 
 * f) Magazynier - dba o dostępność zamawianych materiałów. Dokonuje odbioru dostaw, przygotowuje zamówienia do wysyłki.
 
@@ -92,11 +90,17 @@ e) Wspomaganie pracy magazynów - Pracownicy są w stanie sprawdzić stan magazy
 
 * odczytanie procedur produkcyjnych
 
+* odebranie surowców do produkcji
+
+* wyslanie wyprodukowanego materialu na magazyn
+
 ####1.3.2.3 Wspomaganie zakupu surowców
 
 * wyświetl informacje o posiadanych surowcach
 
 * złóż zamówienie na surowiec
+
+* odbierz surowiec 
 
 ####1.3.2.4 Zarządzanie pracą
 
@@ -120,6 +124,10 @@ e) Wspomaganie pracy magazynów - Pracownicy są w stanie sprawdzić stan magazy
  
 * sprawdzenie stanu magazynów
 
+* odbierz material
+
+* wyslij material 
+
 ##1.4 Zakres odpowiedzialności systemu
 
 W zakres odpowiedzialności systemu wchodzą wymienione obszary aktywności. Będą one realizowane w pełnym zakresie. System nie pomoże w zrealizowaniu rekrutacji, a jedynie odnotuje wyniki takiego postępowania.
@@ -140,7 +148,7 @@ Naszym celem jest zaznajomienie się z poszczególnymi elementami projektowania 
 
 #2. Opis wymagań
 
-###2.1.1 Funkcje z punktu widzenia przezesa i członków zarządu  
+###2.1.1 Funkcje z punktu widzenia prezesa i członków zarządu  
 
 	a) Zmień stan zatrudnienia pracownika (CRUD)
 	b) Wyznacz nagrodę służbową
@@ -155,29 +163,36 @@ Naszym celem jest zaznajomienie się z poszczególnymi elementami projektowania 
 ###2.1.3 Funkcje z punktu widzenia pracownika
 
 	a) Sprawdzenie harmonogramu pracy
+	b) Zatwierdzenie przyjęcia zadania
+	c) Zatwierdzenie ukończenia zadania
+
 
 ###2.1.4 Funkcje z punktu widzenia pracownika Działu Produkcji
 
-	a) Odebranie zlecenia wykonania produktu 
-	b) Zareportowanie wykonania zlecenia 
-	c) Zgłoszenie awarii sprzętu 
+	a) Zgłoszenie awarii sprzętu 
+	b) Odebranie materiałów koniecznych do produkcji
+	c) Zapis wykonania produktu
 
 ###2.1.5 Funkcje z punktu widzenia pracownika Działu Obsługi Klienta
 
 	a) Sprzedaż towaru 
 	b) Dodanie notatki o kliencie 
+	
 
 ###2.1.6 Funkcje z punktu widzenia pracownika magazynu
 
-	a) Wydanie towaru kurierowi
-	b) Wpisanie wyprodukowanego towaru
+	a) Wydanie towaru 
+	b) Odebranie materiałów
 	c) Przeglądanie stanu magazynu
+
 
 ###2.1.7 Funkcje z punktu widzenia pracownika Działu Marketingu i Rozwoju
 
 	a) Zawarcie umowy z firmą reklamową
-	b) Wykonanie zleceni wykonania materiałów reklamowych
+	b) Wykonanie zadania wykonania materiałów reklamowych
 	c) Zlecenie firmie zewnętrznej wykonania materiałów reklamowych
+	d) Sprawdzenie nowo-powstałych materiałów
+	e) Przeprowadzenie kontroli jakości
  
 ##2.2. Dane przechowywane w systemie
 
@@ -257,7 +272,7 @@ Są to funkcje związane z zarządzaniem pracownikami a zwłaszcza <<CRUD>> harm
 
 ###2.4.3 Bezpieczeństwo danych
 
-Najstotniejsze w systemie są dane o zamówieniach. Są kluczowym elementem działalności firmy, dlatego nie mogą być zagrożone. Istotne są także dane o klientach ze względu na ich poufny charakter.
+Najistotniejsze w systemie są dane o zamówieniach. Są kluczowym elementem działalności firmy, dlatego nie mogą być zagrożone. Istotne są także dane o klientach ze względu na ich poufny charakter.
 
 ###2.4.4 Dostępność systemu
 
@@ -265,16 +280,119 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 ##2.5. Analiza wymagań funkcjonalnych
 
-<img src="rysunki\2\Praca_razem.png" alt="Zatrudnienie">
+<img src="rysunki/2/Sprzedaz_towaru.png" alt="Sprzedaż towaru">
 
-*   **Tytuł: Zmiana stanu zatrudnienia pracownika**
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+  **2.1.1 Tytuł: Sprzedaż towaru**
+
+*   Aktor główny: Pracownik działu sprzedaży
+*   Cel: Sprzedanie towaru
+*   Gwarancja:  Stan systemu może ulec zmianie
+*   Wyzwalacz: Klient dzwoni do firmy z zamiarem zamówienia materiału 
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+	
+	1. Pracownik konsultuje z klientem rodzaj i cenę materiału
+	2. Pracownik proponuje wstępną cenę i czas produkcji
+	3. Pracownik wysyła zlecenie produkcji do zatwierdzenia
+	4. Pracownik otrzymuje potwierdzenie produkcji i informuje klienta o aktualnym stanie
+	5. Pracownik wysyła zlecenie wysyłki
+	6. Po otrzymaniu płatności pracownik zatwierdza sprzedaż
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+  **2.2.1 Tytuł: Zgłoszenie awarii sprzętu**
+
+*   Aktor główny: Pracownik działu produkcji
+*   Aktorzy: Kierownik
+*   Cel: Zgłoszenie awarii sprzętu w celu jak najszybszej naprawy
+*   Poziom: Niebieski
+*   Gwarancja:  Brak zmiany stanu systemu
+*   Warunek początkowy: Nastąpiła awaria sprzętu
+*   Wyzwalacz: Wejście na okno zgłoszenie problemu
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+	1. Pracownik zgłasza awarię sprzętu
+	2. Zostaje poinformowany kierownik działu, który weryfikuje dana awarie
+	3. Weryfikacja przebiegła pomyślnie i zostaje wysłana wiadomość do działu administracji 
+		3.1.  Weryfikacja przebiegła niepomyślnie
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+  **2.2.2 Tytuł: Odebranie materiałów koniecznych do wykonania zadania**
+
+*   Aktor główny: Pracownik działu produkcji
+*   Cel: Odebranie materiałów
+*   Poziom: Niebieski
+*   Gwarancja: Brak zmiany stanu systemu
+*   Warunek początkowy: Materiały potrzebne do produkcji zostały wysłane do magazynu
+*   Wyzwalacz: Wejście na okno magazynu
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+	1. Pracownik sprawdza materiały
+		1.1 Materiały są nieprawidłowe wiec zostają zwrócone
+	2. Materiały zostają zapisane w systemie jako odebrane
+	3. Materiały zostają zapisane w systemie jako użyte do produkcji
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+   **2.2.3 Tytuł: Zapisz ukończenia produkcji**
+
+*   Aktor główny: Pracownik działu produkcji
+*   Aktor: Pracownik działu marketingu i rozwoju
+*   Cel: Zapisz do systemu ukończenia produkcji
+*   Poziom: Niebieski
+*   Gwarancja: Brak zmiany stanu systemu
+*   Warunek początkowy: Materiał został wyprodukowany
+*   Wyzwalacz: Wejście na okno produkcji
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+	1. Pracownik sprawdza czy produkt jest zgodny z wymaganiami
+		1.1 Produkt nie jest zgodny , informacja zostaje wyslana do kierownika
+	2. Sprawdzenie przez dzial rozwoju czy produkt jest zgodny z normami
+		2.1 Produkt nie jest zgodny , informacja zostaje wyslana do kierownika
+	3. Produkt zostaje zapisany jako ukonczony
+	4. Produkt zostaje wyslany na magazyn
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+   **2.3.1 Tytuł: Zakup surowców**
+
+*   Aktor główny: Pracownik działu sprzedaży 
+*   Cel: Zakup surowców
+*   Poziom: Niebieski
+*   Gwarancja: Stan systemu jest bez zmian
+*	Warunek początkowy: Otrzymano zadanie zakupu
+*   Wyzwalacz: Wejście w okno zakupu
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+	
+	1. Utworzono listę zakupów
+	2. Złożono zamówienie surowców
+	3. Zamówienie zostało przyjęte
+		3.1. Brak surowca w hurtowni
+	4. Zapłata i dołączenie faktury do systemu
+
+
+<img src="rysunki/2/Praca_razem.png" alt="Zatrudnienie">
+
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+  **2.4.1 Tytuł: Zmiana stanu zatrudnienia pracownika**
+
 *   Aktor główny: Prezes
 *   Aktorzy: Pracownik, kierownik pionu 
 *   Cel: Zmiana w stanie zatrudnienia pracownika
 *   Poziom: Niebieski
 *   Gwarancja: Stan systemu nie zmienia się 
-*   Wyzwalacz: Prezes otwiera okno zarządzania pracownikami
-
+*   Warunek początkowy: Prezes otwiera okno zarządzania pracownikami
+*   Wyzwalacz: Pracownik potrzebuje zmiany danych
 
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
@@ -286,13 +404,15 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-*   **Tytuł: Wyznaczenie nagrody służbowej**
+  **2.4.2 Tytuł: Wyznaczenie nagrody służbowej**
+
 *   Aktor główny: Prezes	
 *   Aktorzy: Pracownik	
 *   Cel: Wyznaczenie nagrody służbowej
 *   Poziom: Niebieski
 *   Gwarancja: Brak zmian w systemie
-*   Wyzwalacz: Prezes otwiera okno nagród
+*   Warunek początkowy: Prezes otwiera okno nagród
+*   Wyzwalacz: Pracownik ma otrzymać nagrodę
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
  	
@@ -302,7 +422,8 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-*   **Tytuł: Wyznaczenie kierownika działu**
+   **2.4.3 Tytuł: Wyznaczenie kierownika działu**
+
 *   Aktor główny: Prezes
 *   Aktorzy: Pracownik
 *   Cel: Wyznaczenie kierownika z obecnych pracowników
@@ -320,7 +441,8 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-*   **Tytuł: Ustalenie harmonogramu pracy**
+   **2.4.4 Tytuł: Ustalenie harmonogramu pracy**
+
 *   Aktor główny: Kierownik pionu
 *   Aktorzy: pracownik
 *   Cel: Ustawienie harmonogramu dla danego pionu
@@ -338,29 +460,30 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-<img src="\rysunki\2\Produkcja_razem.png" alt="Produkcja">
+<img src="rysunki/2/Produkcja_razem.png" alt="Produkcja">
 
-*   **Tytuł: Odebranie zlecenia wykonania produktu**
-*   Aktor główny: Pracownik działu produkcji
-*   Aktorzy: Pracownik działu produkcji
-*   Cel: Przyjęcie zlecenia wykoniania
+   **2.4.5 Tytuł: Odebranie zlecenia**
+
+*   Aktor główny: Pracownik 
+*   Cel: Przyjęcie zadania 
 *   Poziom: Niebieski
 *   Gwarancja: Brak zmiany stanu systemu 
 *   Wyzwalacz: Pracownik wszedł na okno nieodebranego zadania
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-	1. Pracownik zatwierdził odebranie zlecenia
-	2. Zostały wysłane wiadomości o koniecznych materiałach
+	1. Pracownik zatwierdził odebranie zadania
+	2. Zostały wysłane wiadomości o koniecznych danych/materiałach do innych pracowników
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-*   **Tytuł: Zareportowanie wykonania zlecenia**
-*   Aktor główny: Pracownik działu
+   **2.4.6 Tytuł: Zaraportowanie wykonania zlecenia**
+   
+*   Aktor główny: Pracownik
 *   Cel: Wysłanie raportu o wykonanym zadaniu
 *   Poziom: Niebieski
 *   Gwarancja:  Brak zmiany stanu systemu
-*   Warunek poczatkowy: Pracownik posiada obdebrane, ale nie wykonane zadanie 
+*   Warunek początkowy: Pracownik posiada odebrane, ale nie wykonane zadanie 
 *   Wyzwalacz: Pracownik wszedł na na okno danego zadania
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
@@ -368,63 +491,28 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 	1. Pracownik zatwierdził wykonanie zadania
 		1.1 Termin zakończenia zadania minął
-	2. Informacje o zmianch w magazynie zostały dodane do systemu
+	2. Informacje o zmianach w magazynie zostały dodane do systemu
 	3. Informacje o zakończeniu zostały wysłane do kierownika działu.
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-*   **Tytuł: Zgłoszenie awarii sprzętu**
-*   Aktor główny: Pracownik
-*   Aktorzy: Kierownik
-*   Cel: Zgloszenie awarii sprzetu w celu jak najszybszej naprawy
-*   Poziom: Niebieski
-*   Gwarancja:  Brak zmiany stanu systemu
-*   Wyzwalacz: Wejście na okno zgłoszenie problemu
+
+<img src="rysunki/2/Magazyn_razem.png" alt="Magazyn">
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
-
-	1. Pracownik zgłasza awarię sprzętu
-	2. Zostaje poinformowany kierownik dzialu, który weryfikuje dana awarie
-	3. Weryfikacja przebiegla pomyslnie i zostaje wysłana wiadomość do działu administracji 
-		3.1.  Weryfikacja przebiegla niepomyslnie
-
-&nbsp; <!--- Zeby sie listy nie mergowaly-->
-
-
-<img src="\rysunki\2\Sprzedaz_towaru.png" alt="Sprzedaż towaru">
-
-*   **Tytuł: Sprzedaż towaru**
-*   Aktor główny: Pracownik działu sprzedaży
-*   Aktorzy: Pracownik Dzialu sprzedaży
-*   Cel: Sprzedanie towaru
-*   Gwarancja:  Stan systemu może ulec zmianie
-*   Wyzwalacz: Klient dzwoni do firmy z zamiarem zamówienia materiału 
-
-&nbsp; <!--- Zeby sie listy nie mergowaly-->
-
-	
-	1. Pracownik konsultuje z klientem rodzaj i cene materialu
-	2. Pracownik proponuje wstepna cene i czas produkcji
-	3. Pracownik wysyla zlecenie produkcji do zatwierdzenia
-	4. Pracownik otrzymuje potwierdzenie produkcji i informuje klienta o aktualnym stanie
-	5. Pracownik wysyla zlecenie wysylki
-	6. Po otrzymaniu platnosci pracownik zatwierdza sprzedaż
-
-&nbsp; <!--- Zeby sie listy nie mergowaly-->
-
-<img src="\rysunki\2\Magazyn_razem.png" alt="Magazyn">
 	  
-*   **Tytuł: Wydanie towaru kurierowi**
+   **2.5.1 Tytuł: Wydanie towaru**
+
 *   Aktor główny: Pracownik magazynu
-*   Aktorzy: Pracownik magazynu
 *   Cel: Wysłanie towaru do klienta lub innego magazynu
 *   Poziom: Niebieski
 *   Gwarancja: Stan systemu nie zmienia się 
+*	Warunek początkowy: Zadanie wysłania przesyłki zostało otrzymane
 *   Wyzwalacz: Pracownik magazynu otwiera okno wydania towaru
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-    1. Pracownik magazynu wprowadza dane zlecenia wysyłki do formularza    
+    1. Pracownik magazynu wprowadza dane zadanie wysyłki do formularza    
     2. Dokonywana jest weryfikacja ze stanem magazynu    
         2.1 Odrzucono formularz
     3. Pracownik potwierdza wykonanie   
@@ -432,43 +520,39 @@ System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza si
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-*   **Tytuł: Sprawdzanie stanu magazynu**
+   **2.5.2 Tytuł: Odebranie materiałów**
+
 *   Aktor główny: Pracownik magazynu
-*   Aktorzy: Pracownik magazynu
-*   Cel: Uzyskanie niezbędnych informacji o stanie
+*   Cel: Zapis odebrania materiałów w systemie
 *   Poziom: Niebieski
 *   Gwarancja: Stan systemu nie zmienia się 
-*   Wyzwalacz: Wejście w okno przeglądania magaznu
+*   Wyzwalacz: Pracownik otrzymuje materiał
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
 
-    1. Pracownik ustalna określone filtry odnośnie przeglądania. Filtry dzielą się na kilka kategorii. 
+    1. Sprawdzenie czy paczka jest oczekiwana, zawiera poprawne materiały bądź jest w dobrym stanie
+		1.1. Zawiadomienie kierownika bądź zwrot
+	2. Przyjęcie paczki i odłożenie na magazyn
+	3. Zapis do systemu
+		
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+   **2.5.3 Tytuł: Sprawdzanie stanu magazynu**
+
+*   Aktor główny: Pracownik magazynu
+*   Cel: Uzyskanie niezbędnych informacji o stanie magazynu
+*   Poziom: Niebieski
+*   Gwarancja: Stan systemu nie zmienia się 
+*   Wyzwalacz: Wejście w okno przeglądania magazynu
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+    1. Pracownik ustala określone filtry odnośnie przeglądania. Filtry dzielą się na kilka kategorii. 
     2. Generowany jest odpowiedni widok.  
 
 &nbsp; <!--- Zeby sie listy nie mergowaly-->
-
-
-*   **Tytuł: Wpisanie wyprodukowanego towaru**
-*   Aktor główny: Pracownik magazynu
-*   Aktorzy: Pracownik magazynu
-*   Cel: Dodanie do stanu magazynu wyprodukowanego produktu
-*   Poziom: 
-*   Gwarancja: Stan systemu nie zmienia się 
-*   Wyzwalacz: Wejście w okno wprowadzania towaru
-
-&nbsp; <!--- Zeby sie listy nie mergowaly-->
-
-    1. Pracownik wprowadza dane oraz ilość towaru w formularz   
-        1.1 Negatywna weryfikacja wprowadzonych danych. Produkty nie są firmowe 
-    2. Wyświetla się propnowane miejsce magazynowania towaru    
-        2.1 Wyświetlana jest informacja o możliwym braku miejsca w magazynie    
-        2.2 Pracownik na własną rekę znajduje miejsce   
-            2.2.1 Nie znalazł miejsca   
-        2.3 Pracownik opisuje położenie towaru  
-    3. Pracownik zatwierdza zmagazynowanie towaru
-
-&nbsp; <!--- Zeby sie listy nie mergowaly-->
-    	
+ 	
 ##2.6. Wymagania funkcjonalne dla dodatkowych funkcji systemu
 
 *	Tytuł: Tworzenie kopii bezpieczeństwa
@@ -530,14 +614,13 @@ mają być widoczne od razu po wprowadzeniu w systemie.
 Podsystemy kontroli jakości i produkcji powinny opierać się na sprawdzonych technologiach
 używanych w podobnych firmach. Każdy pracownik powinien zostać wyszkolony z obsługi funkcji systemowych
 odpowiednio do stanowiska zajmowanego w firmie.
-Należy zapewnić wsparcie techniczne. Wszelkie prace konserwacyjne w ramach systemu powinny odbywać się
-poza godzinami działania firmy.
+Należy zapewnić wsparcie techniczne. Wszelkie prace konserwacyjne w ramach systemu powinny odbywać się poza godzinami działania firmy.
 
 #3. Analiza funkcjonalna systemu – diagramy DFD 
 
 ##3.1 Diagram kontekstowy systemu wraz z opisem
 
-<img src="rysunki\3\systemDFD.png" alt="Diagram DFD calego systemu" style="width:100%;height:40%">
+<img src="rysunki/3/systemDFD.png" alt="Diagram DFD calego systemu" style="width:100%;height:40%">
 
 ###3.1.1 Opis
 Z systemem komunikować będzie się: prezes, członek zarządu, pracownik działu R&D, pracownik-sprzedawca, pracownik-magazynier, pracownik-produkcja.
@@ -554,7 +637,7 @@ Z systemem komunikować będzie się: prezes, członek zarządu, pracownik dzia�
 
 ####3.2.1.1 Rysunek
 
-<img src="rysunki\3\DFD0.png" alt="Diagram DFD calego systemu" style="width:100%;height:80%">
+<img src="rysunki/3/DFD0.png" alt="Diagram DFD calego systemu" style="width:100%;height:80%">
 
 ####3.2.1.2 Opis
 Powyższy diagram  DFD ukazuje wyodrębnienie pewnych podsystemów szerzej przedstawionych na kolejnych diagramach.
@@ -563,7 +646,7 @@ Powyższy diagram  DFD ukazuje wyodrębnienie pewnych podsystemów szerzej przed
 
 ####3.2.2.1 Rysunek
 
-<img src="rysunki\3\obslugaSprzedazy.png" alt="Obsluga sprzedaży" style="width:90%;height:50%">
+<img src="rysunki/3/obslugaSprzedazy.png" alt="Obsluga sprzedaży" style="width:90%;height:50%">
 
 ####3.2.2.2 Opis
 
@@ -577,7 +660,7 @@ Powyższy diagram  DFD ukazuje wyodrębnienie pewnych podsystemów szerzej przed
 
 ####3.2.3.1 Rysunek
 
-<img src="rysunki\3\obslugaMagazynu.png" alt="Obsluga sprzedaży" style="width:100%;height:40%">
+<img src="rysunki/3/obslugaMagazynu.png" alt="Obsluga sprzedaży" style="width:100%;height:40%">
 
 ####3.2.3.2 Opis
 
@@ -590,7 +673,7 @@ Powyższy diagram  DFD ukazuje wyodrębnienie pewnych podsystemów szerzej przed
 
 ####3.2.4.1 Rysunek
 
-<img src="rysunki\3\obslugaZatrudnienia.png" alt="Zarządzanie pracą" style="width:100%;height:40%">
+<img src="rysunki/3/obslugaZatrudnienia.png" alt="Zarządzanie pracą" style="width:100%;height:40%">
 
 ####3.2.4.2 Opis
 
@@ -601,7 +684,7 @@ Powyższy diagram  DFD ukazuje wyodrębnienie pewnych podsystemów szerzej przed
 
 ####3.2.4.1 Rysunek
 
-<img src="rysunki\3\obslugaProdukcji.png" alt="Wspomaganie produkcji" style="width:100%;height:70%">
+<img src="rysunki/3/obslugaProdukcji.png" alt="Wspomaganie produkcji" style="width:100%;height:70%">
 
 ####3.2.4.2 Opis
 
@@ -609,24 +692,33 @@ Powyższy diagram  DFD ukazuje wyodrębnienie pewnych podsystemów szerzej przed
 	4.2 Pracownik chce zmodyfikować<<CRUD>> stan zamówienia. Nowy stan musi być zgodny z wytycznymi nałożonymi przez zarząd firmy. Dokonywane jest sprawdzenie stanu materiałów na magazynie.
 	4.3 Pracownik bądź 4.2 chce sprawdzić dostępność materiałów w magazynie. Podawany jest rodzaj materiału i ilość. W odpowiedzi uzyskuje się potwierdzenie lub zaprzeczenie danej kwerendy.
 
+
 #4.Roboczy słownik danych
-	1. Stan zlecenia - dane określające ile zadań ze zlecenia zostało już wykonane i gdzie aktualnie odbywa się praca nad danym zleceniem.
-	2. Decyzje administracyjne - Dane przekazywane pracownikom na temat odgórnych zmian w firmie.
-	3. Stan zatrudnienia pracowników - dane dotyczące zarobków, awansach, przeniesieniach, zwolnieniach i rodzaju zatrudnienia.
-	4. Stan magazynu - ilość i rodzaj materiałów na danym managzynie. Informuje także o stanie krytycznym.
-	5. Dane o funkcjonowianiu przedsiębiorstwa - dane zawierające raporty finansowe i stanu magazynu, zbiorowy spis pracowników itd. 
-	6. Dane na temat wykonania zamówienia - czas do dostarczenia gotowego zamówienia
-	7. Dane identyfikacyjne klienta - Klient identyfikowany jest poprzez imię, nazwisko oraz indywidualny numer
-	8. Dane o zleceniu - dane zlecenia z dodatkiem elementów zmiennych, jak miejsce przechowywania produktów
-	9. Dane zlecenia - dane nie zawierające elementów zmiennych
-	10.Oznaczenie wypisania w bazie - Dane zatwierdzające wypisanie z bazy danych
+
+1. Magazyny danych
+
+
+	1. Zgloszenia - udokumentowanie awarii maszyn
+	2. Zamowienia - zlozone zamowienia przez klientow
+	3. Produkty - spis materialow mozliwych do wyprodukowania
+	4. Magazyn - ilosc i rodzaj materialow na magazynach
+	5. Klienci - osoby, ktore uprzednio zakupily produkt, badz maja podpisana stala umowe z firma
+	6. Dostawcy - firmy, z ktorymi podpisano umowy kurierskie
 	
-	
+2. Obiekty
+	1. Wspomaganie sprzedaży - dzial zajmujacy sie kontaktem z klientami
+	2. Zarzadznie produkcja - dzial zajmujacy sie produkcja wlasciwa materialu skoropodobnego
+	3. Zarzadzanie magazynem - obszar odbierajacy, przechowywujacy i wysylajacy materialy
+	4. Zarzadznie praca - obszar zapewniajacy spojnosc harmonogramu oraz monitorujacy stan zatrudnienia pracownikow
+	5. Wspomaganie zakupu surowcow - dzial zapewniajacy dostepnosc surowcow
+	6. Administrowanie firmy - obszar zapewnianiajacy poprawne dzialanie systemu, kontrolujacy poprane dzialanie firmy
+	7. Generowanie raportów i danych statystcznych - obszar zbierajacy dane i generujacy raporty oraz statystyki
+
 #5. Analiza struktur danych przechowywanych w magazynach
 
 ##5.1 Diagram ERD
 
-<img src="rysunki\4\diagram_rolled.png" alt="Diagram DFD calego systemu" style="width:120%;height:170%">
+<img src="rysunki/4/diagram_rolled.png" alt="Diagram DFD calego systemu" style="width:120%;height:170%">
 
 ##5.2 Tabela krzyżowa
 
@@ -1114,12 +1206,55 @@ Zamowienia
 	[Data wyslania] [date] NULL
 <code/>
 
-#6 Activity Diagram
-<img src="rysunki\6\Sprzedaz.jpg" alt="Produkcja">
+###Diagram aktywności
 
-<img src="rysunki\6\Zarzadzanie_magazynem.png" alt="Zarządzanie magazynem">
+Pokazane poniżej diagramy aktywności są dokładnym opisem najważniejszych procedur w firmie
 
-<img src="rysunki\6\Zarzadzanie_praca.png" alt="Zarządzanie pracą">
+## Sprzedaż
+
+<img src="rysunki/6/Sprzedaz.jpg" alt="Zarządzanie sprzedażą" style="width:100%;height:80%">
+
+Podczas sprzedaży zamówienie przechodzi przez 3 ( lub 4 jeśli nie ma wystarczająco surowców na magazynie ) obszary aktywności:
+
+    1. Sprzedaż 
+		1. Złożenie zamówienia przez klienta i zapewnienie zgody obustronnej co do warunków sprzedaży.
+		2. Poinformowanie klienta o zakończeniu produkcji.
+		3. Odebranie zapłaty i faktur.
+    2. Produkcja
+		1. Przygotowanie się do produkcji poprzez sprawdzenie gotowości maszyn i dostępu do produktu
+		2. Produkcja
+		3. Zadbanie o zgodność ze standardami
+    3. Magazyn
+		1. Dbanie o płynny przepływ materiałów między obszarami oraz firmą, a klientem
+		2. Sprawdzanie czy jest wystarczająco surowców na magazynie
+    4. Zakup
+		1. Zamówienie surowców
+
+## Zarządzanie magazynem
+
+<img src="rysunki/6/Magazyn.png" alt="Zarządzanie magazynem" style="width:100%;height:80%">
+
+Akcja w diagramie aktywności w Zarządzaniu magazynem rozpoczyna się od przyjścia przesyłki.
+Diagram nie precyzuje jaki jest to rodzaj przesyłki i od kogo, ponieważ przejście jest niezależne od tych danych.
+Pozwala to zawrzeć w tym diagramie system dla wszystkich rodzajów magazynów oraz produktów.
+
+1. Sprawdzenie poprawności przesyłki
+2. Przyjęcie przesyłki
+3. Zapisanie przesyłki do systemu i odłożenie na magazynem
+4. Przesłanie dalej materiałów
+
+## Zatrudnienie
+
+<img src="rysunki/6/Praca.png" alt="Zatrudnienie" style="width:100%;height:80%">
+
+Diagram Zatrudnienie porusza się w obszarze zarządzania pracą. 
+Stan początkowy to decyzja o zatrudnieniu nowego pracownika.
+
+1. Dodanie pracownika do systemu
+2. Przypisanie pracownika do stanowiska
+3. Przypisanie pracownikowi mentora
+4. Zadbanie o poprawność pracownika w systemie 
+5. Dodaj "benefit pack" pracownikowi
 
 #9. Architektura systemu
 
@@ -1127,7 +1262,7 @@ Zamowienia
 
 Poniżej zaprezentowany jest schemat architektury systemu.
 
-<img src="rysunki\9\schemat.png" alt="schemat">
+<img src="rysunki/9/schemat.png" alt="schemat">
 
 ## 9.2 Opis architektury systemu
 
@@ -1141,7 +1276,7 @@ Nie przewidziany jest schemat pracy offline, ze względu na obecność wszystkic
 
 Po uruchomieniu aplikacji przez użytkownika generuje się okno logowania.
 
-<img src="rysunki\10\logowanie.png" alt="logowanie">
+<img src="rysunki/10/logowanie.png" alt="logowanie">
 
 Użytkownik musi podać swój login i hasło, które następnie zostaje zweryfikowane.
 
@@ -1155,11 +1290,11 @@ Jeżeli używkonik posiadał wcześniej sesję w systemie to uwidacznia się pop
 
 Jeżeli nie to okno przybiera taką postać:
 
-<img src="rysunki\10\nowa_karta2.png" alt="nowa_karta">
+<img src="rysunki/10/nowa_karta2.png" alt="nowa_karta">
 
 Użytkownik może wybrać jedną z opcji, co spowoduje zamianę bierzącej karty na kartę określonego typu. Wybór jest także możliwy przy pomocy klawiatury.
 
-<img src="rysunki\10\nowa_karta.png" alt="nowa_karta">
+<img src="rysunki/10/nowa_karta.png" alt="nowa_karta">
 
 W każdym momencie użytkownik może otworzyć nową kartę klikając w "+" na pasku zakładek.
 
@@ -1171,7 +1306,7 @@ Użytkownik może też się wylogować przyciskając przyscisk "Wyloguj" w górn
 
 Oto przykładowy wygląd aplikacji bo wybraniu okna magazynu:
 
-<img src="rysunki\10\magazyn.png" alt="magazyn">
+<img src="rysunki/10/magazyn.png" alt="magazyn">
 
 Użytkownik znajdując się w obszarze magazynu może wybierać z listy po lewej stronie konkretny widok czy funkcjonalność. Niektóre z nich mogą być kategoriami i zawierać własne podkategorie. Odpowiednia kategoria będzie widnieć w opisie danej karty.
 
@@ -1179,7 +1314,7 @@ Może też wybierać ogólne opcje takie jak: Plik, Edytuj, Widok, Narzędzia cz
 
 ### 10.3.2 Breakdown
 
-<img src="rysunki\10\magazynbreakdown.png" alt="magazyn-breakdown">
+<img src="rysunki/10/magazyn_breakdown.png" alt="magazyn-breakdown">
 
 Zobaczmy może troszkę bardziej czytelny obraz:
 
@@ -1202,7 +1337,7 @@ Zobaczmy może troszkę bardziej czytelny obraz:
 
 Oto przykładowa funkcjonalność znajdująca się w obszarze sprzedaży.
 
-<img src="rysunki\10\sprzedaz.png" alt="sprzedaz">
+<img src="rysunki/10/sprzedaz.png" alt="sprzedaz">
 
 Pracownik może tutaj wybierać klienta oraz kompletować skład zamówienia. Po zatwierdzeniu może wprowadzić zamówienie do systemu oraz wydrukować jego skład.
 
@@ -1210,7 +1345,7 @@ Pracownik może tutaj wybierać klienta oraz kompletować skład zamówienia. Po
 
 Poniżej zaprezentowana rozpiska.
 
-<img src="rysunki\10\magazynbreakdown.png" alt="magazyn-breakdown">
+<img src="rysunki/10/sprzedaz-breakdown.png" alt="sprzedaz-breakdown">
 
     1. Pasek narzędzi
     2. Przycisk wylogowania się
@@ -1225,7 +1360,6 @@ Poniżej zaprezentowana rozpiska.
     11. Dane sesji    
 
 Dodawnie nowego produktu ułatwiono tutaj przez wiersz-widmo na tabeli. Podczas gdy podczas edycji aktualnej pozycji w oknie 6 można zobaczyć podgląd produktu, gdy zaznaczym wiersz-widmo, podgląd umożliwi wybranie rodzaju produktu i wpisanie szczegółów. Oczywiście edycja zamówienia poprzez edycje wiersza tabeli także jest możliwa. Naturalnie w pasku 3 także znajdują się opcję od dodawania oraz edycji pozycji zamówienia.
-
 
 # 11. Podsumowanie
 
@@ -1246,16 +1380,10 @@ sygnałów dotyczących ewentualnych poprawek. Dlatego też uznajemy powstały p
 systemu za poprawny.
 
 ## 11.3 Uwagi i wnioski końcowe
-Stworzenie projektu systemu informatycznego okazało relatywnie łatwym zadaniem. Największą trudnością okazało się utrzymanie spójności projektu oraz skupienia się na najważniejszych częściach systemu, co spowodowało problem z dziedziny perfekcjonistyczno-praktycznej. Od strony dydaktycznej projekt
-pozwolił nam na zapoznanie się z problemami jakie możemy napotkać w przyszłości,
+
+Stworzenie projektu systemu informatycznego okazało relatywnie łatwym zadaniem. Największą trudnością okazało się utrzymanie spójności projektu oraz skupienia się na najważniejszych częściach systemu, co spowodowało problem z dziedziny perfekcjonistyczno-praktycznej. Od strony dydaktycznej projekt pozwolił nam na zapoznanie się z problemami jakie możemy napotkać w przyszłości,
 rozpoczynając od kłopotów ze skontaktowaniem się z klientem przez problemy z
 organizacją pracy na trudnościach z utrzymaniem spójności projektu. Uznajemy, że stworzony przez nas produkt spełnia wszystkie wymagania. Uzyskane doświadczenie ułatwi wykonywanie tego przedśięwzięć w przyszłości.
-
-# 12. Bibliografia
-
-[1] Żabińska M.: Wykłady w ramach przedmiotu „Projektowanie Systemów
-informatycznych” wygłoszone dla studentów II roku kierunku Informatyka Wydz. EAIiE
-AGH w roku akademickim 2014/2015.
 
 #13. Wykorzystane narzędzia
 
@@ -1282,8 +1410,68 @@ AGH w roku akademickim 2014/2015.
 	8. Sprzęt  - maszyny służące do produkcji materiałów powlekanych w tym. 
 	9.  Magazyn – firma posiada trzy rodzaje magazynów : magazyn surowców, produktów i reklamacji. W zależności od typu  są przechowywane w nich materiały.
 	10. Pracownik magazynu – pracownik stacjonujący na magazynie. Odpowiada, za poprawane dostarczenie/odebranie  		materiałów dla kuriera jak i do działu produkcji.
-	11. Niwykonane zlecenie – zadanie, które zostało odebrane, ale nie zostało zatiwierdzone jego wykonanie
-	12. Nieodebrane zlecenie – zadanie, które zostało wysłane do pracownika, ale nie zostało przez niego odebrane
+	11. Niewykonane zlecenie – zadanie, które zostało odebrane, ale nie zostało zatwierdzone jego wykonanie.
+	12. Nieodebrane zlecenie – zadanie, które zostało wysłane do pracownika, ale nie zostało przez niego odebrane.
+
+# Spis rysunków
+	
+	1. Sformułowanie zadania projektowego
+		schemat
+	2. Opis wymagań
+		Magazyn_razem
+		Odebranie_zlecenia_wykonania_produktu
+		podsystemy
+		Praca_razem
+		Produkcja_razem
+		Sprawdzenie_stanu_magazynu
+		Sprzedaz_towaru
+		Ustalenie_harmonogramu_pracy
+		Wpisanie_wyprodukowanego_towaru
+		Wydanie_towaru_kurierowi
+		Wyznaczenie_kierownika_dzialu
+		Wyznaczenie_nagrody_sluzbowej
+		Zareportowanie_wykonania_zlecenia
+		Zgloszenie_awarii_sprzetu
+		Zmiana_stanu_zatrudnienia_pracownika
+	3. Analiza funkcjonalna systemu – diagramy DFD 
+		DFD0
+		obslugaMagazynu
+		obslugaProdukcji
+		obslugaSprzedazy
+		obslugaZatrudnienia
+		systemDFD
+	5. Analiza struktur danych przechowywanych w magazynach
+		diagram
+		diagram_rolled
+	6. Diagramy aktywności
+		Magazyn
+		Praca
+		Sprzedaz
+	9. Architektura systemu
+		schemat.odg
+		schemat
+		spis.txt
+	10. Projekt interfejsu użytkownika
+		logofirmy
+		dostawcy_symbol
+		logowanie
+		magazyn_breakdown
+		magazyn
+		magazyn_symbol
+		material_podglad
+		nowa_karta2
+		nowa_karta
+		praca_symbol
+		produkcja_symbol
+		sprzedaz-breakdown
+		sprzedaz
+		sprzedaz_symbol
+		stat_symbol
+		zarzadzanie_symbol
+
+
+
+
 
 
 

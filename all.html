@@ -1,297 +1,299 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <title>all</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
-/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
-/* Author: Nicolas Hery - http://nicolashery.com */
-/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
-/* Source: https://github.com/nicolahery/markdownpad-github */
+    <style type="text/css">
+        /* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+        /* Author: Nicolas Hery - http://nicolashery.com */
+        /* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+        /* Source: https://github.com/nicolahery/markdownpad-github */
 
-/* RESET
-=============================================================================*/
+        /* RESET
+        =============================================================================*/
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
 
-/* BODY
-=============================================================================*/
+        /* BODY
+        =============================================================================*/
 
-body {
-  font-family: Helvetica, arial, freesans, clean, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
-  padding: 20px;
-  max-width: 960px;
-  margin: 0 auto;
-}
+        body {
+            font-family: Helvetica, arial, freesans, clean, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            padding: 20px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
 
-body>*:first-child {
-  margin-top: 0 !important;
-}
+            body > *:first-child {
+                margin-top: 0 !important;
+            }
 
-body>*:last-child {
-  margin-bottom: 0 !important;
-}
+            body > *:last-child {
+                margin-bottom: 0 !important;
+            }
 
-/* BLOCKS
-=============================================================================*/
+        /* BLOCKS
+        =============================================================================*/
 
-p, blockquote, ul, ol, dl, table, pre {
-  margin: 15px 0;
-}
+        p, blockquote, ul, ol, dl, table, pre {
+            margin: 15px 0;
+        }
 
-/* HEADERS
-=============================================================================*/
+        /* HEADERS
+        =============================================================================*/
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px;
-  padding: 0;
-  font-weight: bold;
-  -webkit-font-smoothing: antialiased;
-}
+        h1, h2, h3, h4, h5, h6 {
+            margin: 20px 0 10px;
+            padding: 0;
+            font-weight: bold;
+            -webkit-font-smoothing: antialiased;
+        }
 
-h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
-  font-size: inherit;
-}
+            h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+                font-size: inherit;
+            }
 
-h1 {
-  font-size: 28px;
-  color: #000;
-}
+        h1 {
+            font-size: 32px;
+            color: #000;
+        }
 
-h2 {
-  font-size: 24px;
-  border-bottom: 1px solid #ccc;
-  color: #000;
-}
+        h2 {
+            font-size: 28px;
+            border-bottom: 1px solid #ccc;
+            color: #000;
+        }
 
-h3 {
-  font-size: 18px;
-}
+        h3 {
+            font-size: 18px;
+        }
 
-h4 {
-  font-size: 16px;
-}
+        h4 {
+            font-size: 16px;
+        }
 
-h5 {
-  font-size: 14px;
-}
+        h5 {
+            font-size: 14px;
+        }
 
-h6 {
-  color: #777;
-  font-size: 14px;
-}
+        h6 {
+            color: #777;
+            font-size: 14px;
+        }
 
-body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
-  margin-top: 0;
-  padding-top: 0;
-}
+        body > h2:first-child, body > h1:first-child, body > h1:first-child + h2, body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
 
-a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
-  margin-top: 0;
-  padding-top: 0;
-}
+        a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+            margin-top: 0;
+            padding-top: 0;
+        }
 
-h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
-  margin-top: 10px;
-}
+        h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+            margin-top: 12px;
+        }
 
-/* LINKS
-=============================================================================*/
+        /* LINKS
+        =============================================================================*/
 
-a {
-  color: #4183C4;
-  text-decoration: none;
-}
+        a {
+            color: #4183C4;
+            text-decoration: none;
+        }
 
-a:hover {
-  text-decoration: underline;
-}
+            a:hover {
+                text-decoration: underline;
+            }
 
-/* LISTS
-=============================================================================*/
+        /* LISTS
+        =============================================================================*/
 
-ul, ol {
-  padding-left: 30px;
-}
+        ul, ol {
+            padding-left: 30px;
+        }
 
-ul li > :first-child, 
-ol li > :first-child, 
-ul li ul:first-of-type, 
-ol li ol:first-of-type, 
-ul li ol:first-of-type, 
-ol li ul:first-of-type {
-  margin-top: 0px;
-}
+            ul li > :first-child,
+            ol li > :first-child,
+            ul li ul:first-of-type,
+            ol li ol:first-of-type,
+            ul li ol:first-of-type,
+            ol li ul:first-of-type {
+                margin-top: 0px;
+            }
 
-ul ul, ul ol, ol ol, ol ul {
-  margin-bottom: 0;
-}
+            ul ul, ul ol, ol ol, ol ul {
+                margin-bottom: 0;
+            }
 
-dl {
-  padding: 0;
-}
+        dl {
+            padding: 0;
+        }
 
-dl dt {
-  font-size: 14px;
-  font-weight: bold;
-  font-style: italic;
-  padding: 0;
-  margin: 15px 0 5px;
-}
+            dl dt {
+                font-size: 14px;
+                font-weight: bold;
+                font-style: italic;
+                padding: 0;
+                margin: 15px 0 5px;
+            }
 
-dl dt:first-child {
-  padding: 0;
-}
+                dl dt:first-child {
+                    padding: 0;
+                }
 
-dl dt>:first-child {
-  margin-top: 0px;
-}
+                dl dt > :first-child {
+                    margin-top: 0px;
+                }
 
-dl dt>:last-child {
-  margin-bottom: 0px;
-}
+                dl dt > :last-child {
+                    margin-bottom: 0px;
+                }
 
-dl dd {
-  margin: 0 0 15px;
-  padding: 0 15px;
-}
+            dl dd {
+                margin: 0 0 15px;
+                padding: 0 15px;
+            }
 
-dl dd>:first-child {
-  margin-top: 0px;
-}
+                dl dd > :first-child {
+                    margin-top: 0px;
+                }
 
-dl dd>:last-child {
-  margin-bottom: 0px;
-}
+                dl dd > :last-child {
+                    margin-bottom: 0px;
+                }
 
-/* CODE
-=============================================================================*/
+        /* CODE
+        =============================================================================*/
 
-pre, code, tt {
-  font-size: 12px;
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-}
+        pre, code, tt {
+            font-size: 14px;
+            font-family: Consolas, "Liberation Mono", Courier, monospace;
+        }
 
-code, tt {
-  margin: 0 0px;
-  padding: 0px 0px;
-  white-space: nowrap;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  border-radius: 3px;
-}
+        code, tt {
+            margin: 0 0px;
+            padding: 0px 0px;
+            white-space: nowrap;
+            border: 1px solid #eaeaea;
+            background-color: #f8f8f8;
+            border-radius: 3px;
+        }
 
-pre>code {
-  margin: 0;
-  padding: 0;
-  white-space: pre;
-  border: none;
-  background: transparent;
-}
+        pre > code {
+            margin: 0;
+            padding: 0;
+            white-space: pre;
+            border: none;
+            background: transparent;
+        }
 
-pre {
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px;
-}
+        pre {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            font-size: 13px;
+            line-height: 19px;
+            overflow: auto;
+            padding: 6px 10px;
+            border-radius: 3px;
+        }
 
-pre code, pre tt {
-  background-color: transparent;
-  border: none;
-}
+            pre code, pre tt {
+                background-color: transparent;
+                border: none;
+            }
 
-kbd {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: #DDDDDD;
-    background-image: linear-gradient(#F1F1F1, #DDDDDD);
-    background-repeat: repeat-x;
-    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
-    border-image: none;
-    border-radius: 2px 2px 2px 2px;
-    border-style: solid;
-    border-width: 1px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 10px;
-    padding: 1px 4px;
-}
+        kbd {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            background-color: #DDDDDD;
+            background-image: linear-gradient(#F1F1F1, #DDDDDD);
+            background-repeat: repeat-x;
+            border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+            border-image: none;
+            border-radius: 2px 2px 2px 2px;
+            border-style: solid;
+            border-width: 1px;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            line-height: 10px;
+            padding: 1px 4px;
+        }
 
-/* QUOTES
-=============================================================================*/
+        /* QUOTES
+        =============================================================================*/
 
-blockquote {
-  border-left: 4px solid #DDD;
-  padding: 0 15px;
-  color: #777;
-}
+        blockquote {
+            border-left: 4px solid #DDD;
+            padding: 0 15px;
+            color: #777;
+        }
 
-blockquote>:first-child {
-  margin-top: 0px;
-}
+            blockquote > :first-child {
+                margin-top: 0px;
+            }
 
-blockquote>:last-child {
-  margin-bottom: 0px;
-}
+            blockquote > :last-child {
+                margin-bottom: 0px;
+            }
 
-/* HORIZONTAL RULES
-=============================================================================*/
+        /* HORIZONTAL RULES
+        =============================================================================*/
 
-hr {
-  clear: both;
-  margin: 15px 0;
-  height: 0px;
-  overflow: hidden;
-  border: none;
-  background: transparent;
-  border-bottom: 4px solid #ddd;
-  padding: 0;
-}
+        hr {
+            clear: both;
+            margin: 15px 0;
+            height: 0px;
+            overflow: hidden;
+            border: none;
+            background: transparent;
+            border-bottom: 4px solid #ddd;
+            padding: 0;
+        }
 
-/* TABLES
-=============================================================================*/
+        /* TABLES
+        =============================================================================*/
 
-table th {
-  font-weight: bold;
-}
+        table th {
+            font-weight: bold;
+        }
 
-table th, table td {
-  border: 1px solid #ccc;
-  padding: 6px 13px;
-}
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 6px 13px;
+        }
 
-table tr {
-  border-top: 1px solid #ccc;
-  background-color: #fff;
-}
+        table tr {
+            border-top: 1px solid #ccc;
+            background-color: #fff;
+        }
 
-table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
+            table tr:nth-child(2n) {
+                background-color: #f8f8f8;
+            }
 
-/* IMAGES
-=============================================================================*/
+        /* IMAGES
+        =============================================================================*/
 
-img {
-  max-width: 100%
-}
-</style>
+        img {
+            max-width: 100%;
+        }
+    </style>
+
+
 </head>
 <body>
-<p>#1. Sformułowanie zadania projektowego</p>
+<h1>1. Sformułowanie zadania projektowego</h1>
 <h2>1.1. Obszar i przedmiot modelowania</h2>
 <h3>1.1.1. Dziedzina problemu</h3>
 <p>Firma: Firma &quot;Sanwil&quot; S.A.</p>
@@ -302,17 +304,18 @@ img {
 <p>Cel problemu: Utworzenie systemu zajmującego się zarządzaniem magazynem oraz zasobami ludzkimi oraz wspomaganie pracy.</p>
 <h2>1.2. Obszar modelowania</h2>
 <h3>1.2.1. Opis struktury organizacyjnej</h3>
-<p>Za decyzję o kierunku rozwoju firmy odpowiada Zgromadzenie Wspólników, pod którym podlega prezes zarządu, który zarządza większością pionów z wyjątkiem pionu logistyki i pionu finansów. Pion logistyki, zajmujący się zamówieniami, i pion finansów zajmujący się księgowością są zarządzane przez Członka zarządu ds. Ekonomiczno-Finansowych podlegającego bezpośrednio pod Zgromadzenie Wspólników. Firma posiada kilka magazynów:</p>
+<p><img src="rysunki/1/schemat.png" alt="Schemat firmy"></p>
+<p>Za decyzję o kierunku rozwoju firmy odpowiada Zgromadzenie Wspólników, pod którym podlega prezes zarzdzajacy większością pionów z wyjątkiem pionu logistyki i pionu finansów. Pion logistyki, zajmujący się zamówieniami, i pion finansów zajmujący się księgowością są zarządzane przez Członka zarządu ds. Ekonomiczno-Finansowych podlegającego bezpośrednio pod Zgromadzenie Wspólników. Firma posiada kilka magazynów:</p>
 <ul>
 <li>surowców</li>
 <li>produktów</li>
 <li>reklamacji</li>
 </ul>
-<p>Firma wytwarza i sprzedaje sztuczne skóry dla przemysłu meblowego, obuwniczego i medycznego. Produkuje również materiały kaletnicze, odzieżowe, plandekowe oraz materiały na potrzeby wojska i przemysłu motoryzacyjnego. Projektowanie produktu jest oparte o indywidualne wymagania klienta. Surowce są zamawiane przez pracowników pionu Logiki i zaopatrzenia i przekazane do magazynu surowców. Następnie w zależności od typu produktu, zostają one użyte przez jeden z oddziałów produkcji i przekazane do magazynu produktów. Następnie pion jakości sprawdza czy produkt zawiera jakieś wady i czy jest zgodny z normą ISO. Jeśli wszystkie wymagania zostały spełnione pracownicy pionu sprzedaży wysyłają towar do klienta. Odbywa się ona na terenie kraju jak i poza jego granicami , w szczególności na terenach Ukrainy i Rosji. Jeśli produkt zostanie zwrócony, trafia do magazynu reklamacji. Nie związany bezpośrednio z częścią kliencką jest pion Marketingu i Rozwoju, który zajmuje się badaniem technologii, zarządzaniem laboratorium oraz kontaktami z potencjalnymi klientami.W laboratorium kontroluje się jakość surowców, bada parametry wyrobów i wydaje atesty wewnętrzne .</p>
+<p>Firma wytwarza i sprzedaje sztuczne skóry dla przemysłu meblowego, obuwniczego i medycznego. Produkuje również materiały kaletnicze, odzieżowe, plandekowe oraz materiały na potrzeby wojska i przemysłu motoryzacyjnego. Projektowanie produktu jest oparte o indywidualne wymagania klienta. Surowce są zamawiane przez pracowników pionu logistyki i przekazane do magazynu surowców. Następnie w zależności od typu produktu, zostają one użyte przez jeden z oddziałów produkcji i przekazane do magazynu produktów. Następnie pion jakości sprawdza czy produkt zawiera jakieś wady i czy jest zgodny z normą ISO. Jeśli wszystkie wymagania zostały spełnione pracownicy pionu sprzedaży wysyłają towar do klienta. Odbywa się ona na terenie kraju jak i poza jego granicami , w szczególności na terenach Ukrainy i Rosji. Jeśli produkt zostanie zwrócony, trafia do magazynu reklamacji. Nie związany bezpośrednio z częścią kupna i sprzedaży jest pion Marketingu i Rozwoju, który zajmuje się badaniem technologii, zarządzaniem laboratorium oraz kontaktami z potencjalnymi klientami.W laboratorium kontroluje się jakość surowców, bada parametry wyrobów i wydaje atesty wewnętrzne .</p>
 <h3>1.2.2. Obszary aktywności</h3>
 <p>a) Wspomaganie sprzedaży - Klient może złożyć zamówienie, tylko za pośrednictwem pracownika, telefonicznie lub osobiście. System pozwala pracownikom na zapisywanie i oglądanie danych o sprzedanych produktach oraz o klientach. Na podstawie wymagań zostaje utworzone zamówienia, po których sprzedaży utworzone będą faktury.</p>
 <p>b) Wspomaganie produkcji - System zawiera informacje o produkcie, który jest w kolejce do produkcji, który jest obecnie w produkcji oraz który został wyprodukowany, a także o stanie maszyn produkcyjnych. Zapewnia odpowiedni przebieg procedur kontroli jakości zamówionych produktów.System monitoruje też stan surowców w magazynie upewniając się, że nie zostanie
-ustalona produkcja materiału jeśli nie ma ich wystarczająco.</p>
+ustalona produkcja jeśli nie ma ich wystarczająco.</p>
 <p>c) Wspomaganie zakupu surowców - System zawiera informacje o ilości oraz składzie zakupionych materiałów, a także informacje o dostawcach. System umożliwia utworzenie zestawienia produktów, które należy zakupić oraz rejestruje dany zakup i jego przekazanie do magazyn surowcow.</p>
 <p>d) Zarządzanie pracą - Prezes posiada możliwość zatrudniać, promować oraz zwalniać pracowników. Kierownicy mają możliwość zarządzania pracą swoich podwładnych. Reszta pracowników może sprawdzić w systemie swój harmonogram oraz odebrać zlecone im zadania. System pozwala na generowanie raportów i statystyki z dzialań pracowników, jak i ogolnego stanu firmy.</p>
 <p>e) Wspomaganie pracy magazynów - Pracownicy są w stanie sprawdzić stan magazynu i na bieżąco go aktualizować podczas wydawania materiałów. Każdy z produktów jest okrelany poprzez swój unikalny kod. System dba o bezpieczny stan magazynów sygnalizujac ilosć danego materialu ponizej krytycznej linii.</p>
@@ -326,13 +329,13 @@ ustalona produkcja materiału jeśli nie ma ich wystarczająco.</p>
 <p>b) Członek Zarządu ds. Ekonomiczno-Finansowych - sprawuje pieczę nad strategicznymi pionami firmy - logistyką i finansami. Zastępuje w tych obowiązkach Prezesa Zarządu. Współpracuje z pionem logistyki podejmując decyzje odnośnie zakupu surowców i zarządzania stanem magazynu. Kontroluje także pion finansowy, kierując pracą w dziedzinie księgowości.</p>
 </li>
 <li>
-<p>c) Pracownik działu Obsługi Klienta - przyjmuje zamówienia telefoniczne i obsługuje klientów przychodzących osobiście.</p>
+<p>c) Pracownik działu Obsługi Klienta - przyjmuje zamówienia i reklamacje telefoniczne oraz obsługuje klientów przychodzących osobiście. Zajmuje sie także  odpowiedzia na pyatnia od potencjalnych klientów.</p>
 </li>
 <li>
-<p>d) Pracownik Pionu Produkcji - ma dostęp do kolejki czekających do produkcji materiałów. Wytwarza materiały przeznaczone do sprzedaży.</p>
+<p>d) Pracownik Pionu Produkcji - ma dostęp do kolejki czekających do produkcji materiałów. Wytwarza materiały przeznaczone do sprzedaży. Może pobierać materialy przyslane z magazynu surowców.</p>
 </li>
 <li>
-<p>e) Pracownik działu Marketingu i Rozwoju - przeprowadza kontrole materiałów, dokonuje oceny sytuacji na rynku, ściśle współpracuje z laboratorium.</p>
+<p>e) Pracownik działu Marketingu i Rozwoju - przeprowadza kontrole materiałów, dokonuje oceny sytuacji na rynku, ściśle współpracuje z laboratorium. Przeprowadza rozmowy z potencjalnymi klientami dlugoterminowymi.</p>
 </li>
 <li>
 <p>f) Magazynier - dba o dostępność zamawianych materiałów. Dokonuje odbioru dostaw, przygotowuje zamówienia do wysyłki.</p>
@@ -380,6 +383,12 @@ ustalona produkcja materiału jeśli nie ma ich wystarczająco.</p>
 <li>
 <p>odczytanie procedur produkcyjnych</p>
 </li>
+<li>
+<p>odebranie surowców do produkcji</p>
+</li>
+<li>
+<p>wyslanie wyprodukowanego materialu na magazyn</p>
+</li>
 </ul>
 <h4>1.3.2.3 Wspomaganie zakupu surowców</h4>
 <ul>
@@ -388,6 +397,9 @@ ustalona produkcja materiału jeśli nie ma ich wystarczająco.</p>
 </li>
 <li>
 <p>złóż zamówienie na surowiec</p>
+</li>
+<li>
+<p>odbierz surowiec </p>
 </li>
 </ul>
 <h4>1.3.2.4 Zarządzanie pracą</h4>
@@ -422,6 +434,12 @@ ustalona produkcja materiału jeśli nie ma ich wystarczająco.</p>
 <li>
 <p>sprawdzenie stanu magazynów</p>
 </li>
+<li>
+<p>odbierz material</p>
+</li>
+<li>
+<p>wyslij material </p>
+</li>
 </ul>
 <h2>1.4 Zakres odpowiedzialności systemu</h2>
 <p>W zakres odpowiedzialności systemu wchodzą wymienione obszary aktywności. Będą one realizowane w pełnym zakresie. System nie pomoże w zrealizowaniu rekrutacji, a jedynie odnotuje wyniki takiego postępowania.</p>
@@ -433,7 +451,7 @@ ustalona produkcja materiału jeśli nie ma ich wystarczająco.</p>
 <h3>1.6.2 Cele przedsięwzięcia projektowego</h3>
 <p>Naszym celem jest zaznajomienie się z poszczególnymi elementami projektowania systemów informatycznych z wykorzystaniem metodyki strukturalnej. Uzyskiwanie potrzebnych informacji od klientów podczas procesu projektowania oraz utrzymywanie dobrego kontaktu. Chcemy również nabrać doświadczenie w pracy grupowej, odpowiednim planowaniu działań oraz dotrzymywaniu terminów.</p>
 <h1>2. Opis wymagań</h1>
-<h3>2.1.1 Funkcje z punktu widzenia przezesa i członków zarządu</h3>
+<h3>2.1.1 Funkcje z punktu widzenia prezesa i członków zarządu</h3>
 <pre><code>a) Zmień stan zatrudnienia pracownika (CRUD)
 b) Wyznacz nagrodę służbową
 c) Wyznacz kierownika działu
@@ -447,12 +465,14 @@ b) Utworzenie raportu na temat funkcjonowania działu
 
 <h3>2.1.3 Funkcje z punktu widzenia pracownika</h3>
 <pre><code>a) Sprawdzenie harmonogramu pracy
+b) Zatwierdzenie przyjęcia zadania
+c) Zatwierdzenie ukończenia zadania
 </code></pre>
 
 <h3>2.1.4 Funkcje z punktu widzenia pracownika Działu Produkcji</h3>
-<pre><code>a) Odebranie zlecenia wykonania produktu 
-b) Zareportowanie wykonania zlecenia 
-c) Zgłoszenie awarii sprzętu 
+<pre><code>a) Zgłoszenie awarii sprzętu 
+b) Odebranie materiałów koniecznych do produkcji
+c) Zapis wykonania produktu
 </code></pre>
 
 <h3>2.1.5 Funkcje z punktu widzenia pracownika Działu Obsługi Klienta</h3>
@@ -461,15 +481,17 @@ b) Dodanie notatki o kliencie
 </code></pre>
 
 <h3>2.1.6 Funkcje z punktu widzenia pracownika magazynu</h3>
-<pre><code>a) Wydanie towaru kurierowi
-b) Wpisanie wyprodukowanego towaru
+<pre><code>a) Wydanie towaru 
+b) Odebranie materiałów
 c) Przeglądanie stanu magazynu
 </code></pre>
 
 <h3>2.1.7 Funkcje z punktu widzenia pracownika Działu Marketingu i Rozwoju</h3>
 <pre><code>a) Zawarcie umowy z firmą reklamową
-b) Wykonanie zleceni wykonania materiałów reklamowych
+b) Wykonanie zadania wykonania materiałów reklamowych
 c) Zlecenie firmie zewnętrznej wykonania materiałów reklamowych
+d) Sprawdzenie nowo-powstałych materiałów
+e) Przeprowadzenie kontroli jakości
 </code></pre>
 
 <h2>2.2. Dane przechowywane w systemie</h2>
@@ -542,19 +564,112 @@ d) Dane o magazynie
 <p>Niektóre partie systemu wymagają szybkiego dostępu.
 Są to funkcje związane z zarządzaniem pracownikami a zwłaszcza &lt;<CRUD>&gt; harmonogramu pracy.</p>
 <h3>2.4.3 Bezpieczeństwo danych</h3>
-<p>Najstotniejsze w systemie są dane o zamówieniach. Są kluczowym elementem działalności firmy, dlatego nie mogą być zagrożone. Istotne są także dane o klientach ze względu na ich poufny charakter.</p>
+<p>Najistotniejsze w systemie są dane o zamówieniach. Są kluczowym elementem działalności firmy, dlatego nie mogą być zagrożone. Istotne są także dane o klientach ze względu na ich poufny charakter.</p>
 <h3>2.4.4 Dostępność systemu</h3>
 <p>System musi być dostępny niezbędnie w godzinach pracy. Poza nimi dopuszcza się niedługie przerwy serwisowe. Należy wymusić wykonywanie kopii bezpieczeństwa danych.</p>
 <h2>2.5. Analiza wymagań funkcjonalnych</h2>
-<p><img src="rysunki\2\Praca_razem.png" alt="Zatrudnienie"></p>
+<p><img src="rysunki/2/Sprzedaz_towaru.png" alt="Sprzedaż towaru"></p>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.1.1 Tytuł: Sprzedaż towaru</strong></p>
 <ul>
-<li><strong>Tytuł: Zmiana stanu zatrudnienia pracownika</strong></li>
+<li>Aktor główny: Pracownik działu sprzedaży</li>
+<li>Cel: Sprzedanie towaru</li>
+<li>Gwarancja:  Stan systemu może ulec zmianie</li>
+<li>Wyzwalacz: Klient dzwoni do firmy z zamiarem zamówienia materiału </li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Pracownik konsultuje z klientem rodzaj i cenę materiału
+2. Pracownik proponuje wstępną cenę i czas produkcji
+3. Pracownik wysyła zlecenie produkcji do zatwierdzenia
+4. Pracownik otrzymuje potwierdzenie produkcji i informuje klienta o aktualnym stanie
+5. Pracownik wysyła zlecenie wysyłki
+6. Po otrzymaniu płatności pracownik zatwierdza sprzedaż
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.2.1 Tytuł: Zgłoszenie awarii sprzętu</strong></p>
+<ul>
+<li>Aktor główny: Pracownik działu produkcji</li>
+<li>Aktorzy: Kierownik</li>
+<li>Cel: Zgłoszenie awarii sprzętu w celu jak najszybszej naprawy</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja:  Brak zmiany stanu systemu</li>
+<li>Warunek początkowy: Nastąpiła awaria sprzętu</li>
+<li>Wyzwalacz: Wejście na okno zgłoszenie problemu</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Pracownik zgłasza awarię sprzętu
+2. Zostaje poinformowany kierownik działu, który weryfikuje dana awarie
+3. Weryfikacja przebiegła pomyślnie i zostaje wysłana wiadomość do działu administracji 
+    3.1.  Weryfikacja przebiegła niepomyślnie
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.2.2 Tytuł: Odebranie materiałów koniecznych do wykonania zadania</strong></p>
+<ul>
+<li>Aktor główny: Pracownik działu produkcji</li>
+<li>Cel: Odebranie materiałów</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja: Brak zmiany stanu systemu</li>
+<li>Warunek początkowy: Materiały potrzebne do produkcji zostały wysłane do magazynu</li>
+<li>Wyzwalacz: Wejście na okno magazynu</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Pracownik sprawdza materiały
+    1.1 Materiały są nieprawidłowe wiec zostają zwrócone
+2. Materiały zostają zapisane w systemie jako odebrane
+3. Materiały zostają zapisane w systemie jako użyte do produkcji
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.2.3 Tytuł: Zapisz ukończenia produkcji</strong></p>
+<ul>
+<li>Aktor główny: Pracownik działu produkcji</li>
+<li>Aktor: Pracownik działu marketingu i rozwoju</li>
+<li>Cel: Zapisz do systemu ukończenia produkcji</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja: Brak zmiany stanu systemu</li>
+<li>Warunek początkowy: Materiał został wyprodukowany</li>
+<li>Wyzwalacz: Wejście na okno produkcji</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Pracownik sprawdza czy produkt jest zgodny z wymaganiami
+    1.1 Produkt nie jest zgodny , informacja zostaje wyslana do kierownika
+2. Sprawdzenie przez dzial rozwoju czy produkt jest zgodny z normami
+    2.1 Produkt nie jest zgodny , informacja zostaje wyslana do kierownika
+3. Produkt zostaje zapisany jako ukonczony
+4. Produkt zostaje wyslany na magazyn
+</code></pre>
+
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.3.1 Tytuł: Zakup surowców</strong></p>
+<ul>
+<li>Aktor główny: Pracownik działu sprzedaży </li>
+<li>Cel: Zakup surowców</li>
+<li>Poziom: Niebieski</li>
+<li>Gwarancja: Stan systemu jest bez zmian</li>
+<li>Warunek początkowy: Otrzymano zadanie zakupu</li>
+<li>Wyzwalacz: Wejście w okno zakupu</li>
+</ul>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<pre><code>1. Utworzono listę zakupów
+2. Złożono zamówienie surowców
+3. Zamówienie zostało przyjęte
+    3.1. Brak surowca w hurtowni
+4. Zapłata i dołączenie faktury do systemu
+</code></pre>
+
+<p><img src="rysunki/2/Praca_razem.png" alt="Zatrudnienie"></p>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.4.1 Tytuł: Zmiana stanu zatrudnienia pracownika</strong></p>
+<ul>
 <li>Aktor główny: Prezes</li>
 <li>Aktorzy: Pracownik, kierownik pionu </li>
 <li>Cel: Zmiana w stanie zatrudnienia pracownika</li>
 <li>Poziom: Niebieski</li>
 <li>Gwarancja: Stan systemu nie zmienia się </li>
-<li>Wyzwalacz: Prezes otwiera okno zarządzania pracownikami</li>
+<li>Warunek początkowy: Prezes otwiera okno zarządzania pracownikami</li>
+<li>Wyzwalacz: Pracownik potrzebuje zmiany danych</li>
 </ul>
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
 <pre><code>1. Prezes wprowadza zmiany
@@ -564,14 +679,15 @@ Są to funkcje związane z zarządzaniem pracownikami a zwłaszcza &lt;<CRUD>&gt
 </code></pre>
 
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.4.2 Tytuł: Wyznaczenie nagrody służbowej</strong></p>
 <ul>
-<li><strong>Tytuł: Wyznaczenie nagrody służbowej</strong></li>
 <li>Aktor główny: Prezes	</li>
 <li>Aktorzy: Pracownik	</li>
 <li>Cel: Wyznaczenie nagrody służbowej</li>
 <li>Poziom: Niebieski</li>
 <li>Gwarancja: Brak zmian w systemie</li>
-<li>Wyzwalacz: Prezes otwiera okno nagród</li>
+<li>Warunek początkowy: Prezes otwiera okno nagród</li>
+<li>Wyzwalacz: Pracownik ma otrzymać nagrodę</li>
 </ul>
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
 <pre><code>1. Prezes przyznaje nagrodę
@@ -580,8 +696,8 @@ Są to funkcje związane z zarządzaniem pracownikami a zwłaszcza &lt;<CRUD>&gt
 </code></pre>
 
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.4.3 Tytuł: Wyznaczenie kierownika działu</strong></p>
 <ul>
-<li><strong>Tytuł: Wyznaczenie kierownika działu</strong></li>
 <li>Aktor główny: Prezes</li>
 <li>Aktorzy: Pracownik</li>
 <li>Cel: Wyznaczenie kierownika z obecnych pracowników</li>
@@ -597,8 +713,8 @@ Są to funkcje związane z zarządzaniem pracownikami a zwłaszcza &lt;<CRUD>&gt
 </code></pre>
 
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.4.4 Tytuł: Ustalenie harmonogramu pracy</strong></p>
 <ul>
-<li><strong>Tytuł: Ustalenie harmonogramu pracy</strong></li>
 <li>Aktor główny: Kierownik pionu</li>
 <li>Aktorzy: pracownik</li>
 <li>Cel: Ustawienie harmonogramu dla danego pionu</li>
@@ -614,87 +730,51 @@ Są to funkcje związane z zarządzaniem pracownikami a zwłaszcza &lt;<CRUD>&gt
 </code></pre>
 
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
-<p><img src="\rysunki\2\Produkcja_razem.png" alt="Produkcja"></p>
+<p><img src="rysunki/2/Produkcja_razem.png" alt="Produkcja"></p>
+<p><strong>2.4.5 Tytuł: Odebranie zlecenia</strong></p>
 <ul>
-<li><strong>Tytuł: Odebranie zlecenia wykonania produktu</strong></li>
-<li>Aktor główny: Pracownik działu produkcji</li>
-<li>Aktorzy: Pracownik działu produkcji</li>
-<li>Cel: Przyjęcie zlecenia wykoniania</li>
+<li>Aktor główny: Pracownik </li>
+<li>Cel: Przyjęcie zadania </li>
 <li>Poziom: Niebieski</li>
 <li>Gwarancja: Brak zmiany stanu systemu </li>
 <li>Wyzwalacz: Pracownik wszedł na okno nieodebranego zadania</li>
 </ul>
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
-<pre><code>1. Pracownik zatwierdził odebranie zlecenia
-2. Zostały wysłane wiadomości o koniecznych materiałach
+<pre><code>1. Pracownik zatwierdził odebranie zadania
+2. Zostały wysłane wiadomości o koniecznych danych/materiałach do innych pracowników
 </code></pre>
 
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.4.6 Tytuł: Zaraportowanie wykonania zlecenia</strong></p>
 <ul>
-<li><strong>Tytuł: Zareportowanie wykonania zlecenia</strong></li>
-<li>Aktor główny: Pracownik działu</li>
+<li>Aktor główny: Pracownik</li>
 <li>Cel: Wysłanie raportu o wykonanym zadaniu</li>
 <li>Poziom: Niebieski</li>
 <li>Gwarancja:  Brak zmiany stanu systemu</li>
-<li>Warunek poczatkowy: Pracownik posiada obdebrane, ale nie wykonane zadanie </li>
+<li>Warunek początkowy: Pracownik posiada odebrane, ale nie wykonane zadanie </li>
 <li>Wyzwalacz: Pracownik wszedł na na okno danego zadania</li>
 </ul>
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
 <pre><code>1. Pracownik zatwierdził wykonanie zadania
     1.1 Termin zakończenia zadania minął
-2. Informacje o zmianch w magazynie zostały dodane do systemu
+2. Informacje o zmianach w magazynie zostały dodane do systemu
 3. Informacje o zakończeniu zostały wysłane do kierownika działu.
 </code></pre>
 
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><img src="rysunki/2/Magazyn_razem.png" alt="Magazyn"></p>
+<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.5.1 Tytuł: Wydanie towaru</strong></p>
 <ul>
-<li><strong>Tytuł: Zgłoszenie awarii sprzętu</strong></li>
-<li>Aktor główny: Pracownik</li>
-<li>Aktorzy: Kierownik</li>
-<li>Cel: Zgloszenie awarii sprzetu w celu jak najszybszej naprawy</li>
-<li>Poziom: Niebieski</li>
-<li>Gwarancja:  Brak zmiany stanu systemu</li>
-<li>Wyzwalacz: Wejście na okno zgłoszenie problemu</li>
-</ul>
-<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
-<pre><code>1. Pracownik zgłasza awarię sprzętu
-2. Zostaje poinformowany kierownik dzialu, który weryfikuje dana awarie
-3. Weryfikacja przebiegla pomyslnie i zostaje wysłana wiadomość do działu administracji 
-    3.1.  Weryfikacja przebiegla niepomyslnie
-</code></pre>
-
-<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
-<p><img src="\rysunki\2\Sprzedaz_towaru.png" alt="Sprzedaż towaru"></p>
-<ul>
-<li><strong>Tytuł: Sprzedaż towaru</strong></li>
-<li>Aktor główny: Pracownik działu sprzedaży</li>
-<li>Aktorzy: Pracownik Dzialu sprzedaży</li>
-<li>Cel: Sprzedanie towaru</li>
-<li>Gwarancja:  Stan systemu może ulec zmianie</li>
-<li>Wyzwalacz: Klient dzwoni do firmy z zamiarem zamówienia materiału </li>
-</ul>
-<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
-<pre><code>1. Pracownik konsultuje z klientem rodzaj i cene materialu
-2. Pracownik proponuje wstepna cene i czas produkcji
-3. Pracownik wysyla zlecenie produkcji do zatwierdzenia
-4. Pracownik otrzymuje potwierdzenie produkcji i informuje klienta o aktualnym stanie
-5. Pracownik wysyla zlecenie wysylki
-6. Po otrzymaniu platnosci pracownik zatwierdza sprzedaż
-</code></pre>
-
-<p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
-<p><img src="\rysunki\2\Magazyn_razem.png" alt="Magazyn"></p>
-<ul>
-<li><strong>Tytuł: Wydanie towaru kurierowi</strong></li>
 <li>Aktor główny: Pracownik magazynu</li>
-<li>Aktorzy: Pracownik magazynu</li>
 <li>Cel: Wysłanie towaru do klienta lub innego magazynu</li>
 <li>Poziom: Niebieski</li>
 <li>Gwarancja: Stan systemu nie zmienia się </li>
+<li>Warunek początkowy: Zadanie wysłania przesyłki zostało otrzymane</li>
 <li>Wyzwalacz: Pracownik magazynu otwiera okno wydania towaru</li>
 </ul>
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
-<pre><code>1. Pracownik magazynu wprowadza dane zlecenia wysyłki do formularza    
+<pre><code>1. Pracownik magazynu wprowadza dane zadanie wysyłki do formularza    
 2. Dokonywana jest weryfikacja ze stanem magazynu    
     2.1 Odrzucono formularz
 3. Pracownik potwierdza wykonanie   
@@ -702,39 +782,33 @@ Są to funkcje związane z zarządzaniem pracownikami a zwłaszcza &lt;<CRUD>&gt
 </code></pre>
 
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.5.2 Tytuł: Odebranie materiałów</strong></p>
 <ul>
-<li><strong>Tytuł: Sprawdzanie stanu magazynu</strong></li>
 <li>Aktor główny: Pracownik magazynu</li>
-<li>Aktorzy: Pracownik magazynu</li>
-<li>Cel: Uzyskanie niezbędnych informacji o stanie</li>
+<li>Cel: Zapis odebrania materiałów w systemie</li>
 <li>Poziom: Niebieski</li>
 <li>Gwarancja: Stan systemu nie zmienia się </li>
-<li>Wyzwalacz: Wejście w okno przeglądania magaznu</li>
+<li>Wyzwalacz: Pracownik otrzymuje materiał</li>
 </ul>
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
-<pre><code>1. Pracownik ustalna określone filtry odnośnie przeglądania. Filtry dzielą się na kilka kategorii. 
-2. Generowany jest odpowiedni widok.  
+<pre><code>1. Sprawdzenie czy paczka jest oczekiwana, zawiera poprawne materiały bądź jest w dobrym stanie
+    1.1. Zawiadomienie kierownika bądź zwrot
+2. Przyjęcie paczki i odłożenie na magazyn
+3. Zapis do systemu
 </code></pre>
 
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
+<p><strong>2.5.3 Tytuł: Sprawdzanie stanu magazynu</strong></p>
 <ul>
-<li><strong>Tytuł: Wpisanie wyprodukowanego towaru</strong></li>
 <li>Aktor główny: Pracownik magazynu</li>
-<li>Aktorzy: Pracownik magazynu</li>
-<li>Cel: Dodanie do stanu magazynu wyprodukowanego produktu</li>
-<li>Poziom: </li>
+<li>Cel: Uzyskanie niezbędnych informacji o stanie magazynu</li>
+<li>Poziom: Niebieski</li>
 <li>Gwarancja: Stan systemu nie zmienia się </li>
-<li>Wyzwalacz: Wejście w okno wprowadzania towaru</li>
+<li>Wyzwalacz: Wejście w okno przeglądania magazynu</li>
 </ul>
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
-<pre><code>1. Pracownik wprowadza dane oraz ilość towaru w formularz   
-    1.1 Negatywna weryfikacja wprowadzonych danych. Produkty nie są firmowe 
-2. Wyświetla się propnowane miejsce magazynowania towaru    
-    2.1 Wyświetlana jest informacja o możliwym braku miejsca w magazynie    
-    2.2 Pracownik na własną rekę znajduje miejsce   
-        2.2.1 Nie znalazł miejsca   
-    2.3 Pracownik opisuje położenie towaru  
-3. Pracownik zatwierdza zmagazynowanie towaru
+<pre><code>1. Pracownik ustala określone filtry odnośnie przeglądania. Filtry dzielą się na kilka kategorii. 
+2. Generowany jest odpowiedni widok.  
 </code></pre>
 
 <p>&nbsp; <!--- Zeby sie listy nie mergowaly--></p>
@@ -798,11 +872,10 @@ mają być widoczne od razu po wprowadzeniu w systemie.</p>
 <p>Podsystemy kontroli jakości i produkcji powinny opierać się na sprawdzonych technologiach
 używanych w podobnych firmach. Każdy pracownik powinien zostać wyszkolony z obsługi funkcji systemowych
 odpowiednio do stanowiska zajmowanego w firmie.
-Należy zapewnić wsparcie techniczne. Wszelkie prace konserwacyjne w ramach systemu powinny odbywać się
-poza godzinami działania firmy.</p>
+Należy zapewnić wsparcie techniczne. Wszelkie prace konserwacyjne w ramach systemu powinny odbywać się poza godzinami działania firmy.</p>
 <h1>3. Analiza funkcjonalna systemu – diagramy DFD</h1>
 <h2>3.1 Diagram kontekstowy systemu wraz z opisem</h2>
-<p><img src="rysunki\3\systemDFD.png" alt="Diagram DFD calego systemu" style="width:100%;height:40%"></p>
+<p><img src="rysunki/3/systemDFD.png" alt="Diagram DFD calego systemu" style="width:100%;height:40%"></p>
 <h3>3.1.1 Opis</h3>
 <p>Z systemem komunikować będzie się: prezes, członek zarządu, pracownik działu R&amp;D, pracownik-sprzedawca, pracownik-magazynier, pracownik-produkcja.</p>
 <ul>
@@ -815,12 +888,12 @@ poza godzinami działania firmy.</p>
 <h2>3.2 Analiza top-down</h2>
 <h3>3.2.1 Wyszczególnienie</h3>
 <h4>3.2.1.1 Rysunek</h4>
-<p><img src="rysunki\3\DFD0.png" alt="Diagram DFD calego systemu" style="width:100%;height:80%"></p>
+<p><img src="rysunki/3/DFD0.png" alt="Diagram DFD calego systemu" style="width:100%;height:80%"></p>
 <h4>3.2.1.2 Opis</h4>
 <p>Powyższy diagram  DFD ukazuje wyodrębnienie pewnych podsystemów szerzej przedstawionych na kolejnych diagramach.</p>
 <h3>3.2.2 Wspomaganie sprzedaży</h3>
 <h4>3.2.2.1 Rysunek</h4>
-<p><img src="rysunki\3\obslugaSprzedazy.png" alt="Obsluga sprzedaży" style="width:90%;height:50%"></p>
+<p><img src="rysunki/3/obslugaSprzedazy.png" alt="Obsluga sprzedaży" style="width:90%;height:50%"></p>
 <h4>3.2.2.2 Opis</h4>
 <pre><code>1.1 Pracownik wprowadza do systemu szczegółowe dane klienta, które następnie zostają zapisane w bazie danych.
 1.2 Pracownik wycofuje wskazane zamówienie. Musi ono zostać jednoznacznie sprecyzowane.
@@ -831,7 +904,7 @@ poza godzinami działania firmy.</p>
 
 <h3>3.2.3 Zarządzanie magazynem</h3>
 <h4>3.2.3.1 Rysunek</h4>
-<p><img src="rysunki\3\obslugaMagazynu.png" alt="Obsluga sprzedaży" style="width:100%;height:40%"></p>
+<p><img src="rysunki/3/obslugaMagazynu.png" alt="Obsluga sprzedaży" style="width:100%;height:40%"></p>
 <h4>3.2.3.2 Opis</h4>
 <pre><code>2.1 Pracownik produkcji wypisuje materiał z magazynu. Musi podać ilość oraz rodzaj. Pracownik magazynu musi zatwierdzić to zapotrzebowanie.
 2.2 Pracownik magazynu dodaje wyprodukowany produkt do magazynu. Musi explicite podać jaki to towar i ile go wyprodukowano.
@@ -841,7 +914,7 @@ poza godzinami działania firmy.</p>
 
 <h3>3.2.4 Zarządzanie pracą</h3>
 <h4>3.2.4.1 Rysunek</h4>
-<p><img src="rysunki\3\obslugaZatrudnienia.png" alt="Zarządzanie pracą" style="width:100%;height:40%"></p>
+<p><img src="rysunki/3/obslugaZatrudnienia.png" alt="Zarządzanie pracą" style="width:100%;height:40%"></p>
 <h4>3.2.4.2 Opis</h4>
 <pre><code>3.1 Prezes lub członek zarządu pragną zmienić stan zatrudniania pracownika. Ta funkcjonalność ma charakter CRUD. 
 3.2 Pracownik pragnie poznać swój aktualny stan zatrudnienia oraz harmonogram pracy.
@@ -849,7 +922,7 @@ poza godzinami działania firmy.</p>
 
 <h3>3.2.4 Zarządzanie produkcją</h3>
 <h4>3.2.4.1 Rysunek</h4>
-<p><img src="rysunki\3\obslugaProdukcji.png" alt="Wspomaganie produkcji" style="width:100%;height:70%"></p>
+<p><img src="rysunki/3/obslugaProdukcji.png" alt="Wspomaganie produkcji" style="width:100%;height:70%"></p>
 <h4>3.2.4.2 Opis</h4>
 <pre><code>4.1 Pracownik zgłasza problem w procesie produkcyjnym. Podaje numer urządzenia i opis usterki, a następnie otrzymuje potwierdzenie.
 4.2 Pracownik chce zmodyfikować&lt;&lt;CRUD&gt;&gt; stan zamówienia. Nowy stan musi być zgodny z wytycznymi nałożonymi przez zarząd firmy. Dokonywane jest sprawdzenie stanu materiałów na magazynie.
@@ -857,21 +930,34 @@ poza godzinami działania firmy.</p>
 </code></pre>
 
 <h1>4.Roboczy słownik danych</h1>
-<pre><code>1. Stan zlecenia - dane określające ile zadań ze zlecenia zostało już wykonane i gdzie aktualnie odbywa się praca nad danym zleceniem.
-2. Decyzje administracyjne - Dane przekazywane pracownikom na temat odgórnych zmian w firmie.
-3. Stan zatrudnienia pracowników - dane dotyczące zarobków, awansach, przeniesieniach, zwolnieniach i rodzaju zatrudnienia.
-4. Stan magazynu - ilość i rodzaj materiałów na danym managzynie. Informuje także o stanie krytycznym.
-5. Dane o funkcjonowianiu przedsiębiorstwa - dane zawierające raporty finansowe i stanu magazynu, zbiorowy spis pracowników itd. 
-6. Dane na temat wykonania zamówienia - czas do dostarczenia gotowego zamówienia
-7. Dane identyfikacyjne klienta - Klient identyfikowany jest poprzez imię, nazwisko oraz indywidualny numer
-8. Dane o zleceniu - dane zlecenia z dodatkiem elementów zmiennych, jak miejsce przechowywania produktów
-9. Dane zlecenia - dane nie zawierające elementów zmiennych
-10.Oznaczenie wypisania w bazie - Dane zatwierdzające wypisanie z bazy danych
-</code></pre>
-
+<ol>
+<li>
+<p>Magazyny danych</p>
+<ol>
+<li>Zgloszenia - udokumentowanie awarii maszyn</li>
+<li>Zamowienia - zlozone zamowienia przez klientow</li>
+<li>Produkty - spis materialow mozliwych do wyprodukowania</li>
+<li>Magazyn - ilosc i rodzaj materialow na magazynach</li>
+<li>Klienci - osoby, ktore uprzednio zakupily produkt, badz maja podpisana stala umowe z firma</li>
+<li>Dostawcy - firmy, z ktorymi podpisano umowy kurierskie</li>
+</ol>
+</li>
+<li>
+<p>Obiekty</p>
+<ol>
+<li>Wspomaganie sprzedaży - dzial zajmujacy sie kontaktem z klientami</li>
+<li>Zarzadznie produkcja - dzial zajmujacy sie produkcja wlasciwa materialu skoropodobnego</li>
+<li>Zarzadzanie magazynem - obszar odbierajacy, przechowywujacy i wysylajacy materialy</li>
+<li>Zarzadznie praca - obszar zapewniajacy spojnosc harmonogramu oraz monitorujacy stan zatrudnienia pracownikow</li>
+<li>Wspomaganie zakupu surowcow - dzial zapewniajacy dostepnosc surowcow</li>
+<li>Administrowanie firmy - obszar zapewnianiajacy poprawne dzialanie systemu, kontrolujacy poprane dzialanie firmy</li>
+<li>Generowanie raportów i danych statystcznych - obszar zbierajacy dane i generujacy raporty oraz statystyki</li>
+</ol>
+</li>
+</ol>
 <h1>5. Analiza struktur danych przechowywanych w magazynach</h1>
 <h2>5.1 Diagram ERD</h2>
-<p><img src="rysunki\4\diagram_rolled.png" alt="Diagram DFD calego systemu" style="width:120%;height:170%"></p>
+<p><img src="rysunki/4/diagram_rolled.png" alt="Diagram DFD calego systemu" style="width:120%;height:170%"></p>
 <h2>5.2 Tabela krzyżowa</h2>
 <p><style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -1352,40 +1438,78 @@ poza godzinami działania firmy.</p>
 </code></pre>
 
 <p><code/></p>
-<h1>6 Activity Diagram</h1>
-<p><img src="rysunki\6\Sprzedaz.jpg" alt="Produkcja"></p>
-<p><img src="rysunki\6\Zarzadzanie_magazynem.png" alt="Zarządzanie magazynem"></p>
-<p><img src="rysunki\6\Zarzadzanie_praca.png" alt="Zarządzanie pracą"></p>
+<h3>Diagram aktywności</h3>
+<p>Pokazane poniżej diagramy aktywności są dokładnym opisem najważniejszych procedur w firmie</p>
+<h2>Sprzedaż</h2>
+<p><img src="rysunki/6/Sprzedaz.jpg" alt="Zarządzanie sprzedażą" style="width:100%;height:80%"></p>
+<p>Podczas sprzedaży zamówienie przechodzi przez 3 ( lub 4 jeśli nie ma wystarczająco surowców na magazynie ) obszary aktywności:</p>
+<pre><code>1. Sprzedaż 
+    1. Złożenie zamówienia przez klienta i zapewnienie zgody obustronnej co do warunków sprzedaży.
+    2. Poinformowanie klienta o zakończeniu produkcji.
+    3. Odebranie zapłaty i faktur.
+2. Produkcja
+    1. Przygotowanie się do produkcji poprzez sprawdzenie gotowości maszyn i dostępu do produktu
+    2. Produkcja
+    3. Zadbanie o zgodność ze standardami
+3. Magazyn
+    1. Dbanie o płynny przepływ materiałów między obszarami oraz firmą, a klientem
+    2. Sprawdzanie czy jest wystarczająco surowców na magazynie
+4. Zakup
+    1. Zamówienie surowców
+</code></pre>
+
+<h2>Zarządzanie magazynem</h2>
+<p><img src="rysunki/6/Magazyn.png" alt="Zarządzanie magazynem" style="width:100%;height:80%"></p>
+<p>Akcja w diagramie aktywności w Zarządzaniu magazynem rozpoczyna się od przyjścia przesyłki.
+Diagram nie precyzuje jaki jest to rodzaj przesyłki i od kogo, ponieważ przejście jest niezależne od tych danych.
+Pozwala to zawrzeć w tym diagramie system dla wszystkich rodzajów magazynów oraz produktów.</p>
+<ol>
+<li>Sprawdzenie poprawności przesyłki</li>
+<li>Przyjęcie przesyłki</li>
+<li>Zapisanie przesyłki do systemu i odłożenie na magazynem</li>
+<li>Przesłanie dalej materiałów</li>
+</ol>
+<h2>Zatrudnienie</h2>
+<p><img src="rysunki/6/Praca.png" alt="Zatrudnienie" style="width:100%;height:80%"></p>
+<p>Diagram Zatrudnienie porusza się w obszarze zarządzania pracą. 
+Stan początkowy to decyzja o zatrudnieniu nowego pracownika.</p>
+<ol>
+<li>Dodanie pracownika do systemu</li>
+<li>Przypisanie pracownika do stanowiska</li>
+<li>Przypisanie pracownikowi mentora</li>
+<li>Zadbanie o poprawność pracownika w systemie </li>
+<li>Dodaj &quot;benefit pack&quot; pracownikowi</li>
+</ol>
 <h1>9. Architektura systemu</h1>
 <h2>9.1 Schemat architektury systemu</h2>
 <p>Poniżej zaprezentowany jest schemat architektury systemu.</p>
-<p><img src="rysunki\9\schemat.png" alt="schemat"></p>
+<p><img src="rysunki/9/schemat.png" alt="schemat"></p>
 <h2>9.2 Opis architektury systemu</h2>
 <p>Architektura systemu opiera się na schemacie klient - serwer. Wszystkie dane są umieszczone są w usłudze bazodanowej a program użytkownika komunikuje się z nią poprzez Internet. Serwer akceptuje połączenia tylko z wewnętrznej sieci firmy. Wyjątkiem jest konto Prezesa oraz Członków Zarządu, którzy mogą się komunikować z systemem bez korzystania z sieci wewnętrznej. Wszyscy inni pracownicy muszą korzystać z systemu tylko w zakładzie pracy albo korzystać z tunelowania. Powyższy zabieg jest kluczowy w celu utrzymania bezpieczeństwa systemu.</p>
 <p>Nie przewidziany jest schemat pracy offline, ze względu na obecność wszystkich niezbędnych danych na serwerze.</p>
 <h1>10. Projekt interfejsu użytkownika</h1>
 <h2>10.1 Logowanie się do systemu</h2>
 <p>Po uruchomieniu aplikacji przez użytkownika generuje się okno logowania.</p>
-<p><img src="rysunki\10\logowanie.png" alt="logowanie"></p>
+<p><img src="rysunki/10/logowanie.png" alt="logowanie"></p>
 <p>Użytkownik musi podać swój login i hasło, które następnie zostaje zweryfikowane.</p>
 <p>Po wciśnięciu przycisku logowania uwidacznia się wiadomość o dacie ostatniego logowania.</p>
 <h2>10.2 Karty</h2>
 <p>Praca użytkownika w aplikacji oparta jest o karty, tak jak w przeglądarce internetowej. Ma to umożliwić korzystanie jednocześnie z wielu funkcji systemu, a jednocześnie przybliżyć wygląd do schematu wcześniej znajomemu użytkkownikowi.</p>
 <p>Jeżeli używkonik posiadał wcześniej sesję w systemie to uwidacznia się poprzednia sesja.</p>
 <p>Jeżeli nie to okno przybiera taką postać:</p>
-<p><img src="rysunki\10\nowa_karta2.png" alt="nowa_karta"></p>
+<p><img src="rysunki/10/nowa_karta2.png" alt="nowa_karta"></p>
 <p>Użytkownik może wybrać jedną z opcji, co spowoduje zamianę bierzącej karty na kartę określonego typu. Wybór jest także możliwy przy pomocy klawiatury.</p>
-<p><img src="rysunki\10\nowa_karta.png" alt="nowa_karta"></p>
+<p><img src="rysunki/10/nowa_karta.png" alt="nowa_karta"></p>
 <p>W każdym momencie użytkownik może otworzyć nową kartę klikając w &quot;+&quot; na pasku zakładek.</p>
 <p>Użytkownik może też się wylogować przyciskając przyscisk &quot;Wyloguj&quot; w górnym prawym rogu ekranu.</p>
 <h2>10.3 Generalny układ okna na bazie obszaru magazynu</h2>
 <h3>10.3.1 Wygląd</h3>
 <p>Oto przykładowy wygląd aplikacji bo wybraniu okna magazynu:</p>
-<p><img src="rysunki\10\magazyn.png" alt="magazyn"></p>
+<p><img src="rysunki/10/magazyn.png" alt="magazyn"></p>
 <p>Użytkownik znajdując się w obszarze magazynu może wybierać z listy po lewej stronie konkretny widok czy funkcjonalność. Niektóre z nich mogą być kategoriami i zawierać własne podkategorie. Odpowiednia kategoria będzie widnieć w opisie danej karty.</p>
 <p>Może też wybierać ogólne opcje takie jak: Plik, Edytuj, Widok, Narzędzia czy Pomoc. To menu jest widoczne w każdym widoku aplikacji.</p>
 <h3>10.3.2 Breakdown</h3>
-<p><img src="rysunki\10\magazynbreakdown.png" alt="magazyn-breakdown"></p>
+<p><img src="rysunki/10/magazyn_breakdown.png" alt="magazyn-breakdown"></p>
 <p>Zobaczmy może troszkę bardziej czytelny obraz:</p>
 <pre><code>1. Pasek narzędzi
 2. Przycisk wylogowania się
@@ -1404,11 +1528,11 @@ poza godzinami działania firmy.</p>
 <h2>10.4 Generalny układ okna na bazie obszaru sprzedaży</h2>
 <h3>10.4.1 Wygląd</h3>
 <p>Oto przykładowa funkcjonalność znajdująca się w obszarze sprzedaży.</p>
-<p><img src="rysunki\10\sprzedaz.png" alt="sprzedaz"></p>
+<p><img src="rysunki/10/sprzedaz.png" alt="sprzedaz"></p>
 <p>Pracownik może tutaj wybierać klienta oraz kompletować skład zamówienia. Po zatwierdzeniu może wprowadzić zamówienie do systemu oraz wydrukować jego skład.</p>
 <h3>10.4.2 Breakdown</h3>
 <p>Poniżej zaprezentowana rozpiska.</p>
-<p><img src="rysunki\10\magazynbreakdown.png" alt="magazyn-breakdown"></p>
+<p><img src="rysunki/10/sprzedaz-breakdown.png" alt="sprzedaz-breakdown"></p>
 <pre><code>1. Pasek narzędzi
 2. Przycisk wylogowania się
 3. Pasek kart
@@ -1435,14 +1559,9 @@ systemem wymagania użytkowników. Również ze strony klienta nie mieliśmy ża
 sygnałów dotyczących ewentualnych poprawek. Dlatego też uznajemy powstały projekt
 systemu za poprawny.</p>
 <h2>11.3 Uwagi i wnioski końcowe</h2>
-<p>Stworzenie projektu systemu informatycznego okazało relatywnie łatwym zadaniem. Największą trudnością okazało się utrzymanie spójności projektu oraz skupienia się na najważniejszych częściach systemu, co spowodowało problem z dziedziny perfekcjonistyczno-praktycznej. Od strony dydaktycznej projekt
-pozwolił nam na zapoznanie się z problemami jakie możemy napotkać w przyszłości,
+<p>Stworzenie projektu systemu informatycznego okazało relatywnie łatwym zadaniem. Największą trudnością okazało się utrzymanie spójności projektu oraz skupienia się na najważniejszych częściach systemu, co spowodowało problem z dziedziny perfekcjonistyczno-praktycznej. Od strony dydaktycznej projekt pozwolił nam na zapoznanie się z problemami jakie możemy napotkać w przyszłości,
 rozpoczynając od kłopotów ze skontaktowaniem się z klientem przez problemy z
 organizacją pracy na trudnościach z utrzymaniem spójności projektu. Uznajemy, że stworzony przez nas produkt spełnia wszystkie wymagania. Uzyskane doświadczenie ułatwi wykonywanie tego przedśięwzięć w przyszłości.</p>
-<h1>12. Bibliografia</h1>
-<p>[1] Żabińska M.: Wykłady w ramach przedmiotu „Projektowanie Systemów
-informatycznych” wygłoszone dla studentów II roku kierunku Informatyka Wydz. EAIiE
-AGH w roku akademickim 2014/2015.</p>
 <h1>13. Wykorzystane narzędzia</h1>
 <pre><code>- UMLet
 - Retext
@@ -1467,8 +1586,64 @@ AGH w roku akademickim 2014/2015.</p>
 8. Sprzęt  - maszyny służące do produkcji materiałów powlekanych w tym. 
 9.  Magazyn – firma posiada trzy rodzaje magazynów : magazyn surowców, produktów i reklamacji. W zależności od typu  są przechowywane w nich materiały.
 10. Pracownik magazynu – pracownik stacjonujący na magazynie. Odpowiada, za poprawane dostarczenie/odebranie        materiałów dla kuriera jak i do działu produkcji.
-11. Niwykonane zlecenie – zadanie, które zostało odebrane, ale nie zostało zatiwierdzone jego wykonanie
-12. Nieodebrane zlecenie – zadanie, które zostało wysłane do pracownika, ale nie zostało przez niego odebrane
+11. Niewykonane zlecenie – zadanie, które zostało odebrane, ale nie zostało zatwierdzone jego wykonanie.
+12. Nieodebrane zlecenie – zadanie, które zostało wysłane do pracownika, ale nie zostało przez niego odebrane.
+</code></pre>
+
+<h1>Spis rysunków</h1>
+<pre><code>1. Sformułowanie zadania projektowego
+    schemat
+2. Opis wymagań
+    Magazyn_razem
+    Odebranie_zlecenia_wykonania_produktu
+    podsystemy
+    Praca_razem
+    Produkcja_razem
+    Sprawdzenie_stanu_magazynu
+    Sprzedaz_towaru
+    Ustalenie_harmonogramu_pracy
+    Wpisanie_wyprodukowanego_towaru
+    Wydanie_towaru_kurierowi
+    Wyznaczenie_kierownika_dzialu
+    Wyznaczenie_nagrody_sluzbowej
+    Zareportowanie_wykonania_zlecenia
+    Zgloszenie_awarii_sprzetu
+    Zmiana_stanu_zatrudnienia_pracownika
+3. Analiza funkcjonalna systemu – diagramy DFD 
+    DFD0
+    obslugaMagazynu
+    obslugaProdukcji
+    obslugaSprzedazy
+    obslugaZatrudnienia
+    systemDFD
+5. Analiza struktur danych przechowywanych w magazynach
+    diagram
+    diagram_rolled
+6. Diagramy aktywności
+    Magazyn
+    Praca
+    Sprzedaz
+9. Architektura systemu
+    schemat.odg
+    schemat
+    spis.txt
+10. Projekt interfejsu użytkownika
+    logofirmy
+    dostawcy_symbol
+    logowanie
+    magazyn_breakdown
+    magazyn
+    magazyn_symbol
+    material_podglad
+    nowa_karta2
+    nowa_karta
+    praca_symbol
+    produkcja_symbol
+    sprzedaz-breakdown
+    sprzedaz
+    sprzedaz_symbol
+    stat_symbol
+    zarzadzanie_symbol
 </code></pre>
 
 
