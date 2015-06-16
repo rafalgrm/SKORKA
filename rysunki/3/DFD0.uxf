@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="13.2">
-  <zoom_level>7</zoom_level>
+  <zoom_level>4</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>392</x>
-      <y>84</y>
-      <w>238</w>
-      <h>28</h>
+      <x>224</x>
+      <y>136</y>
+      <w>136</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>Prezes
 bg=yellow</panel_attributes>
@@ -16,10 +16,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>357</x>
-      <y>1001</y>
-      <w>175</w>
-      <h>35</h>
+      <x>204</x>
+      <y>660</y>
+      <w>100</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>Pracownik Pionu Produkcji
 bg=yellow</panel_attributes>
@@ -28,10 +28,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>77</x>
-      <y>1120</y>
-      <w>238</w>
-      <h>28</h>
+      <x>44</x>
+      <y>728</y>
+      <w>136</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>Pracownik działu Obsługi Klienta
 bg=yellow</panel_attributes>
@@ -40,10 +40,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>392</x>
-      <y>42</y>
-      <w>238</w>
-      <h>28</h>
+      <x>224</x>
+      <y>112</y>
+      <w>136</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>Członek Zarządu ds. Ekonomiczno-Finansowych
 bg=yellow</panel_attributes>
@@ -52,10 +52,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>616</x>
-      <y>1099</y>
-      <w>161</w>
-      <h>42</h>
+      <x>352</x>
+      <y>716</y>
+      <w>92</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Pracownik magazynu
 bg=yellow</panel_attributes>
@@ -64,10 +64,10 @@ bg=yellow</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>777</x>
-      <y>728</y>
-      <w>183</w>
-      <h>92</h>
+      <x>444</x>
+      <y>504</y>
+      <w>104</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -86,10 +86,10 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>777</x>
-      <y>749</y>
-      <w>182</w>
-      <h>49</h>
+      <x>444</x>
+      <y>516</y>
+      <w>104</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes> 
 
@@ -102,10 +102,10 @@ bg=white</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>637</x>
-      <y>812</y>
-      <w>98</w>
-      <h>301</h>
+      <x>364</x>
+      <y>552</y>
+      <w>56</w>
+      <h>172</h>
     </coordinates>
     <panel_attributes>Stan magazynu
 lt=&lt;-&gt;</panel_attributes>
@@ -114,10 +114,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>364</x>
-      <y>812</y>
-      <w>84</w>
-      <h>203</h>
+      <x>208</x>
+      <y>552</y>
+      <w>48</w>
+      <h>116</h>
     </coordinates>
     <panel_attributes>Stan zadania
 lt=&lt;-&gt;</panel_attributes>
@@ -126,10 +126,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>112</x>
-      <y>812</y>
-      <w>91</w>
-      <h>322</h>
+      <x>64</x>
+      <y>552</y>
+      <w>52</w>
+      <h>184</h>
     </coordinates>
     <panel_attributes>Dane klienta
 lt=&lt;-&gt;</panel_attributes>
@@ -138,10 +138,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
-      <y>812</y>
-      <w>98</w>
-      <h>203</h>
+      <x>216</x>
+      <y>552</y>
+      <w>56</w>
+      <h>116</h>
     </coordinates>
     <panel_attributes>Dane materiałów
 lt=&lt;-&gt;</panel_attributes>
@@ -150,10 +150,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>658</x>
-      <y>812</y>
-      <w>112</w>
-      <h>301</h>
+      <x>376</x>
+      <y>552</y>
+      <w>64</w>
+      <h>172</h>
     </coordinates>
     <panel_attributes>Dane o dostawach
 lt=-&gt;</panel_attributes>
@@ -162,10 +162,10 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
-      <y>812</y>
-      <w>91</w>
-      <h>203</h>
+      <x>280</x>
+      <y>552</y>
+      <w>52</w>
+      <h>116</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;
 Dane zgłoszeń</panel_attributes>
@@ -174,10 +174,10 @@ Dane zgłoszeń</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>238</x>
-      <y>812</y>
-      <w>77</w>
-      <h>322</h>
+      <x>136</x>
+      <y>552</y>
+      <w>44</w>
+      <h>184</h>
     </coordinates>
     <panel_attributes>Zamówienie
 lt=&lt;-</panel_attributes>
@@ -186,10 +186,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>133</x>
-      <y>812</y>
-      <w>105</w>
-      <h>322</h>
+      <x>76</x>
+      <y>552</y>
+      <w>60</w>
+      <h>184</h>
     </coordinates>
     <panel_attributes>Dane sprzedaży
 lt=&lt;-&gt;</panel_attributes>
@@ -198,10 +198,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>392</x>
-      <y>0</y>
-      <w>238</w>
-      <h>28</h>
+      <x>224</x>
+      <y>88</y>
+      <w>136</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>Pracownik działu Marketingu i Rozwoju
 bg=yellow</panel_attributes>
@@ -210,10 +210,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>259</x>
-      <y>49</y>
-      <w>210</w>
-      <h>273</h>
+      <x>148</x>
+      <y>116</y>
+      <w>120</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>Dane o fukcjonowaniu przesiębiorstwa
 lt=-</panel_attributes>
@@ -222,10 +222,10 @@ lt=-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>294</x>
-      <y>7</y>
-      <w>112</w>
-      <h>63</h>
+      <x>168</x>
+      <y>92</y>
+      <w>64</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 </panel_attributes>
@@ -234,10 +234,10 @@ lt=-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>294</x>
-      <y>49</y>
-      <w>112</w>
-      <h>63</h>
+      <x>168</x>
+      <y>116</y>
+      <w>64</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 </panel_attributes>
@@ -246,10 +246,10 @@ lt=-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>294</x>
-      <y>42</y>
-      <w>112</w>
-      <h>28</h>
+      <x>168</x>
+      <y>112</y>
+      <w>64</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 </panel_attributes>
@@ -258,10 +258,10 @@ lt=-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>672</x>
-      <y>63</y>
-      <w>168</w>
-      <h>84</h>
+      <x>384</x>
+      <y>124</y>
+      <w>96</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>Decyzje administracyjne
 stan zatrudnienia
@@ -271,10 +271,10 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>623</x>
-      <y>42</y>
-      <w>70</w>
-      <h>28</h>
+      <x>356</x>
+      <y>112</y>
+      <w>40</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 </panel_attributes>
@@ -283,10 +283,10 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>623</x>
-      <y>49</y>
-      <w>70</w>
-      <h>63</h>
+      <x>356</x>
+      <y>116</y>
+      <w>40</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 </panel_attributes>
@@ -295,10 +295,10 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>623</x>
-      <y>0</y>
-      <w>287</w>
-      <h>742</h>
+      <x>356</x>
+      <y>88</y>
+      <w>164</w>
+      <h>424</h>
     </coordinates>
     <panel_attributes>Stan zatrudnienia, harmonogram
 lt=&lt;-</panel_attributes>
@@ -307,10 +307,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>812</y>
-      <w>679</w>
-      <h>469</h>
+      <x>144</x>
+      <y>552</y>
+      <w>388</w>
+      <h>268</h>
     </coordinates>
     <panel_attributes>Stan zatrudnienia, harmonogram
 lt=-&gt;</panel_attributes>
@@ -319,10 +319,10 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>693</x>
-      <y>812</y>
-      <w>175</w>
-      <h>413</h>
+      <x>396</x>
+      <y>552</y>
+      <w>100</w>
+      <h>236</h>
     </coordinates>
     <panel_attributes>Stan zatrudnienia, harmonogram
 lt=-&gt;</panel_attributes>
@@ -331,10 +331,10 @@ lt=-&gt;</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>567</x>
-      <y>728</y>
-      <w>183</w>
-      <h>92</h>
+      <x>324</x>
+      <y>504</y>
+      <w>104</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -353,10 +353,10 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>567</x>
-      <y>749</y>
-      <w>182</w>
-      <h>49</h>
+      <x>324</x>
+      <y>516</y>
+      <w>104</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes> 
          Zarządzanie magazynem
@@ -368,10 +368,10 @@ bg=white</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>994</x>
-      <y>728</y>
-      <w>176</w>
-      <h>92</h>
+      <x>568</x>
+      <y>504</y>
+      <w>100</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -390,10 +390,10 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>994</x>
-      <y>749</y>
-      <w>175</w>
-      <h>49</h>
+      <x>568</x>
+      <y>516</y>
+      <w>100</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes> 
   Wspomaganie zakupu surowców
@@ -405,10 +405,10 @@ bg=white</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>350</x>
-      <y>728</y>
-      <w>183</w>
-      <h>92</h>
+      <x>200</x>
+      <y>504</y>
+      <w>104</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -427,10 +427,10 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>350</x>
-      <y>749</y>
-      <w>182</w>
-      <h>49</h>
+      <x>200</x>
+      <y>516</y>
+      <w>104</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes> 
            Zarządzanie produkcją
@@ -442,10 +442,10 @@ bg=white</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>147</x>
-      <y>728</y>
-      <w>183</w>
-      <h>92</h>
+      <x>84</x>
+      <y>504</y>
+      <w>104</w>
+      <h>52</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -464,10 +464,10 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>147</x>
-      <y>749</y>
-      <w>182</w>
-      <h>49</h>
+      <x>84</x>
+      <y>516</y>
+      <w>104</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes> 
        Wspomaganie sprzedaży
@@ -480,9 +480,9 @@ bg=white</panel_attributes>
     <type>CustomElementImpl</type>
     <coordinates>
       <x>0</x>
-      <y>553</y>
-      <w>211</w>
-      <h>43</h>
+      <y>404</y>
+      <w>121</w>
+      <h>25</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -511,10 +511,10 @@ for(String textline : textlines) {
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>406</x>
-      <y>483</y>
-      <w>211</w>
-      <h>43</h>
+      <x>232</x>
+      <y>364</y>
+      <w>121</w>
+      <h>25</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -543,10 +543,10 @@ for(String textline : textlines) {
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>364</x>
-      <y>812</y>
-      <w>539</w>
-      <h>434</h>
+      <x>208</x>
+      <y>552</y>
+      <w>308</w>
+      <h>248</h>
     </coordinates>
     <panel_attributes>Stan zatrudnienia, harmonogram
 lt=-&gt;</panel_attributes>
@@ -555,10 +555,10 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>588</y>
-      <w>77</w>
-      <h>154</h>
+      <x>156</x>
+      <y>424</y>
+      <w>44</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>Zamówienie
 lt=&lt;-</panel_attributes>
@@ -567,10 +567,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>259</x>
-      <y>553</y>
-      <w>211</w>
-      <h>43</h>
+      <x>148</x>
+      <y>404</y>
+      <w>121</w>
+      <h>25</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -599,10 +599,10 @@ for(String textline : textlines) {
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>371</x>
-      <y>588</y>
-      <w>84</w>
-      <h>154</h>
+      <x>212</x>
+      <y>424</y>
+      <w>48</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>Stan zadania
 lt=&lt;-&gt;</panel_attributes>
@@ -611,10 +611,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>994</x>
-      <y>896</y>
-      <w>197</w>
-      <h>43</h>
+      <x>568</x>
+      <y>600</y>
+      <w>112</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -643,10 +643,10 @@ for(String textline : textlines) {
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>602</x>
-      <y>553</y>
-      <w>211</w>
-      <h>43</h>
+      <x>344</x>
+      <y>404</y>
+      <w>121</w>
+      <h>25</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -676,10 +676,10 @@ for(String textline : textlines) {
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>658</x>
-      <y>588</y>
-      <w>98</w>
-      <h>154</h>
+      <x>376</x>
+      <y>424</y>
+      <w>56</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>Stan magazynu
 lt=&lt;-</panel_attributes>
@@ -688,10 +688,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>805</x>
-      <y>560</y>
-      <w>329</w>
-      <h>182</h>
+      <x>460</x>
+      <y>408</y>
+      <w>188</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>Stan surowców
 lt=&lt;-&gt;</panel_attributes>
@@ -700,10 +700,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1078</x>
-      <y>812</y>
-      <w>91</w>
-      <h>98</h>
+      <x>616</x>
+      <y>552</y>
+      <w>52</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>Dane dostawcy
 lt=&lt;-&gt;</panel_attributes>
@@ -712,10 +712,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
-      <y>518</y>
-      <w>126</w>
-      <h>224</h>
+      <x>220</x>
+      <y>384</y>
+      <w>72</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>Specyfikacja produktu
 lt=&lt;-</panel_attributes>
@@ -724,10 +724,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>21</x>
-      <y>588</y>
-      <w>140</w>
-      <h>196</h>
+      <x>12</x>
+      <y>424</y>
+      <w>80</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>Dane klienta
 lt=&lt;-&gt;</panel_attributes>
@@ -736,10 +736,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>336</x>
-      <y>259</y>
-      <w>183</w>
-      <h>92</h>
+      <x>192</x>
+      <y>236</y>
+      <w>105</w>
+      <h>53</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -758,10 +758,10 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>336</x>
-      <y>280</y>
-      <w>182</w>
-      <h>49</h>
+      <x>192</x>
+      <y>248</y>
+      <w>104</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes> 
   Generowanie raportów i danych
@@ -774,10 +774,10 @@ bg=white</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>665</x>
-      <y>133</y>
-      <w>183</w>
-      <h>92</h>
+      <x>380</x>
+      <y>164</y>
+      <w>105</w>
+      <h>53</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -796,10 +796,10 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>665</x>
-      <y>154</y>
-      <w>182</w>
-      <h>49</h>
+      <x>380</x>
+      <y>176</y>
+      <w>104</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes> 
           Administrowanie firmy
@@ -811,10 +811,10 @@ bg=white</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>63</x>
-      <y>343</y>
-      <w>308</w>
-      <h>224</h>
+      <x>36</x>
+      <y>284</y>
+      <w>176</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>Dane o klientach
 lt=-&gt;</panel_attributes>
@@ -823,10 +823,10 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>343</y>
-      <w>119</w>
-      <h>224</h>
+      <x>156</x>
+      <y>284</y>
+      <w>68</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>Dane o zamówieniach
 lt=&lt;-</panel_attributes>
@@ -835,10 +835,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>420</x>
-      <y>343</y>
-      <w>112</w>
-      <h>154</h>
+      <x>240</x>
+      <y>284</y>
+      <w>64</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>Dane o produktach
 lt=&lt;-</panel_attributes>
@@ -847,10 +847,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>511</x>
-      <y>301</y>
-      <w>259</w>
-      <h>266</h>
+      <x>292</x>
+      <y>260</y>
+      <w>148</w>
+      <h>152</h>
     </coordinates>
     <panel_attributes>Stan magazynu
 lt=&lt;-</panel_attributes>
@@ -859,10 +859,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>224</x>
-      <y>490</y>
-      <w>196</w>
-      <h>252</h>
+      <x>128</x>
+      <y>368</y>
+      <w>112</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>Dane produktów
 lt=-&gt;</panel_attributes>
@@ -871,10 +871,10 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>511</x>
-      <y>280</y>
-      <w>637</w>
-      <h>462</h>
+      <x>292</x>
+      <y>248</y>
+      <w>364</w>
+      <h>264</h>
     </coordinates>
     <panel_attributes>Stan surowców, dostawcy
 lt=&lt;-</panel_attributes>
@@ -883,10 +883,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>497</x>
-      <y>623</y>
-      <w>147</w>
-      <h>119</h>
+      <x>284</x>
+      <y>444</y>
+      <w>84</w>
+      <h>68</h>
     </coordinates>
     <panel_attributes>Stan magazynu
 
@@ -896,10 +896,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>609</x>
-      <y>217</y>
-      <w>126</w>
-      <h>301</h>
+      <x>348</x>
+      <y>212</y>
+      <w>72</w>
+      <h>172</h>
     </coordinates>
     <panel_attributes>Zmiana oferty
 lt=&lt;-&gt;</panel_attributes>
@@ -908,10 +908,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>182</y>
-      <w>175</w>
-      <h>560</h>
+      <x>480</x>
+      <y>192</y>
+      <w>100</w>
+      <h>320</h>
     </coordinates>
     <panel_attributes>Stan zatrudnienia
 lt=&lt;-&gt;</panel_attributes>
@@ -920,10 +920,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>840</x>
-      <y>161</y>
-      <w>504</w>
-      <h>770</h>
+      <x>480</x>
+      <y>180</y>
+      <w>288</w>
+      <h>440</h>
     </coordinates>
     <panel_attributes>Zmiana dostawcy
 lt=&lt;-&gt;</panel_attributes>
@@ -932,10 +932,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>406</x>
-      <y>1050</y>
-      <w>211</w>
-      <h>43</h>
+      <x>232</x>
+      <y>688</y>
+      <w>120</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -964,10 +964,10 @@ for(String textline : textlines) {
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>504</x>
-      <y>812</y>
-      <w>119</w>
-      <h>252</h>
+      <x>288</x>
+      <y>552</y>
+      <w>68</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;
 Dane zgłoszeń</panel_attributes>
