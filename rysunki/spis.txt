@@ -1,0 +1,53 @@
+1 Sformułowanie zadania projektowego
+	schemat
+2 Opis wymagań
+	Magazyn_razem
+	Odebranie_zlecenia_wykonania_produktu
+	podsystemy
+	Praca_razem
+	Produkcja_razem
+	Sprawdzenie_stanu_magazynu
+	Sprzedaz_towaru
+	Ustalenie_harmonogramu_pracy
+	Wpisanie_wyprodukowanego_towaru
+	Wydanie_towaru_kurierowi
+	Wyznaczenie_kierownika_dzialu
+	Wyznaczenie_nagrody_sluzbowej
+	Zareportowanie_wykonania_zlecenia
+	Zgloszenie_awarii_sprzetu
+	Zmiana_stanu_zatrudnienia_pracownika
+3 Analiza funkcjonalna systemu – diagramy DFD 
+	DFD0
+	obslugaMagazynu
+	obslugaProdukcji
+	obslugaSprzedazy
+	obslugaZatrudnienia
+	systemDFD
+5 Analiza struktur danych przechowywanych w magazynach
+	diagram
+	diagram_rolled
+6 Diagramy aktywności
+	Magazyn
+	Praca
+	Sprzedaz
+9 Architektura systemu
+	schemat.odg
+	schemat
+	spis.txt
+10 Projekt interfejsu użytkownika
+	logofirmy
+	dostawcy_symbol
+	logowanie
+	magazyn_breakdown
+	magazyn
+	magazyn_symbol
+	material_podglad
+	nowa_karta2
+	nowa_karta
+	praca_symbol
+	produkcja_symbol
+	sprzedaz-breakdown
+	sprzedaz
+	sprzedaz_symbol
+	stat_symbol
+	zarzadzanie_symbol
