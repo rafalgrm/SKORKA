@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>80</x>
-      <y>608</y>
+      <x>8</x>
+      <y>440</y>
       <w>200</w>
       <h>40</h>
     </coordinates>
@@ -16,8 +16,8 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>600</x>
-      <y>608</y>
+      <x>528</x>
+      <y>440</y>
       <w>184</w>
       <h>48</h>
     </coordinates>
@@ -28,9 +28,9 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>624</x>
-      <y>472</y>
-      <w>112</w>
+      <x>552</x>
+      <y>304</y>
+      <w>120</w>
       <h>152</h>
     </coordinates>
     <panel_attributes>Dane o produkcje
@@ -40,9 +40,9 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>232</x>
-      <y>512</y>
-      <w>136</w>
+      <x>160</x>
+      <y>344</y>
+      <w>152</w>
       <h>112</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
@@ -52,8 +52,8 @@ Ilosc i rodzaj materiału</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>544</x>
-      <y>376</y>
+      <x>472</x>
+      <y>208</y>
       <w>209</w>
       <h>105</h>
     </coordinates>
@@ -74,14 +74,14 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>544</x>
-      <y>400</y>
+      <x>472</x>
+      <y>232</y>
       <w>208</w>
       <h>56</h>
     </coordinates>
     <panel_attributes>
  
-         Dodanie produktu do magazynu
+    Dodanie produktu do magazynu
 layer=1
 
 bg=white</panel_attributes>
@@ -90,8 +90,8 @@ bg=white</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>1072</x>
-      <y>376</y>
+      <x>1000</x>
+      <y>208</y>
       <w>201</w>
       <h>105</h>
     </coordinates>
@@ -112,8 +112,8 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>1072</x>
-      <y>400</y>
+      <x>1000</x>
+      <y>232</y>
       <w>200</w>
       <h>56</h>
     </coordinates>
@@ -127,8 +127,8 @@ bg=white</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>72</x>
-      <y>416</y>
+      <x>0</x>
+      <y>248</y>
       <w>225</w>
       <h>105</h>
     </coordinates>
@@ -149,8 +149,8 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>72</x>
-      <y>440</y>
+      <x>0</x>
+      <y>272</y>
       <w>224</w>
       <h>56</h>
     </coordinates>
@@ -164,8 +164,8 @@ bg=white</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>360</x>
-      <y>304</y>
+      <x>288</x>
+      <y>136</y>
       <w>241</w>
       <h>49</h>
     </coordinates>
@@ -196,8 +196,8 @@ for(String textline : textlines) {
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>584</x>
-      <y>176</y>
+      <x>512</x>
+      <y>8</y>
       <w>241</w>
       <h>49</h>
     </coordinates>
@@ -205,7 +205,7 @@ for(String textline : textlines) {
 // observe the element preview.
 
  
-Stan magazynu
+Magazyn
 fg=black</panel_attributes>
     <additional_attributes/>
     <custom_code>//Modify the code below to define the element's behavior.
@@ -229,9 +229,9 @@ for(String textline : textlines) {
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>648</x>
-      <y>216</y>
-      <w>152</w>
+      <x>576</x>
+      <y>48</y>
+      <w>176</w>
       <h>176</h>
     </coordinates>
     <panel_attributes>Zmiana ilosci w magazynie
@@ -241,9 +241,9 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>816</x>
-      <y>184</y>
-      <w>448</w>
+      <x>744</x>
+      <y>16</y>
+      <w>472</w>
       <h>208</h>
     </coordinates>
     <panel_attributes>Zmiana ilosci w magazynie
@@ -253,8 +253,8 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>88</x>
-      <y>200</y>
+      <x>16</x>
+      <y>32</y>
       <w>504</w>
       <h>232</h>
     </coordinates>
@@ -265,8 +265,8 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>256</x>
-      <y>256</y>
+      <x>184</x>
+      <y>88</y>
       <w>376</w>
       <h>176</h>
     </coordinates>
@@ -278,8 +278,8 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1264</x>
-      <y>416</y>
+      <x>1192</x>
+      <y>248</y>
       <w>136</w>
       <h>144</h>
     </coordinates>
@@ -290,8 +290,8 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>1280</x>
-      <y>544</y>
+      <x>1208</x>
+      <y>376</y>
       <w>225</w>
       <h>49</h>
     </coordinates>
@@ -322,8 +322,8 @@ for(String textline : textlines) {
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>448</x>
-      <y>344</y>
+      <x>376</x>
+      <y>176</y>
       <w>112</w>
       <h>96</h>
     </coordinates>
@@ -334,8 +334,8 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>776</x>
-      <y>472</y>
+      <x>704</x>
+      <y>304</y>
       <w>360</w>
       <h>168</h>
     </coordinates>
@@ -346,8 +346,8 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>288</x>
-      <y>456</y>
+      <x>216</x>
+      <y>288</y>
       <w>328</w>
       <h>184</h>
     </coordinates>
@@ -358,8 +358,8 @@ lt=-&gt;</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>792</x>
-      <y>376</y>
+      <x>720</x>
+      <y>208</y>
       <w>225</w>
       <h>105</h>
     </coordinates>
@@ -380,8 +380,8 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>792</x>
-      <y>400</y>
+      <x>720</x>
+      <y>232</y>
       <w>224</w>
       <h>56</h>
     </coordinates>
@@ -395,8 +395,8 @@ bg=white</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>704</x>
-      <y>472</y>
+      <x>632</x>
+      <y>304</y>
       <w>200</w>
       <h>152</h>
     </coordinates>
@@ -407,9 +407,9 @@ lt=-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>816</x>
-      <y>200</y>
-      <w>216</w>
+      <x>744</x>
+      <y>32</y>
+      <w>240</w>
       <h>192</h>
     </coordinates>
     <panel_attributes>Zmiana ilosci w magazynie
