@@ -33,7 +33,7 @@ bg=yellow</panel_attributes>
       <w>120</w>
       <h>152</h>
     </coordinates>
-    <panel_attributes>Dane o produkcje
+    <panel_attributes>Dane o produkcie
 lt=-&gt;</panel_attributes>
     <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
   </element>
@@ -42,11 +42,11 @@ lt=-&gt;</panel_attributes>
     <coordinates>
       <x>160</x>
       <y>344</y>
-      <w>152</w>
+      <w>120</w>
       <h>112</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-Ilosc i rodzaj materiału</panel_attributes>
+Dane o materiale</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
   <element>
@@ -231,11 +231,11 @@ for(String textline : textlines) {
     <coordinates>
       <x>576</x>
       <y>48</y>
-      <w>176</w>
+      <w>112</w>
       <h>176</h>
     </coordinates>
-    <panel_attributes>Zmiana ilosci w magazynie
-lt=&lt;-</panel_attributes>
+    <panel_attributes>Stan magazynu
+lt=-&gt;</panel_attributes>
     <additional_attributes>10.0;200.0;10.0;10.0</additional_attributes>
   </element>
   <element>
@@ -243,10 +243,10 @@ lt=&lt;-</panel_attributes>
     <coordinates>
       <x>744</x>
       <y>16</y>
-      <w>472</w>
+      <w>408</w>
       <h>208</h>
     </coordinates>
-    <panel_attributes>Zmiana ilosci w magazynie
+    <panel_attributes>Stan magazynu
 lt=-&gt;</panel_attributes>
     <additional_attributes>380.0;240.0;380.0;10.0;10.0;10.0</additional_attributes>
   </element>
@@ -255,12 +255,12 @@ lt=-&gt;</panel_attributes>
     <coordinates>
       <x>16</x>
       <y>32</y>
-      <w>504</w>
+      <w>512</w>
       <h>232</h>
     </coordinates>
     <panel_attributes>Oznaczenie wypisania w bazie
 lt=-&gt;</panel_attributes>
-    <additional_attributes>10.0;270.0;10.0;10.0;610.0;10.0</additional_attributes>
+    <additional_attributes>10.0;270.0;10.0;10.0;620.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -270,7 +270,7 @@ lt=-&gt;</panel_attributes>
       <w>376</w>
       <h>176</h>
     </coordinates>
-    <panel_attributes>Zmiana stanu magazynu
+    <panel_attributes>Stan magazynu
 
 lt=&lt;-&gt;</panel_attributes>
     <additional_attributes>10.0;200.0;10.0;20.0;450.0;20.0;450.0;150.0</additional_attributes>
@@ -351,7 +351,7 @@ lt=-&gt;</panel_attributes>
       <w>328</w>
       <h>184</h>
     </coordinates>
-    <panel_attributes>Zgoda
+    <panel_attributes>Zatwierdznie wypisu
 lt=-&gt;</panel_attributes>
     <additional_attributes>390.0;210.0;250.0;210.0;250.0;10.0;10.0;10.0</additional_attributes>
   </element>
@@ -400,7 +400,7 @@ bg=white</panel_attributes>
       <w>200</w>
       <h>152</h>
     </coordinates>
-    <panel_attributes>Zamowienie
+    <panel_attributes>Zatwierdzenei wypisu
 lt=-&gt;</panel_attributes>
     <additional_attributes>10.0;170.0;10.0;140.0;230.0;140.0;230.0;10.0</additional_attributes>
   </element>
@@ -409,10 +409,10 @@ lt=-&gt;</panel_attributes>
     <coordinates>
       <x>744</x>
       <y>32</y>
-      <w>240</w>
+      <w>176</w>
       <h>192</h>
     </coordinates>
-    <panel_attributes>Zmiana ilosci w magazynie
+    <panel_attributes>Stan magazynu
 lt=-&gt;</panel_attributes>
     <additional_attributes>90.0;220.0;90.0;10.0;10.0;10.0</additional_attributes>
   </element>

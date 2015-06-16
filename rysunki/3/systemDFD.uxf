@@ -119,7 +119,7 @@ lt=&lt;-&gt;</panel_attributes>
       <w>216</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>Stan zlecenia
+    <panel_attributes>Zamówienie
 lt=&lt;-&gt;</panel_attributes>
     <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
   </element>
@@ -143,7 +143,7 @@ lt=&lt;-&gt;</panel_attributes>
       <w>216</w>
       <h>24</h>
     </coordinates>
-    <panel_attributes>Dane materiałów
+    <panel_attributes>Specyfikacja produktu
 lt=&lt;-&gt;</panel_attributes>
     <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
   </element>
@@ -179,7 +179,7 @@ Zgłoszenia problemów</panel_attributes>
       <w>174</w>
       <h>66</h>
     </coordinates>
-    <panel_attributes>Zlecenia
+    <panel_attributes>Zamówienie
 lt=&lt;-</panel_attributes>
     <additional_attributes>270.0;20.0;10.0;20.0;10.0;90.0</additional_attributes>
   </element>

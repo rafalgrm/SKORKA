@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="13.2">
-  <zoom_level>8</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>248</x>
-      <y>576</y>
-      <w>688</w>
-      <h>32</h>
+      <x>279</x>
+      <y>648</y>
+      <w>774</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>Pracownik działu Obsługi Klienta
 bg=yellow</panel_attributes>
@@ -16,34 +16,34 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>496</x>
-      <y>384</y>
-      <w>184</w>
-      <h>208</h>
+      <x>558</x>
+      <y>432</y>
+      <w>207</w>
+      <h>234</h>
     </coordinates>
-    <panel_attributes>Dane indetyfikacyjne klienta
+    <panel_attributes>Dane identyfikacyjne klienta
 lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>656</x>
-      <y>384</y>
-      <w>120</w>
-      <h>208</h>
+      <x>738</x>
+      <y>432</y>
+      <w>99</w>
+      <h>234</h>
     </coordinates>
-    <panel_attributes>Dane zamówienia
+    <panel_attributes>Zamówienie
 lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
   </element>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>480</x>
-      <y>288</y>
-      <w>209</w>
-      <h>105</h>
+      <x>540</x>
+      <y>324</y>
+      <w>235</w>
+      <h>118</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -62,10 +62,10 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>480</x>
-      <y>312</y>
-      <w>208</w>
-      <h>56</h>
+      <x>540</x>
+      <y>351</y>
+      <w>234</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes> 
             Złożenie zamówienia
@@ -77,10 +77,10 @@ bg=white</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>312</x>
-      <y>80</y>
-      <w>241</w>
-      <h>49</h>
+      <x>351</x>
+      <y>90</y>
+      <w>271</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -109,10 +109,10 @@ for(String textline : textlines) {
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>776</x>
+      <x>873</x>
       <y>0</y>
-      <w>241</w>
-      <h>49</h>
+      <w>271</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -141,10 +141,10 @@ for(String textline : textlines) {
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>624</x>
-      <y>120</y>
-      <w>88</w>
-      <h>184</h>
+      <x>702</x>
+      <y>135</y>
+      <w>99</w>
+      <h>207</h>
     </coordinates>
     <panel_attributes>Zamówienie
 lt=&lt;-</panel_attributes>
@@ -153,10 +153,10 @@ lt=&lt;-</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>608</x>
-      <y>80</y>
-      <w>241</w>
-      <h>49</h>
+      <x>684</x>
+      <y>90</y>
+      <w>271</w>
+      <h>55</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -185,10 +185,10 @@ for(String textline : textlines) {
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>520</x>
-      <y>120</y>
-      <w>88</w>
-      <h>184</h>
+      <x>585</x>
+      <y>135</y>
+      <w>99</w>
+      <h>207</h>
     </coordinates>
     <panel_attributes>Dane klienta
 lt=&lt;-&gt;</panel_attributes>
@@ -197,10 +197,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>568</x>
-      <y>8</y>
-      <w>224</w>
-      <h>296</h>
+      <x>639</x>
+      <y>9</y>
+      <w>252</w>
+      <h>333</h>
     </coordinates>
     <panel_attributes>Dane produktów
 lt=-&gt;</panel_attributes>
@@ -209,10 +209,10 @@ lt=-&gt;</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>704</x>
-      <y>288</y>
-      <w>209</w>
-      <h>105</h>
+      <x>792</x>
+      <y>324</y>
+      <w>235</w>
+      <h>118</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -231,13 +231,13 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>704</x>
-      <y>312</y>
-      <w>208</w>
-      <h>56</h>
+      <x>792</x>
+      <y>351</y>
+      <w>234</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes> 
-       Sprawdzenie stanu zamówienia
+   Sprawdzenie stanu zamówienia
 layer=1
 
 bg=white</panel_attributes>
@@ -246,22 +246,22 @@ bg=white</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>736</x>
-      <y>120</y>
-      <w>120</w>
-      <h>184</h>
+      <x>828</x>
+      <y>135</y>
+      <w>99</w>
+      <h>207</h>
     </coordinates>
-    <panel_attributes>Stan zamówienia
+    <panel_attributes>Zamówienie
 lt=&lt;-&gt;</panel_attributes>
     <additional_attributes>10.0;210.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>856</x>
-      <y>384</y>
-      <w>96</w>
-      <h>208</h>
+      <x>963</x>
+      <y>432</y>
+      <w>108</w>
+      <h>234</h>
     </coordinates>
     <panel_attributes>Dane zlecenia
 lt=&lt;-</panel_attributes>
@@ -270,12 +270,12 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>760</x>
-      <y>384</y>
-      <w>112</w>
-      <h>208</h>
+      <x>855</x>
+      <y>432</y>
+      <w>99</w>
+      <h>234</h>
     </coordinates>
-    <panel_attributes>Dane o zleceniu
+    <panel_attributes>Zamówienie
 lt=-&gt;</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
   </element>
@@ -283,9 +283,9 @@ lt=-&gt;</panel_attributes>
     <type>CustomElementImpl</type>
     <coordinates>
       <x>0</x>
-      <y>288</y>
-      <w>209</w>
-      <h>105</h>
+      <y>324</y>
+      <w>235</w>
+      <h>118</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -305,9 +305,9 @@ drawLine(0,height-height/4,width,height-height/4);
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
       <x>0</x>
-      <y>312</y>
-      <w>208</w>
-      <h>56</h>
+      <y>351</y>
+      <w>234</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes> 
             Dodanie klienta
@@ -319,22 +319,22 @@ bg=white</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>40</x>
-      <y>384</y>
-      <w>224</w>
-      <h>224</h>
+      <x>45</x>
+      <y>432</y>
+      <w>252</w>
+      <h>252</h>
     </coordinates>
-    <panel_attributes>Szczegółowe dane klienta
+    <panel_attributes>Dane klienta
 lt=&lt;-&gt;</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;260.0;260.0;260.0</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>952</x>
-      <y>312</y>
-      <w>208</w>
-      <h>56</h>
+      <x>1071</x>
+      <y>351</y>
+      <w>234</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes> 
             Wydanie zamówienia
@@ -346,10 +346,10 @@ bg=white</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>952</x>
-      <y>288</y>
-      <w>209</w>
-      <h>105</h>
+      <x>1071</x>
+      <y>324</y>
+      <w>235</w>
+      <h>118</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -368,10 +368,10 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>992</x>
-      <y>136</y>
-      <w>312</w>
-      <h>32</h>
+      <x>1116</x>
+      <y>153</y>
+      <w>351</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>Pracownik magazynu
 bg=yellow</panel_attributes>
@@ -380,10 +380,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>120</x>
-      <y>96</y>
-      <w>208</w>
-      <h>208</h>
+      <x>135</x>
+      <y>108</y>
+      <w>234</w>
+      <h>234</h>
     </coordinates>
     <panel_attributes>Dane klienta
 lt=&lt;-&gt;</panel_attributes>
@@ -392,10 +392,10 @@ lt=&lt;-&gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1120</x>
-      <y>160</y>
-      <w>88</w>
-      <h>144</h>
+      <x>1260</x>
+      <y>180</y>
+      <w>99</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>Zamówienie
 lt=&lt;-</panel_attributes>
@@ -404,22 +404,22 @@ lt=&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>784</x>
-      <y>120</y>
-      <w>224</w>
-      <h>184</h>
+      <x>882</x>
+      <y>135</y>
+      <w>252</w>
+      <h>207</h>
     </coordinates>
-    <panel_attributes>Stan zamówienia
+    <panel_attributes>Zamówienie
 lt=-&gt;</panel_attributes>
     <additional_attributes>260.0;210.0;260.0;90.0;10.0;90.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Systemborder</type>
     <coordinates>
-      <x>224</x>
-      <y>312</y>
-      <w>208</w>
-      <h>56</h>
+      <x>252</x>
+      <y>351</y>
+      <w>234</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes> 
             Wycofanie zamówienia
@@ -431,10 +431,10 @@ bg=white</panel_attributes>
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>224</x>
-      <y>288</y>
-      <w>209</w>
-      <h>105</h>
+      <x>252</x>
+      <y>324</y>
+      <w>235</w>
+      <h>118</h>
     </coordinates>
     <panel_attributes>// Modify the text below and
 // observe the element preview.
@@ -453,24 +453,24 @@ drawLine(0,height-height/4,width,height-height/4);
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>272</x>
-      <y>120</y>
-      <w>416</w>
-      <h>184</h>
+      <x>306</x>
+      <y>135</y>
+      <w>468</w>
+      <h>207</h>
     </coordinates>
-    <panel_attributes>Zmiana stanu zamówienia
+    <panel_attributes>Zamówienie
 lt=&lt;-&gt;</panel_attributes>
     <additional_attributes>10.0;210.0;10.0;70.0;500.0;70.0;500.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
-      <y>384</y>
-      <w>120</w>
-      <h>208</h>
+      <x>315</x>
+      <y>432</y>
+      <w>99</w>
+      <h>234</h>
     </coordinates>
-    <panel_attributes>Dane zamówienia
+    <panel_attributes>Zamówienie
 lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
   </element>
