@@ -4,6 +4,17 @@
 <title>all</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <style type="text/css">
+	p {
+    word-break: break-all;
+    white-space: normal;
+}
+pre {
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
 	
         /* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
         /* Author: Nicolas Hery - http://nicolashery.com */
@@ -31,6 +42,7 @@
             padding: 20px;
             max-width: 960px;
             margin: 0 auto;
+			word-break: break-all;
         }
 
             body > *:first-child {
@@ -46,7 +58,6 @@
 
         p, blockquote, ul, ol, dl, table, pre {
             margin: 15px 0;
-			div { word-wrap: break-word } 
         }
 
         /* HEADERS
@@ -180,6 +191,7 @@
         pre, code, tt {
             font-size: 14px;
             font-family: Consolas, "Liberation Mono", Courier, monospace;
+						word-break: break-all;
         }
 
         code, tt {
