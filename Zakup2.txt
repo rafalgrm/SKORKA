@@ -1,0 +1,16 @@
+   **Tytuł: Zakup surowców**
+*   Aktor główny: Pracownik działu sprzedaży 
+*   Cel: Zakup surowców
+*   Poziom: Niebieski
+*   Gwarancja: Stan systemu jest bez zmian
+*	Warunek początkowy: Otrzymano zadanie zakupu
+*   Wyzwalacz: Wejście w okno zakupu
+
+&nbsp; <!--- Zeby sie listy nie mergowaly-->
+
+	
+	1. Utworzono listę zakupów
+	2. Złożono zamówienie surowców
+	3. Zamówienie zostało przyjęte
+		3.1. Brak surowca w hurtowni
+	4. Zapłata i dołączenie faktury do systemu
